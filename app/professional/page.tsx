@@ -8,10 +8,10 @@ export default function ProfessionalPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <header className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-2">
+          <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-1">
             Professional Work
           </h1>
-          <p className="text-foreground/70">
+          <p className="text-foreground/70 mt-4">
             Selected projects from my professional experience in product development and design.
           </p>
         </header>

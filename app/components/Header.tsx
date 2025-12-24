@@ -1,6 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <>
       {/* Desktop Sidebar */}
@@ -35,6 +43,12 @@ export default function Header() {
               Pocket Design Lab
             </Link>
             <Link
+              href="/media"
+              className="text-foreground/60 hover:text-accent transition-colors"
+            >
+              Media / Press
+            </Link>
+            <Link
               href="/about"
               className="text-foreground/60 hover:text-accent transition-colors"
             >
@@ -51,52 +65,80 @@ export default function Header() {
       </aside>
       
       {/* Mobile Header */}
-      <header className="md:hidden w-full border-b border-accent bg-background">
-        <nav className="px-4 py-4 flex flex-col gap-4">
+      <header className="md:hidden fixed top-0 left-0 right-0 z-20 border-b border-accent bg-background">
+        <div className="px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-xl font-semibold text-foreground hover:text-accent transition-colors">
             Hannah Yesmunt
           </Link>
-          <div className="flex flex-wrap gap-4">
+          <button
+            onClick={toggleMenu}
+            className="flex flex-col gap-1.5 p-2"
+            aria-label="Toggle menu"
+          >
+            <span className={`w-6 h-0.5 bg-accent transition-transform duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`w-6 h-0.5 bg-accent transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : ''}`} />
+            <span className={`w-6 h-0.5 bg-accent transition-transform duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          </button>
+        </div>
+
+        {/* Mobile Menu Dropdown */}
+        <nav className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 border-t border-accent' : 'max-h-0'}`}>
+          <div className="px-4 py-4 flex flex-col gap-4">
             <Link
               href="/"
-              className="text-sm text-foreground/60 hover:text-accent transition-colors"
+              onClick={closeMenu}
+              className="text-foreground/60 hover:text-accent transition-colors"
             >
               Home
             </Link>
             <Link
               href="/professional"
-              className="text-sm text-foreground/60 hover:text-accent transition-colors"
+              onClick={closeMenu}
+              className="text-foreground/60 hover:text-accent transition-colors"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
-              className="text-sm text-foreground/60 hover:text-accent transition-colors"
+              onClick={closeMenu}
+              className="text-foreground/60 hover:text-accent transition-colors"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
-              className="text-sm text-foreground/60 hover:text-accent transition-colors"
+              onClick={closeMenu}
+              className="text-foreground/60 hover:text-accent transition-colors"
             >
               Pocket Design Lab
             </Link>
             <Link
+              href="/media"
+              onClick={closeMenu}
+              className="text-foreground/60 hover:text-accent transition-colors"
+            >
+              Media / Press
+            </Link>
+            <Link
               href="/about"
-              className="text-sm text-foreground/60 hover:text-accent transition-colors"
+              onClick={closeMenu}
+              className="text-foreground/60 hover:text-accent transition-colors"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-sm text-foreground/60 hover:text-accent transition-colors"
+              onClick={closeMenu}
+              className="text-foreground/60 hover:text-accent transition-colors"
             >
               Contact
             </Link>
           </div>
         </nav>
       </header>
+
+      {/* Mobile header spacer */}
+      <div className="md:hidden h-16" />
     </>
   );
 }
-

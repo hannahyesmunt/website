@@ -4,10 +4,6 @@ import { getProjectBySlug } from "@/data/projects";
 import ProjectHeader from "@/app/components/ProjectHeader";
 import ImageWithCaption from "@/app/components/ImageWithCaption";
 
-interface ProjectPageProps {
-  params: Promise<{ slug: string }>;
-}
-
 function getBackLink(category: "professional" | "technical" | "pocket-design-lab"): string {
   switch (category) {
     case "professional":
@@ -34,8 +30,10 @@ function getCategoryLabel(category: "professional" | "technical" | "pocket-desig
   }
 }
 
-export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = await params;
+export default async function ProjectPage(
+  props: { params: Promise<{ slug: string }> }
+) {
+  const { slug } = await props.params;
   const project = getProjectBySlug(slug);
 
   if (!project) {

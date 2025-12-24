@@ -8,10 +8,10 @@ export default function PocketDesignLabPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <header className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-2">
+          <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-1">
             Pocket Design Lab
           </h1>
-          <p className="text-foreground/70">
+          <p className="text-foreground/70 mt-4">
             Curated personal experimentation projects exploring inclusive design, sustainable materials, and innovative silhouettes.
           </p>
         </header>

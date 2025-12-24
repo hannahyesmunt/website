@@ -49,9 +49,9 @@ export const projects: Project[] = [
     slug: "saint-andro-swimwear",
     title: "Androgynous Swimwear Collection",
     category: "professional",
-    year: "2024",
-    brand: "Saint Andro",
-    role: "Assistant Designer",
+    year: "2022-2025",
+    brand: "Saint Andro Swimwear",
+    role: "Founder & Designer",
     overview:
       "Developed an inclusive androgynous swimwear collection focused on gender-neutral design principles, technical fit solutions, and sustainable material selection.",
     responsibilities: [

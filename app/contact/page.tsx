@@ -29,9 +29,32 @@ export default function ContactPage() {
               linkedin.com/in/hannahyesmunt
             </Link>
           </div>
+          <div>
+            <h3 className="text-lg font-semibold text-foreground mb-3">
+              Instagram
+            </h3>
+            <Link
+              href="https://instagram.com/pocketdesignlab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-foreground transition-colors underline"
+            >
+              @pocketdesignlab
+            </Link>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-foreground mb-3">
+              Email
+            </h3>
+            <Link
+              href="mailto:hannahyesmunt@gmail.com"
+              className="text-foreground/70 hover:text-foreground transition-colors underline"
+            >
+              hannahyesmunt@gmail.com
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
