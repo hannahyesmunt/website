@@ -136,9 +136,6 @@ export default function Header() {
           </div>
         </nav>
       </header>
-
-      {/* Mobile header spacer */}
-      <div className="md:hidden h-16" />
     </>
   );
 }

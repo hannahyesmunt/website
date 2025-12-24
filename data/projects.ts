@@ -41,8 +41,14 @@ export const projects: Project[] = [
       "Collaboration with cross-functional teams"
     ],
     images: [
-      { src: "/images/skechers_flat1.jpg", alt: "Technical flat of Skechers hoodie", caption: "Technical flat for men's performance hoodie" },
-      { src: "/images/skechers_fit.jpg", alt: "Fitting session photo", caption: "In-store fitting session for tunnel look" }
+      { src: "/images/skechers/IMG_3907.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/skechers/IMG_4286.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/skechers/IMG_4431.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/skechers/IMG_4512.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/skechers/IMG_4631.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/skechers/IMG_4720.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/skechers/IMG_4724.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/skechers/IMG_4725.jpeg", alt: "Skechers development process", caption: "Development process" }
     ]
   },
   {

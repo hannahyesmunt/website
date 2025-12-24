@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface MediaItem {
   publication: string;
@@ -32,6 +33,18 @@ const mediaItems: MediaItem[] = [
   },
 ];
 
+const mediaImages = [
+  { src: "/images/main/Adaptation_6652_exposure1.webp", alt: "Adaptation editorial" },
+  { src: "/images/main/Adaptation_7350_edit.webp", alt: "Adaptation editorial" },
+  { src: "/images/main/2024_06_05_Pocket_Design_Lab_388.webp", alt: "Pocket Design Lab" },
+  { src: "/images/main/DOUBLE+TOP+6.webp", alt: "Editorial work" },
+  { src: "/images/main/Flatlay_050_websize+(1).webp", alt: "Flatlay photography" },
+  { src: "/images/main/Flatlay_060_websize.webp", alt: "Flatlay photography" },
+  { src: "/images/main/Flatlay_077_websize.webp", alt: "Flatlay photography" },
+  { src: "/images/main/untitled0578_faze2_websize.webp", alt: "Editorial work" },
+  { src: "/images/main/Screenshot+2023-03-01+at+12.15.16+PM.webp", alt: "Media feature" },
+];
+
 export default function MediaPage() {
   return (
     <div className="min-h-screen bg-background">
@@ -44,6 +57,26 @@ export default function MediaPage() {
             A curated selection of media coverage featuring my work in fashion, product development, and creative projects.
           </p>
         </header>
+
+        {/* Photo Gallery */}
+        <section className="mb-12">
+          <div className="columns-2 md:columns-3 gap-4">
+            {mediaImages.map((image, index) => (
+              <div key={index} className="mb-4 break-inside-avoid">
+                <div className="relative w-full bg-foreground/5 rounded-lg overflow-hidden border border-accent/30">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-cover"
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <div className="space-y-6">
           {mediaItems.map((item, index) => (
