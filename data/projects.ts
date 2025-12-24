@@ -63,7 +63,7 @@ export const projects: Project[] = [
   },
   {
     slug: "saint-andro-swimwear",
-    title: "Androgynous Swimwear Collection",
+    title: "Gender Fluid Swimwear Collection",
     category: "professional",
     year: "2022-2025",
     brand: "Saint Andro Swimwear",
