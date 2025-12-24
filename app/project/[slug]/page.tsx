@@ -1,0 +1,105 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { getProjectBySlug } from "@/data/projects";
+import ProjectHeader from "@/app/components/ProjectHeader";
+import ImageWithCaption from "@/app/components/ImageWithCaption";
+
+interface ProjectPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+function getBackLink(category: "professional" | "technical" | "pocket-design-lab"): string {
+  switch (category) {
+    case "professional":
+      return "/professional";
+    case "technical":
+      return "/technical-work";
+    case "pocket-design-lab":
+      return "/pocket-design-lab";
+    default:
+      return "/";
+  }
+}
+
+function getCategoryLabel(category: "professional" | "technical" | "pocket-design-lab"): string {
+  switch (category) {
+    case "professional":
+      return "Professional Work";
+    case "technical":
+      return "Technical Work";
+    case "pocket-design-lab":
+      return "Pocket Design Lab";
+    default:
+      return "Portfolio";
+  }
+}
+
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
+
+  if (!project) {
+    notFound();
+  }
+
+  const backLink = getBackLink(project.category);
+  const categoryLabel = getCategoryLabel(project.category);
+
+  return (
+    <div className="min-h-screen bg-background">
+      <div className="container mx-auto px-4 py-12 max-w-4xl">
+        <div className="mb-6">
+          <Link
+            href={backLink}
+            className="inline-flex items-center text-sm text-foreground/70 hover:text-foreground transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Back to {categoryLabel}
+          </Link>
+        </div>
+
+        <ProjectHeader project={project} />
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-foreground mb-4">Overview</h2>
+          <p className="text-foreground/80 leading-relaxed">
+            {project.overview}
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-foreground mb-4">Responsibilities</h2>
+          <ul className="list-disc list-inside space-y-2 text-foreground/80">
+            {project.responsibilities.map((responsibility, index) => (
+              <li key={index}>{responsibility}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-foreground mb-4">Skills</h2>
+          <ul className="list-disc list-inside space-y-2 text-foreground/80">
+            {project.skills.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-foreground mb-4">Images</h2>
+          <div className="space-y-8">
+            {project.images.map((image, index) => (
+              <ImageWithCaption
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                caption={image.caption}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}
+

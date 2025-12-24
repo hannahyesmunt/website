@@ -1,0 +1,122 @@
+export interface ProjectImage {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
+export interface Project {
+  slug: string;
+  title: string;
+  category: "professional" | "technical" | "pocket-design-lab";
+  year: string;
+  brand?: string;
+  role: string;
+  overview: string;
+  responsibilities: string[];
+  skills: string[];
+  images: ProjectImage[];
+}
+
+export const projects: Project[] = [
+  {
+    slug: "skechers-mens-apparel",
+    title: "Men's Apparel Product Development",
+    category: "professional",
+    year: "2023–2024",
+    brand: "Skechers",
+    role: "Product Development Assistant",
+    overview:
+      "Supported the development of men's lifestyle and performance apparel from concept through production, collaborating across design, technical design, and sourcing teams.",
+    responsibilities: [
+      "Supported product development for 100+ men's apparel styles",
+      "Prepared technical flats and development handoffs",
+      "Tracked revisions across design, fit, and costing iterations",
+      "Assisted in developing tunnel looks for NBA athlete presentations",
+      "Organized seasonal assets and ensured accuracy across line plans"
+    ],
+    skills: [
+      "Product development workflow",
+      "Technical sketch interpretation",
+      "Fit and revision tracking",
+      "Collaboration with cross-functional teams"
+    ],
+    images: [
+      { src: "/images/skechers_flat1.jpg", alt: "Technical flat of Skechers hoodie", caption: "Technical flat for men's performance hoodie" },
+      { src: "/images/skechers_fit.jpg", alt: "Fitting session photo", caption: "In-store fitting session for tunnel look" }
+    ]
+  },
+  {
+    slug: "saint-andro-swimwear",
+    title: "Androgynous Swimwear Collection",
+    category: "professional",
+    year: "2024",
+    brand: "Saint Andro",
+    role: "Assistant Designer",
+    overview:
+      "Developed an inclusive androgynous swimwear collection focused on gender-neutral design principles, technical fit solutions, and sustainable material selection.",
+    responsibilities: [
+      "Collaborated on concept development and design ideation",
+      "Created technical flats and specification packages",
+      "Participated in fit sessions and prototype iterations",
+      "Researched sustainable fabric options and material sourcing",
+      "Developed size-inclusive grading and fit standards"
+    ],
+    skills: [
+      "Gender-neutral design principles",
+      "Swimwear technical design",
+      "Fit and pattern development",
+      "Sustainable material research"
+    ],
+    images: [
+      { src: "/images/saint-andro_collection.jpg", alt: "Saint Andro swimwear collection", caption: "Androgynous swimwear collection overview" },
+      { src: "/images/saint-andro_technical.jpg", alt: "Technical flat of swimwear", caption: "Technical flat for androgynous swimwear design" }
+    ]
+  },
+  {
+    slug: "lattc-final-patternmaking",
+    title: "Final Patternmaking Project",
+    category: "technical",
+    year: "2025",
+    role: "Student",
+    overview: "Designed and constructed a garment from concept to final fit, demonstrating technical patternmaking and garment construction skills.",
+    responsibilities: [
+      "Created technical flats and pattern drafts",
+      "Produced muslin mockups and adjusted fit",
+      "Documented iteration process with photos and notes",
+      "Executed final garment construction with attention to seam finishes and proportions"
+    ],
+    skills: ["Pattern drafting", "Technical flat creation", "Garment fitting", "Construction techniques"],
+    images: [
+      { src: "/images/lattc_flat.jpg", alt: "Technical flat of LATTC project", caption: "Technical flat for final project garment" },
+      { src: "/images/lattc_fit.jpg", alt: "Muslin fitting photo", caption: "Muslin fitting for final garment" }
+    ]
+  },
+  {
+    slug: "pocket-design-lab-baggy-shorts",
+    title: "Baggy Swim Shorts Experiment",
+    category: "pocket-design-lab",
+    year: "2025",
+    role: "Designer / Product Developer",
+    overview: "Explored loose, gender-inclusive swimwear silhouettes with focus on fit, comfort, and sustainable fabric use.",
+    responsibilities: [
+      "Drafted patterns for unisex sizing from XS–3X",
+      "Experimented with fabric drape and stretch ratios",
+      "Created 3D visualizations and mockups",
+      "Documented iterations for potential production use"
+    ],
+    skills: ["Pattern drafting", "3D visualization", "Inclusive sizing", "Fabric experimentation"],
+    images: [
+      { src: "/images/pdl_shorts_flat.jpg", alt: "Flat sketch of baggy swim shorts", caption: "Technical flat for baggy swim shorts" },
+      { src: "/images/pdl_shorts_mockup.jpg", alt: "Mockup photo", caption: "First prototype mockup" }
+    ]
+  }
+];
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return projects.find(project => project.slug === slug);
+}
+
+export function getProjectsByCategory(category: Project["category"]): Project[] {
+  return projects.filter(project => project.category === category);
+}
+
