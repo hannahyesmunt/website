@@ -14,33 +14,43 @@ export interface Project {
   overview: string;
   responsibilities: string[];
   skills: string[];
+  whatILearned?: string;
   images: ProjectImage[];
 }
 
 export const projects: Project[] = [
   {
-    slug: "skechers-mens-apparel",
-    title: "Men's Apparel Product Development",
+    slug: "skechers-mens-product-development",
+    title: "Men's Performance and Lifestyle Apparel",
     category: "professional",
     year: "2025",
     brand: "Skechers Apparel",
-    role: "Associate Product & Material Developer",
+    role: "Product Development",
     overview:
-      "Supported the development of men's lifestyle and performance apparel from concept through production, collaborating across design, technical design, and sourcing teams.",
+      "At Skechers, I worked on the men's product development team supporting lifestyle and performance apparel across basketball, golf, court sports, and outerwear. My role focused on guiding styles from early design intent through sample development, ensuring each product aligned with performance needs, brand standards, and production realities.",
     responsibilities: [
-      "Supported product development for 100+ men's apparel styles",
-      "Prepared technical flats and development handoffs",
-      "Tracked revisions across design, fit, and costing iterations",
-      "Assisted in developing tunnel looks for NBA athlete presentations",
-      "Organized seasonal assets and ensured accuracy across line plans"
+      "Partnered with design, technical design, and merchandising to translate concepts into executable products",
+      "Maintained clarity across the development process—tracking updates, flagging issues early, and keeping styles moving through proto and SMS stages",
+      "Led material, trim, and color development, testing new fabrics, finishes, and construction details",
+      "Balanced cost, quality, and factory capabilities across all development decisions",
+      "Supported NBA athlete tunnel looks along with additional special projects for Skechers-sponsored professional athletes in golf and pickleball",
+      "Sharpened ability to balance design vision with real-world constraints including cost targets, materials availability, and production timelines"
     ],
     skills: [
-      "Product development workflow",
-      "Technical sketch interpretation",
-      "Fit and revision tracking",
-      "Collaboration with cross-functional teams"
+      "Apparel product development workflow",
+      "Materials, trim, and color development",
+      "Sample tracking (Proto & SMS)",
+      "Technical flat interpretation",
+      "PLM & BOM accuracy",
+      "Cross-functional collaboration",
+      "Vendor communication"
     ],
+    whatILearned: "Developing at scale sharpened my ability to balance design intent with cost, materials, and production constraints—skills I now apply to smaller, more experimental projects as well.",
     images: [
+      { src: "/images/skechers/final%20images/550430447_17934039627086715_8389909274568741390_n.jpg", alt: "Skechers final product", caption: "Final product" },
+      { src: "/images/skechers/final%20images/590402588_17942281062086715_2578124886817200815_n.jpg", alt: "Skechers final product", caption: "Final product" },
+      { src: "/images/skechers/final%20images/1753985055479.jpeg", alt: "Skechers final product", caption: "Final product" },
+      { src: "/images/skechers/final%20images/JA297_BLK.avif", alt: "Skechers final product", caption: "Final product" },
       { src: "/images/skechers/IMG_3907.jpeg", alt: "Skechers development process", caption: "Development process" },
       { src: "/images/skechers/IMG_4286.jpeg", alt: "Skechers development process", caption: "Development process" },
       { src: "/images/skechers/IMG_4431.jpeg", alt: "Skechers development process", caption: "Development process" },
@@ -62,7 +72,6 @@ export const projects: Project[] = [
       "Developed an inclusive androgynous swimwear collection focused on gender-neutral design principles, technical fit solutions, and sustainable material selection.",
     responsibilities: [
       "Collaborated on concept development and design ideation",
-      "Created technical flats and specification packages",
       "Participated in fit sessions and prototype iterations",
       "Researched sustainable fabric options and material sourcing",
       "Developed size-inclusive grading and fit standards"
@@ -79,49 +88,98 @@ export const projects: Project[] = [
     ]
   },
   {
-    slug: "lattc-final-patternmaking",
-    title: "Final Patternmaking Project",
+    slug: "passenger-princess-commuter-jacket",
+    title: "Passenger Princess Commuter Jacket",
     category: "technical",
-    year: "2025",
-    role: "Student",
-    overview: "Designed and constructed a garment from concept to final fit, demonstrating technical patternmaking and garment construction skills.",
+    year: "Fall 2025",
+    role: "Student — Pattern Making & Design I",
+    overview: "Passenger Princess Commuter Jacket is a technical outerwear project developed as the final assignment for the Pattern Making & Design I evening course. The jacket reinterprets classic princess-seam tailoring through a commuter-focused lens, integrating high-visibility elements and performance materials to support nighttime travel, safety, and freedom of movement. The project was motivated by a personal accident, which sharpened my focus on designing garments that prioritize protection, visibility, and mobility.",
     responsibilities: [
-      "Created technical flats and pattern drafts",
-      "Produced muslin mockups and adjusted fit",
-      "Documented iteration process with photos and notes",
-      "Executed final garment construction with attention to seam finishes and proportions"
+      "Drafted mid-armhole princess seams (front and back) to shape the body while supporting mobility",
+      "Developed an extended sleeve cap with dart placement to improve range of motion",
+      "Integrated elbow darts for ergonomic bending and comfort",
+      "Designed a mandarin collar for wind protection and a streamlined silhouette",
+      "Patterned a center-front lightweight zipper for ease of wear",
+      "Applied reflective piping along darts and style lines for nighttime visibility",
+      "Used reflective webbing at center-front panel and collar for high-contrast safety detailing",
+      "Constructed using 3.4 oz Nylon Taslan / Supplex with eco DWR finish",
+      "Developed and tested pattern in size 10"
     ],
-    skills: ["Pattern drafting", "Technical flat creation", "Garment fitting", "Construction techniques"],
+    skills: [
+      "Pattern drafting",
+      "Garment engineering",
+      "Fit and mobility problem-solving",
+      "Technical outerwear design",
+      "Material selection for performance apparel",
+      "Concept-to-pattern execution"
+    ],
     images: [
-      { src: "/images/IMG_5703.jpeg", alt: "LATTC project final", caption: "Final garment" },
-      { src: "/images/IMG_5578.jpeg", alt: "LATTC project process", caption: "Pattern drafting" },
-      { src: "/images/IMG_5650.jpeg", alt: "LATTC project process", caption: "Fit testing" },
-      { src: "/images/IMG_5654.jpeg", alt: "LATTC project process", caption: "Pattern card" },
-      { src: "/images/IMG_5655 2.jpeg", alt: "LATTC project process", caption: "Extended sleeve cap with darts" },
-      { src: "/images/IMG_5662 2.jpeg", alt: "LATTC project process", caption: "Final patterns" },
-      { src: "/images/IMG_5677.jpeg", alt: "LATTC project process", caption: "Detail work" },
-      { src: "/images/IMG_5681.jpeg", alt: "LATTC project process", caption: "Process documentation" },
-      { src: "/images/IMG_5692.jpeg", alt: "LATTC project process", caption: "Final garment, back side" },
-      { src: "/images/IMG_5700.jpeg", alt: "LATTC project process", caption: "Final details" }
+      { src: "/images/IMG_5703.jpeg", alt: "Passenger Princess Commuter Jacket front view", caption: "Final garment" },
+      { src: "/images/IMG_5578.jpeg", alt: "Pattern drafting process", caption: "Pattern drafting" },
+      { src: "/images/IMG_5650.jpeg", alt: "Fit testing session", caption: "Fit testing" },
+      { src: "/images/IMG_5654.jpeg", alt: "Pattern card documentation", caption: "Pattern card" },
+      { src: "/images/IMG_5655 2.jpeg", alt: "Extended sleeve cap with darts", caption: "Extended sleeve cap with darts" },
+      { src: "/images/IMG_5662 2.jpeg", alt: "Final patterns laid out", caption: "Final patterns" },
+      { src: "/images/IMG_5677.jpeg", alt: "Reflective piping detail", caption: "Detail work" },
+      { src: "/images/IMG_5681.jpeg", alt: "Construction process", caption: "Process documentation" },
+      { src: "/images/IMG_5692.jpeg", alt: "Passenger Princess Commuter Jacket back view", caption: "Final garment, back side" },
+      { src: "/images/IMG_5700.jpeg", alt: "Final details and finishing", caption: "Final details" }
     ]
   },
   {
-    slug: "pocket-design-lab-baggy-shorts",
-    title: "Baggy Swim Shorts Experiment",
+    slug: "gymnasia-imagining-new-places-to-move",
+    title: "Gymnasia — Imagining New Places to Move",
     category: "pocket-design-lab",
-    year: "2025",
-    role: "Designer / Product Developer",
-    overview: "Explored loose, gender-inclusive swimwear silhouettes with focus on fit, comfort, and sustainable fabric use.",
+    year: "July 2025",
+    role: "Designer / Concept Developer",
+    overview: "Gymnasia is a conceptual exploration into the future of fitness spaces, reimagining where and how people move, train, and connect. The project considers fitness environments not only as functional spaces, but as sites of identity, ritual, and expression.",
     responsibilities: [
-      "Drafted patterns for unisex sizing from XS–3X",
-      "Experimented with fabric drape and stretch ratios",
-      "Created 3D visualizations and mockups",
-      "Documented iterations for potential production use"
+      "Developed a narrative-driven concept exploring inclusive movement spaces",
+      "Conducted visual and historical research to inform world-building",
+      "Directed the creative vision and spatial mood of the project",
+      "Used AI as a collaborative tool for early-stage ideation and visual exploration",
+      "Translated abstract concepts into cohesive visual systems"
     ],
-    skills: ["Pattern drafting", "3D visualization", "Inclusive sizing", "Fabric experimentation"],
+    skills: [
+      "Concept development",
+      "World-building",
+      "Visual direction",
+      "Research-driven design",
+      "AI-assisted ideation",
+      "Narrative storytelling"
+    ],
     images: [
-      { src: "/images/pdl_shorts_flat.jpg", alt: "Flat sketch of baggy swim shorts", caption: "Technical flat for baggy swim shorts" },
-      { src: "/images/pdl_shorts_mockup.jpg", alt: "Mockup photo", caption: "First prototype mockup" }
+      { src: "/images/PDL/GYMNASIA — PDL_files/GYMNASIA.jpeg", alt: "Gymnasia conceptual space", caption: "Conceptual fitness space" },
+      { src: "/images/PDL/GYMNASIA — PDL_files/gymnasia+exterior+2.png", alt: "Gymnasia exterior concept", caption: "Exterior concept" },
+      { src: "/images/PDL/GYMNASIA — PDL_files/gymnasia-interior.png", alt: "Gymnasia visual exploration", caption: "Visual exploration" }
+    ]
+  },
+  {
+    slug: "sporty-bonnet-accessory-design",
+    title: "Sporty Bonnet — Accessory Design Exploration",
+    category: "pocket-design-lab",
+    year: "June 2024",
+    role: "Designer / Accessory Developer",
+    overview: "Sporty Bonnet is a conceptual accessory design project that reinterprets the traditional bonnet through a contemporary, performance-driven lens. Developed in collaboration with a Los Angeles–based artist, the project merges historical silhouette with modern materials and functionality.",
+    responsibilities: [
+      "Developed a contemporary reinterpretation of a historical accessory silhouette",
+      "Conducted material research focused on performance and durability",
+      "Applied outdoor-focused technical fabrics to a traditionally decorative form",
+      "Evaluated construction approaches for functionality and modern wearability",
+      "Led accessory styling and visual execution for the final shoot"
+    ],
+    skills: [
+      "Accessory design",
+      "Material research",
+      "Performance textile application",
+      "Concept development",
+      "Functional design thinking",
+      "Styling and visual presentation"
+    ],
+    images: [
+      { src: "/images/PDL/Technical Bonnet — PDL_files/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Contemporary technical bonnet made with ripstop nylon", caption: "Accessory design exploration combining a historic bonnet silhouette with modern ripstop nylon." },
+      { src: "/images/PDL/Technical Bonnet — PDL_files/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Detail view of technical bonnet construction", caption: "Material study highlighting lightweight, UV-protective, water-repellent performance fabric." },
+      { src: "/images/PDL/Technical Bonnet — PDL_files/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Styled technical bonnet worn in outdoor environment", caption: "Styled final look demonstrating the accessory's balance of form, function, and modern utility." }
     ]
   }
 ];

@@ -9,15 +9,22 @@ export default function AboutPage() {
         </h1>
         <div className="max-w-none">
           <p className="text-foreground/80 leading-relaxed mb-8">
-            I'm a Los Angeles–based designer and product developer exploring the intersections of fashion, sports, and identity. I specialize in translating concepts into functional apparel, from technical flats and patterns to prototypes and finished garments. At the center of my work is creating designs that prioritize freedom of movement, self-expression, and play.
+            I'm a Los Angeles–based designer and product developer exploring the intersections of fashion, sports, and identity. I specialize in translating concepts into functional apparel, from technical flats and patterns to prototypes and finished garments. At the center of my work is creating designs that prioritize freedom of movement, self-expression, and play. I am excited about the future of fashion.
           </p>
-          <div>
+          <div className="flex flex-col md:flex-row gap-4 items-start">
             <Image
               src="/images/about — PDL_files/SAdetroit1.jpg"
               alt="Hannah Yesmunt"
+              width={300}
+              height={400}
+              className="rounded-lg border border-accent/30 w-auto h-[400px] object-cover"
+            />
+            <Image
+              src="/images/main/Screenshot+2023-03-01+at+12.15.16+PM.webp"
+              alt="Hannah Yesmunt"
               width={400}
-              height={500}
-              className="rounded-lg border border-accent/30"
+              height={400}
+              className="rounded-lg border border-accent/30 w-auto h-[400px] object-cover"
             />
           </div>
         </div>

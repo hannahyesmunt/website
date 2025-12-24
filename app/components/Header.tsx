@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex fixed left-0 top-0 h-full w-64 border-r border-accent bg-background flex-col z-10">
+      <aside className="hidden md:flex fixed left-0 top-0 h-full w-48 border-r border-accent bg-background flex-col z-10">
         <nav className="p-6 flex flex-col gap-6">
           <Link href="/" className="text-xl font-semibold text-foreground hover:text-accent transition-colors">
             Hannah Yesmunt

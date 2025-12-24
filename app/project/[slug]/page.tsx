@@ -90,6 +90,15 @@ export default async function ProjectPage(
           </ul>
         </section>
 
+        {project.whatILearned && (
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold text-foreground mb-4">What I Learned</h2>
+            <p className="text-foreground/80 leading-relaxed">
+              {project.whatILearned}
+            </p>
+          </section>
+        )}
+
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Images</h2>
           <div className="columns-1 md:columns-2 gap-4">

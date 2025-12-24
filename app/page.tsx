@@ -6,7 +6,6 @@ const heroImages = [
   { src: "/images/main/bball.jpg", alt: "Editorial work" },
   { src: "/images/main/DOUBLE+TOP+6.webp", alt: "Editorial work" },
   { src: "/images/main/Flatlay_050_websize+(1).webp", alt: "Flatlay photography" },
-  { src: "/images/main/Screenshot+2023-03-01+at+12.15.16+PM.webp", alt: "Media feature" },
   { src: "/images/main/Flatlay_077_websize.webp", alt: "Flatlay photography" },
   { src: "/images/main/Flatlay_060_websize.webp", alt: "Flatlay photography" },
   { src: "/images/main/untitled0578_faze2_websize.webp", alt: "Editorial work" },
@@ -57,7 +56,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/professional"
-              className="px-6 py-3 bg-accent text-white rounded-lg hover:opacity-90 transition-opacity text-center font-medium"
+              className="px-6 py-3 border border-accent/50 text-foreground rounded-lg hover:border-accent hover:bg-accent/5 transition-colors text-center"
             >
               Professional
             </Link>
@@ -87,16 +86,28 @@ export default function Home() {
             <p className="text-foreground/70 max-w-xl">
               Selected features highlighting my work in fashion, product development, and creative projects.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-8 mt-4">
-              <span className="text-lg font-medium text-foreground/60 hover:text-foreground transition-colors">
-                IN Magazine
-              </span>
-              <span className="text-lg font-medium text-foreground/60 hover:text-foreground transition-colors">
-                Publication 2
-              </span>
-              <span className="text-lg font-medium text-foreground/60 hover:text-foreground transition-colors">
-                Publication 3
-              </span>
+            <div className="flex flex-wrap items-center justify-center gap-12 mt-4">
+              <Image
+                src="/images/main/sd l-01.avif"
+                alt="Something Different Magazine"
+                width={150}
+                height={50}
+                className="h-[60px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/main/submissionbeauty.logo.small.72dpi_r3.avif"
+                alt="Submission Beauty"
+                width={150}
+                height={50}
+                className="h-6 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/main/250px-CreativeMornings_Logo.png"
+                alt="Creative Mornings"
+                width={150}
+                height={50}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity mt-3"
+              />
             </div>
             <Link
               href="/media"
