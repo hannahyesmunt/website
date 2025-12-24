@@ -22,9 +22,9 @@ export const projects: Project[] = [
     slug: "skechers-mens-apparel",
     title: "Men's Apparel Product Development",
     category: "professional",
-    year: "2023–2024",
-    brand: "Skechers",
-    role: "Product Development Assistant",
+    year: "2025",
+    brand: "Skechers Apparel",
+    role: "Associate Product & Material Developer",
     overview:
       "Supported the development of men's lifestyle and performance apparel from concept through production, collaborating across design, technical design, and sourcing teams.",
     responsibilities: [
@@ -87,8 +87,16 @@ export const projects: Project[] = [
     ],
     skills: ["Pattern drafting", "Technical flat creation", "Garment fitting", "Construction techniques"],
     images: [
-      { src: "/images/lattc_flat.jpg", alt: "Technical flat of LATTC project", caption: "Technical flat for final project garment" },
-      { src: "/images/lattc_fit.jpg", alt: "Muslin fitting photo", caption: "Muslin fitting for final garment" }
+      { src: "/images/IMG_5703.jpeg", alt: "LATTC project final", caption: "Final garment" },
+      { src: "/images/IMG_5578.jpeg", alt: "LATTC project process", caption: "Pattern drafting" },
+      { src: "/images/IMG_5650.jpeg", alt: "LATTC project process", caption: "Fit testing" },
+      { src: "/images/IMG_5654.jpeg", alt: "LATTC project process", caption: "Pattern card" },
+      { src: "/images/IMG_5655 2.jpeg", alt: "LATTC project process", caption: "Extended sleeve cap with darts" },
+      { src: "/images/IMG_5662 2.jpeg", alt: "LATTC project process", caption: "Final patterns" },
+      { src: "/images/IMG_5677.jpeg", alt: "LATTC project process", caption: "Detail work" },
+      { src: "/images/IMG_5681.jpeg", alt: "LATTC project process", caption: "Process documentation" },
+      { src: "/images/IMG_5692.jpeg", alt: "LATTC project process", caption: "Final garment, back side" },
+      { src: "/images/IMG_5700.jpeg", alt: "LATTC project process", caption: "Final details" }
     ]
   },
   {

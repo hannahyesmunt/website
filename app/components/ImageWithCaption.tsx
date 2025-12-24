@@ -8,14 +8,15 @@ interface ImageWithCaptionProps {
 
 export default function ImageWithCaption({ src, alt, caption }: ImageWithCaptionProps) {
   return (
-    <figure className="my-8">
-      <div className="relative w-full aspect-video bg-foreground/5 rounded-lg overflow-hidden border border-accent/30">
+    <figure className="mb-4 break-inside-avoid">
+      <div className="relative w-full bg-foreground/5 rounded-lg overflow-hidden border border-accent/30">
         <Image
           src={src}
           alt={alt}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          width={800}
+          height={600}
+          className="w-full h-auto object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
         />
       </div>
       {caption && (
