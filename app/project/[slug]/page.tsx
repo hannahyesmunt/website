@@ -46,7 +46,7 @@ export default async function ProjectPage(
   return (
     <div className="min-h-screen bg-background">
       <div className="sticky top-0 z-20 bg-background border-b border-accent py-4">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-3xl">
           <div className="flex items-center justify-between gap-4">
             <Link
               href={backLink}
@@ -62,7 +62,7 @@ export default async function ProjectPage(
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
+      <div className="container mx-auto px-4 py-12 max-w-3xl">
         <ProjectHeader project={project} />
 
         <section className="mb-12">
@@ -101,7 +101,7 @@ export default async function ProjectPage(
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Images</h2>
-          <div className="columns-1 md:columns-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {project.images.map((image, index) => (
               <ImageWithCaption
                 key={index}

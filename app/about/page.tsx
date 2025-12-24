@@ -17,14 +17,14 @@ export default function AboutPage() {
               alt="Hannah Yesmunt"
               width={300}
               height={400}
-              className="rounded-lg border border-accent/30 w-auto h-[400px] object-cover"
+              className="rounded-lg border border-accent/30 h-[350px] w-auto object-cover"
             />
             <Image
               src="/images/main/Screenshot+2023-03-01+at+12.15.16+PM.webp"
               alt="Hannah Yesmunt"
               width={400}
-              height={400}
-              className="rounded-lg border border-accent/30 w-auto h-[400px] object-cover"
+              height={300}
+              className="rounded-lg border border-accent/30 h-[350px] w-auto object-cover"
             />
           </div>
         </div>

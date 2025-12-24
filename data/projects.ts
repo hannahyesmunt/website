@@ -62,29 +62,42 @@ export const projects: Project[] = [
     ]
   },
   {
-    slug: "saint-andro-swimwear",
-    title: "Gender Fluid Swimwear Collection",
+    slug: "case-study-beyond-the-bikini",
+    title: "Case Study: Beyond The Bikini",
     category: "professional",
     year: "2022-2025",
     brand: "Saint Andro Swimwear",
     role: "Founder & Designer",
     overview:
-      "Developed an inclusive androgynous swimwear collection focused on gender-neutral design principles, technical fit solutions, and sustainable material selection.",
+      "This case study highlights one of the key products we developed at Saint Andro: the Oh Cool Compression Zip Top. The garment is a versatile, high-performance piece designed to balance function, comfort, and inclusivity. Inspired by sporty, outdoor lifestyles, it supports movement, sun protection, and thermal regulation, making it ideal for swimming, water sports, or casual wear.\n\nThe focus here is on the design process, material exploration, and performance innovation that differentiate this top from conventional activewear.",
     responsibilities: [
-      "Collaborated on concept development and design ideation",
-      "Participated in fit sessions and prototype iterations",
-      "Researched sustainable fabric options and material sourcing",
-      "Developed size-inclusive grading and fit standards"
+      "Provide adjustable, mid-level coverage to accommodate multiple body types",
+      "Integrate sun protection (UPF-rated) for outdoor use",
+      "Use scuba-style fabric to simulate cooling, thermoregulating properties",
+      "Maintain freedom of movement for sport or daily activity",
+      "Create a unisex silhouette that is functional and fashion-forward",
+      "Tested various scuba-style and thermo-regulating fabrics for stretch, cooling, and drape",
+      "Selected sustainable and recycled fabric options to align with brand values",
+      "Evaluated mobility, range of motion, and sun coverage",
+      "Used CLO 3D to create virtual prototypes and refine style lines before physical production"
     ],
     skills: [
-      "Gender-neutral design principles",
-      "Swimwear technical design",
-      "Fit and pattern development",
-      "Sustainable material research"
+      "Product development & pattern drafting",
+      "Functional design for activewear and swimwear",
+      "Material and textile innovation",
+      "Inclusive sizing and unisex pattern engineering",
+      "Prototype iteration & performance testing",
+      "CLO 3D garment visualization and virtual prototyping"
     ],
+    whatILearned: "The Oh Cool Compression Zip Top combines technical innovation with thoughtful design, providing a garment that is adaptable, performance-ready, and inclusive. It exemplifies Saint Andro's commitment to high-quality, functional, and fashion-forward swimwear for all bodies.",
     images: [
-      { src: "/images/saint-andro_collection.jpg", alt: "Saint Andro swimwear collection", caption: "Androgynous swimwear collection overview" },
-      { src: "/images/saint-andro_technical.jpg", alt: "Technical flat of swimwear", caption: "Technical flat for androgynous swimwear design" }
+      { src: "/images/sa/1sa.png", alt: "Saint Andro Oh Cool Compression Zip Top", caption: "Conceptual ideation" },
+      { src: "/images/sa/2ST.A S1.4 ZIP UP TOP.png", alt: "Saint Andro Zip Up Top technical flat", caption: "Technical flat" },
+      { src: "/images/sa/3ZIP TOP RENDER.png", alt: "Saint Andro Zip Top render", caption: "3D render" },
+      { src: "/images/sa/4ZIP TOP RENDER_Custom_View_1.png", alt: "Saint Andro Zip Top custom view", caption: "3D render custom view" },
+      { src: "/images/sa/5000055980003_websize.webp", alt: "Saint Andro product photography", caption: "Product photography" },
+      { src: "/images/sa/6untitled0398_expsr_faze_websize.jpg", alt: "Saint Andro editorial", caption: "Editorial" },
+      { src: "/images/sa/7Maxcam_PST00041_websize.jpg", alt: "Saint Andro fit testing", caption: "Fit testing" }
     ]
   },
   {
