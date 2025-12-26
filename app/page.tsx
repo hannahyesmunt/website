@@ -88,21 +88,21 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-4 px-4">
               <Image
-                src="/images/main/sd l-01.avif"
+                src="/images/main/press/sd l-01.avif"
                 alt="Something Different Magazine"
                 width={150}
                 height={50}
                 className="h-[50px] md:h-[60px] w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <Image
-                src="/images/main/submissionbeauty.logo.small.72dpi_r3.avif"
+                src="/images/main/press/submissionbeauty.logo.small.72dpi_r3.avif"
                 alt="Submission Beauty"
                 width={150}
                 height={50}
                 className="h-5 md:h-6 w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <Image
-                src="/images/main/250px-CreativeMornings_Logo.png"
+                src="/images/main/press/250px-CreativeMornings_Logo.png"
                 alt="Creative Mornings"
                 width={150}
                 height={50}
