@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto py-8 md:py-12 max-w-3xl">
+      <div className="container mx-auto py-8 md:py-16 max-w-5xl">
         <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
           Contact
         </span>

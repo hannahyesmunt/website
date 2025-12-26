@@ -37,7 +37,7 @@ const mediaItems: MediaItem[] = [
 export default function MediaPage() {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto py-8 md:py-12 max-w-4xl">
+      <div className="container mx-auto py-8 md:py-16 max-w-5xl">
         <header className="mb-10 md:mb-12">
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
             Press

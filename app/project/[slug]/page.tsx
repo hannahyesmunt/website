@@ -68,7 +68,7 @@ export default async function ProjectPage(
         </div>
       </div>
 
-        <div className="container mx-auto py-8 md:py-12 max-w-5xl">
+        <div className="container mx-auto py-8 md:py-16 max-w-5xl">
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6 mt-2">
               {project.title}
@@ -173,7 +173,7 @@ export default async function ProjectPage(
         </div>
       </div>
 
-      <div className="container mx-auto py-8 md:py-12 max-w-5xl">
+      <div className="container mx-auto py-8 md:py-16 max-w-5xl">
         <div className="max-w-3xl">
           <ProjectHeader project={project} />
 
