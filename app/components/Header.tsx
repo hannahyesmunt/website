@@ -87,53 +87,53 @@ export default function Header() {
 
         {/* Mobile Menu Dropdown */}
         <nav className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 border-t border-border' : 'max-h-0'}`}>
-          <div className="px-4 py-4 flex flex-col gap-4">
+          <div className="px-4 py-6 flex flex-col gap-5">
             <Link
               href="/"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors py-2 text-lg"
             >
               Home
             </Link>
             <Link
               href="/professional"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors py-2 text-lg"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors py-2 text-lg"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors py-2 text-lg"
             >
               Pocket Design Lab
             </Link>
             <Link
               href="/media"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors py-2 text-lg"
             >
               Media / Press
             </Link>
             <Link
               href="/about"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors py-2 text-lg"
             >
               About
             </Link>
             <Link
               href="/contact"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors py-2 text-lg"
             >
               Contact
             </Link>

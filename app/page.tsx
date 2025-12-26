@@ -12,12 +12,12 @@ const heroImages = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <div className="container mx-auto px-4 py-12 max-w-5xl flex-1">
+      <div className="container mx-auto py-8 md:py-12 max-w-5xl flex-1">
         <div className="flex flex-col items-start text-left">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-base md:text-lg font-medium text-muted mb-4">
+          <p className="text-base md:text-lg font-medium text-muted mb-6 md:mb-4">
             Product Developer / Assistant Designer
           </p>
           <div className="max-w-2xl">
@@ -27,11 +27,11 @@ export default function Home() {
           </div>
 
           {/* Photo Gallery - Masonry */}
-          <div className="w-full mt-10">
-            <div className="columns-2 md:columns-3 gap-2">
+          <div className="w-full mt-12 md:mt-10">
+            <div className="columns-2 md:columns-3 gap-3 md:gap-2">
               {heroImages.map((image, index) => (
-                <div key={index} className="mb-2 break-inside-avoid">
-                  <div className="relative w-full overflow-hidden rounded-lg border border-border bg-surface">
+                <div key={index} className="mb-3 md:mb-2 break-inside-avoid">
+                  <div className="relative w-full overflow-hidden rounded-lg border border-border bg-surface shadow-sm">
                     <Image
                       src={image.src}
                       alt={image.alt}
@@ -46,26 +46,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full mt-20 flex flex-col items-center">
-            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">
+          <div className="w-full mt-16 md:mt-20 flex flex-col items-center">
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8 text-center">
               Explore my work
             </span>
-            <div className="flex flex-col sm:flex-row gap-4 mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
               <Link
                 href="/professional"
-                className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
+                className="px-6 py-4 sm:py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
               >
                 Professional
               </Link>
               <Link
                 href="/technical-work"
-                className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
+                className="px-6 py-4 sm:py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
               >
                 Technical Work
               </Link>
               <Link
                 href="/pocket-design-lab"
-                className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
+                className="px-6 py-4 sm:py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
               >
                 Pocket Design Lab
               </Link>
@@ -76,8 +76,8 @@ export default function Home() {
 
       {/* Media Teaser Section */}
       <section className="border-t border-accent bg-background">
-        <div className="container mx-auto px-4 py-16 max-w-3xl">
-          <div className="flex flex-col items-center text-center gap-6">
+        <div className="container mx-auto py-16 max-w-3xl">
+          <div className="flex flex-col items-center text-center gap-8 md:gap-6">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted">
               Featured In
             </span>
@@ -86,32 +86,32 @@ export default function Home() {
                 Selected features highlighting my work in fashion, product development, and creative projects.
               </p>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-12 mt-4">
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-4 px-4">
               <Image
                 src="/images/main/sd l-01.avif"
                 alt="Something Different Magazine"
                 width={150}
                 height={50}
-                className="h-[60px] w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
+                className="h-[50px] md:h-[60px] w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <Image
                 src="/images/main/submissionbeauty.logo.small.72dpi_r3.avif"
                 alt="Submission Beauty"
                 width={150}
                 height={50}
-                className="h-6 w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
+                className="h-5 md:h-6 w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <Image
                 src="/images/main/250px-CreativeMornings_Logo.png"
                 alt="Creative Mornings"
                 width={150}
                 height={50}
-                className="h-14 w-auto object-contain opacity-50 hover:opacity-100 mt-3 grayscale hover:grayscale-0 transition-all"
+                className="h-10 md:h-14 w-auto object-contain opacity-50 hover:opacity-100 mt-2 md:mt-3 grayscale hover:grayscale-0 transition-all"
               />
             </div>
             <Link
               href="/media"
-              className="mt-4 px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-sm font-medium"
+              className="mt-8 md:mt-4 px-8 py-4 sm:px-6 sm:py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-sm font-medium"
             >
               See All Media
             </Link>

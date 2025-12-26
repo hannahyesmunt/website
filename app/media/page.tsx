@@ -37,8 +37,8 @@ const mediaItems: MediaItem[] = [
 export default function MediaPage() {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
-        <header className="mb-12">
+      <div className="container mx-auto py-8 md:py-12 max-w-4xl">
+        <header className="mb-10 md:mb-12">
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
             Press
           </span>
@@ -52,14 +52,14 @@ export default function MediaPage() {
           </div>
         </header>
 
-        <div className="space-y-6">
+        <div className="space-y-6 md:space-y-8">
           {mediaItems.map((item, index) => (
             <Link
               key={index}
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block border border-border rounded-lg p-6 bg-surface hover:border-accent hover:shadow-sm transition-all duration-200"
+              className="block border border-border rounded-lg p-5 md:p-6 bg-surface hover:border-accent hover:shadow-sm transition-all duration-200"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex items-start justify-between gap-4">
@@ -78,9 +78,11 @@ export default function MediaPage() {
                 <p className="text-sm md:text-base text-muted leading-relaxed max-w-2xl">
                   {item.description}
                 </p>
-                <span className="text-xs font-mono tracking-[0.06em] text-muted group-hover:text-accent transition-colors inline-flex items-center gap-1 uppercase">
-                  {item.linkText || "Read article"} →
-                </span>
+                <div className="mt-2">
+                  <span className="text-xs font-mono tracking-[0.06em] text-muted group-hover:text-accent transition-colors inline-flex items-center gap-1 uppercase">
+                    {item.linkText || "Read article"} →
+                  </span>
+                </div>
               </div>
             </Link>
           ))}

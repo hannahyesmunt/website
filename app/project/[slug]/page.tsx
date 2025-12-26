@@ -50,24 +50,25 @@ export default async function ProjectPage(
   if (slug === "case-study-beyond-the-bikini") {
     return (
       <div className="min-h-screen bg-background">
-        <div className="sticky top-0 z-20 bg-background border-b border-border py-4">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <div className="flex items-center justify-between gap-4">
-              <Link
-                href={backLink}
-                className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors"
-              >
-                <span className="mr-2 text-accent">←</span>
-                Back to {categoryLabel}
-              </Link>
-              <h1 className="text-lg font-semibold text-foreground truncate">
-                {project.title}
-              </h1>
-            </div>
+      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border py-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="flex items-center justify-between gap-4">
+            <Link
+              href={backLink}
+              className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors py-1 px-2 -ml-2"
+            >
+              <span className="mr-2 text-accent">←</span>
+              <span className="hidden sm:inline">Back to {categoryLabel}</span>
+              <span className="sm:hidden text-xs uppercase font-mono tracking-wider">Back</span>
+            </Link>
+            <h1 className="text-sm md:text-lg font-bold text-foreground truncate max-w-[200px] md:max-w-none uppercase font-mono tracking-tight">
+              {project.title}
+            </h1>
           </div>
         </div>
+      </div>
 
-        <div className="container mx-auto px-4 py-12 max-w-5xl">
+        <div className="container mx-auto py-8 md:py-12 max-w-5xl">
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6 mt-2">
               {project.title}
@@ -88,7 +89,7 @@ export default async function ProjectPage(
             {project.designGoals && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Design Goals</h2>
-                <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-base md:text-lg">
                   {project.designGoals.map((goal, index) => (
                     <li key={index} className="leading-relaxed">{goal}</li>
                   ))}
@@ -101,7 +102,7 @@ export default async function ProjectPage(
             {project.features && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Material & Technical Features</h2>
-                <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-base md:text-lg">
                   {project.features.map((feature, index) => (
                     <li key={index} className="leading-relaxed">{feature}</li>
                   ))}
@@ -114,7 +115,7 @@ export default async function ProjectPage(
             {project.process && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Process & Approach</h2>
-                <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-base md:text-lg">
                   {project.process.map((step, index) => (
                     <li key={index} className="leading-relaxed">{step}</li>
                   ))}
@@ -127,7 +128,7 @@ export default async function ProjectPage(
             {project.outcome && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Outcome</h2>
-                <p className="text-foreground/90 leading-relaxed">
+                <p className="text-foreground/90 leading-relaxed text-base md:text-lg">
                   {project.outcome}
                 </p>
               </section>
@@ -136,7 +137,7 @@ export default async function ProjectPage(
 
           <div className="mt-16">
             <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
-            <div className="grid grid-cols-1 gap-12">
+            <div className="grid grid-cols-1 gap-8 md:gap-12">
               {project.images.map((image, index) => (
                 <ImageWithCaption
                   key={index}
@@ -154,28 +155,29 @@ export default async function ProjectPage(
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="sticky top-0 z-20 bg-background border-b border-border py-4">
-        <div className="container mx-auto px-4 max-w-3xl">
+      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border py-4">
+        <div className="container mx-auto max-w-5xl">
           <div className="flex items-center justify-between gap-4">
             <Link
               href={backLink}
-              className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors"
+              className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors py-1 px-2 -ml-2"
             >
               <span className="mr-2 text-accent">←</span>
-              Back to {categoryLabel}
+              <span className="hidden sm:inline">Back to {categoryLabel}</span>
+              <span className="sm:hidden text-xs uppercase font-mono tracking-wider">Back</span>
             </Link>
-            <h1 className="text-lg font-semibold text-foreground truncate">
+            <h1 className="text-sm md:text-lg font-bold text-foreground truncate max-w-[200px] md:max-w-none uppercase font-mono tracking-tight">
               {project.title}
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 max-w-5xl">
+      <div className="container mx-auto py-8 md:py-12 max-w-5xl">
         <div className="max-w-3xl">
           <ProjectHeader project={project} />
 
-          <section className="mb-12">
+          <section className="mb-10 md:mb-12">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
             <div className="max-w-2xl">
               <p className="text-base md:text-lg text-foreground leading-relaxed">
@@ -184,7 +186,7 @@ export default async function ProjectPage(
             </div>
           </section>
 
-          <section className="mb-12">
+          <section className="mb-10 md:mb-12">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Responsibilities</span>
             <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-muted leading-relaxed">
               {project.responsibilities.map((responsibility, index) => (
@@ -193,7 +195,7 @@ export default async function ProjectPage(
             </ul>
           </section>
 
-          <section className="mb-12">
+          <section className="mb-10 md:mb-12">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Skills</span>
             <ul className="flex flex-wrap gap-2">
               {project.skills.map((skill, index) => (
@@ -203,10 +205,10 @@ export default async function ProjectPage(
           </section>
 
           {project.whatILearned && (
-            <section className="mb-12">
+            <section className="mb-10 md:mb-12">
               <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">What I Learned</span>
               <div className="max-w-2xl">
-                <p className="text-base md:text-lg text-muted leading-relaxed italic bg-surface p-6 border-l-4 border-accent rounded-r-lg">
+                <p className="text-base md:text-lg text-muted leading-relaxed italic bg-surface p-5 md:p-6 border-l-4 border-accent rounded-r-lg">
                   {project.whatILearned}
                 </p>
               </div>
@@ -216,7 +218,7 @@ export default async function ProjectPage(
 
         <div className="mt-16">
           <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
-          <div className="grid grid-cols-1 gap-12">
+          <div className="grid grid-cols-1 gap-8 md:gap-12">
             {project.images.map((image, index) => (
               <ImageWithCaption
                 key={index}

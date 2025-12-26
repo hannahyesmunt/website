@@ -6,8 +6,8 @@ export default function PocketDesignLabPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-12 max-w-7xl">
-        <header className="mb-12">
+      <div className="container mx-auto py-8 md:py-12 max-w-7xl">
+        <header className="mb-10 md:mb-12">
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
             Category
           </span>
@@ -21,7 +21,7 @@ export default function PocketDesignLabPage() {
           </div>
         </header>
         {pocketProjects.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-8">
             {pocketProjects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
