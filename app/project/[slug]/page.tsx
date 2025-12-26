@@ -214,9 +214,9 @@ export default async function ProjectPage(
           )}
         </div>
 
-        <section className="mb-12">
-          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8 block">Images</span>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-16">
+          <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
+          <div className="grid grid-cols-1 gap-12">
             {project.images.map((image, index) => (
               <ImageWithCaption
                 key={index}
@@ -226,7 +226,7 @@ export default async function ProjectPage(
               />
             ))}
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
