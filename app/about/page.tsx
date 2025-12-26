@@ -10,11 +10,11 @@ export default function AboutPage() {
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
               About
             </span>
-            <h1 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-8 break-words">
+            <h1 className="text-xl md:text-2xl font-bold text-foreground tracking-tight mb-8 break-words">
               Hannah Yesmunt
             </h1>
             <div className="max-w-full">
-              <p className="text-sm md:text-base text-foreground leading-relaxed break-words">
+              <p className="text-xs md:text-sm text-foreground leading-relaxed break-words">
                 I'm a Los Angeles–based designer and product developer exploring the intersections of fashion, sports, and identity. I specialize in translating concepts into functional apparel, from technical flats and patterns to prototypes and finished garments. At the center of my work is creating designs that prioritize freedom of movement, self-expression, and play.
               </p>
             </div>

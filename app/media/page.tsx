@@ -42,11 +42,11 @@ export default function MediaPage() {
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
             Press
           </span>
-          <h1 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-6">
+          <h1 className="text-xl md:text-2xl font-bold text-foreground tracking-tight mb-6">
             Media / Press
           </h1>
           <div className="max-w-2xl">
-            <p className="text-sm md:text-base text-muted leading-relaxed">
+            <p className="text-xs md:text-sm text-muted leading-relaxed">
               A curated selection of media coverage featuring my work in fashion, product development, and creative projects.
             </p>
           </div>
@@ -72,14 +72,14 @@ export default function MediaPage() {
                     {item.year}
                   </span>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-foreground leading-tight tracking-tight">
+                <h3 className="text-base md:text-lg font-bold text-foreground leading-tight tracking-tight">
                   {item.title}
                 </h3>
-                <p className="text-sm md:text-base text-muted leading-relaxed max-w-2xl">
+                <p className="text-xs md:text-sm text-muted leading-relaxed max-w-2xl">
                   {item.description}
                 </p>
                 <div className="mt-2">
-                  <span className="text-xs font-mono tracking-[0.06em] text-muted group-hover:text-accent transition-colors inline-flex items-center gap-1 uppercase">
+                  <span className="text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted group-hover:text-accent transition-colors inline-flex items-center gap-1 uppercase">
                     {item.linkText || "Read article"} →
                   </span>
                 </div>
@@ -88,7 +88,6 @@ export default function MediaPage() {
           ))}
         </div>
       </div>
-    </div>
   );
 }
 

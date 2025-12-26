@@ -22,43 +22,43 @@ export default function Header() {
             </Link>
             <Link
               href="/"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors font-sans uppercase tracking-[0.08em] text-[11px]"
             >
               Home
             </Link>
             <Link
               href="/professional"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors font-sans uppercase tracking-[0.08em] text-[11px]"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors font-sans uppercase tracking-[0.08em] text-[11px]"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors font-sans uppercase tracking-[0.08em] text-[11px]"
             >
               Pocket Design Lab
             </Link>
             <Link
               href="/media"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors font-sans uppercase tracking-[0.08em] text-[11px]"
             >
               Media / Press
             </Link>
             <Link
               href="/about"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors font-sans uppercase tracking-[0.08em] text-[11px]"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors font-sans uppercase tracking-[0.08em] text-[11px]"
             >
               Contact
             </Link>
@@ -87,53 +87,53 @@ export default function Header() {
 
         {/* Mobile Menu Dropdown */}
         <nav className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 border-t border-border' : 'max-h-0'}`}>
-          <div className="px-4 py-3 flex flex-col gap-0">
+          <div className="px-4 py-2.5 flex flex-col gap-0">
             <Link
               href="/"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1 text-sm font-sans uppercase tracking-[0.08em]"
             >
               Home
             </Link>
             <Link
               href="/professional"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1 text-sm font-sans uppercase tracking-[0.08em]"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1 text-sm font-sans uppercase tracking-[0.08em]"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1 text-sm font-sans uppercase tracking-[0.08em]"
             >
               Pocket Design Lab
             </Link>
             <Link
               href="/media"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1 text-sm font-sans uppercase tracking-[0.08em]"
             >
               Media / Press
             </Link>
             <Link
               href="/about"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1 text-sm font-sans uppercase tracking-[0.08em]"
             >
               About
             </Link>
             <Link
               href="/contact"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1 text-sm font-sans uppercase tracking-[0.08em]"
             >
               Contact
             </Link>
