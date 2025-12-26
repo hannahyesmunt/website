@@ -8,12 +8,17 @@ export default function ProfessionalPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <header className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-1">
+          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
+            Category
+          </span>
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6">
             Professional Work
           </h1>
-          <p className="text-muted mt-4">
-            Selected projects from my professional experience in product development and design.
-          </p>
+          <div className="max-w-2xl">
+            <p className="text-base md:text-lg text-muted leading-relaxed">
+              Selected projects from my professional experience in product development and design.
+            </p>
+          </div>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {professionalProjects.map((project) => (

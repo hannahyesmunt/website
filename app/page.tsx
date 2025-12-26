@@ -15,15 +15,17 @@ export default function Home() {
     <div className="min-h-screen bg-background flex flex-col">
       <div className="container mx-auto px-4 py-12 max-w-4xl flex-1">
         <div className="flex flex-col items-start text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-1">
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-xl font-semibold text-muted mb-4">
+          <p className="text-base md:text-lg font-medium text-muted mb-4">
             Product Developer / Assistant Designer
           </p>
-          <p className="text-base text-muted">
-            Focused on functional design, product workflows, and inclusive apparel solutions
-          </p>
+          <div className="max-w-2xl">
+            <p className="text-base md:text-lg text-muted leading-relaxed">
+              Focused on functional design, product workflows, and inclusive apparel solutions
+            </p>
+          </div>
 
           {/* Photo Gallery - Masonry */}
           <div className="w-full mt-10">
@@ -45,28 +47,30 @@ export default function Home() {
             </div>
           </div>
 
-          <h2 className="text-2xl font-semibold text-foreground mt-20 text-center w-full">
-            Explore my work below
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6 mx-auto">
-            <Link
-              href="/professional"
-              className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center"
-            >
-              Professional
-            </Link>
-            <Link
-              href="/technical-work"
-              className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center"
-            >
-              Technical Work
-            </Link>
-            <Link
-              href="/pocket-design-lab"
-              className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center"
-            >
-              Pocket Design Lab
-            </Link>
+          <div className="w-full mt-20 flex flex-col items-center">
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">
+              Explore my work
+            </span>
+            <div className="flex flex-col sm:flex-row gap-4 mx-auto">
+              <Link
+                href="/professional"
+                className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
+              >
+                Professional
+              </Link>
+              <Link
+                href="/technical-work"
+                className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
+              >
+                Technical Work
+              </Link>
+              <Link
+                href="/pocket-design-lab"
+                className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-sm font-medium"
+              >
+                Pocket Design Lab
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -75,12 +79,14 @@ export default function Home() {
       <section className="border-t border-border bg-surface">
         <div className="container mx-auto px-4 py-16 max-w-3xl">
           <div className="flex flex-col items-center text-center gap-6">
-            <h2 className="text-2xl font-semibold text-foreground">
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted">
               Featured In
-            </h2>
-            <p className="text-muted max-w-xl">
-              Selected features highlighting my work in fashion, product development, and creative projects.
-            </p>
+            </span>
+            <div className="max-w-xl">
+              <p className="text-base md:text-lg text-muted leading-relaxed">
+                Selected features highlighting my work in fashion, product development, and creative projects.
+              </p>
+            </div>
             <div className="flex flex-wrap items-center justify-center gap-12 mt-4">
               <Image
                 src="/images/main/sd l-01.avif"
@@ -106,7 +112,7 @@ export default function Home() {
             </div>
             <Link
               href="/media"
-              className="mt-4 px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors"
+              className="mt-4 px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-sm font-medium"
             >
               See All Media
             </Link>

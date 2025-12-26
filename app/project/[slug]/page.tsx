@@ -171,15 +171,17 @@ export default async function ProjectPage(
         <ProjectHeader project={project} />
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-4">Overview</h2>
-          <p className="text-foreground leading-relaxed">
-            {project.overview}
-          </p>
+          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
+          <div className="max-w-2xl">
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              {project.overview}
+            </p>
+          </div>
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-4 border-l-2 border-accent pl-4">Responsibilities</h2>
-          <ul className="list-disc list-inside space-y-2 text-muted">
+          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Responsibilities</span>
+          <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-muted leading-relaxed">
             {project.responsibilities.map((responsibility, index) => (
               <li key={index}>{responsibility}</li>
             ))}
@@ -187,25 +189,27 @@ export default async function ProjectPage(
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-4 border-l-2 border-accent pl-4">Skills</h2>
-          <ul className="flex flex-wrap gap-2 text-sm">
+          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Skills</span>
+          <ul className="flex flex-wrap gap-2">
             {project.skills.map((skill, index) => (
-              <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-muted">{skill}</li>
+              <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
             ))}
           </ul>
         </section>
 
         {project.whatILearned && (
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-foreground mb-4 border-l-2 border-accent pl-4">What I Learned</h2>
-            <p className="text-muted leading-relaxed italic bg-surface p-6 border-l-4 border-accent rounded-r-lg">
-              {project.whatILearned}
-            </p>
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">What I Learned</span>
+            <div className="max-w-2xl">
+              <p className="text-base md:text-lg text-muted leading-relaxed italic bg-surface p-6 border-l-4 border-accent rounded-r-lg">
+                {project.whatILearned}
+              </p>
+            </div>
           </section>
         )}
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-4">Images</h2>
+          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8 block">Images</span>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {project.images.map((image, index) => (
               <ImageWithCaption

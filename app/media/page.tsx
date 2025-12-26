@@ -39,12 +39,17 @@ export default function MediaPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         <header className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-2">
+          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
+            Press
+          </span>
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6">
             Media / Press
           </h1>
-          <p className="text-muted mt-6">
-            A curated selection of media coverage featuring my work in fashion, product development, and creative projects.
-          </p>
+          <div className="max-w-2xl">
+            <p className="text-base md:text-lg text-muted leading-relaxed">
+              A curated selection of media coverage featuring my work in fashion, product development, and creative projects.
+            </p>
+          </div>
         </header>
 
         <div className="space-y-6">
@@ -59,21 +64,21 @@ export default function MediaPage() {
               <div className="flex flex-col gap-3">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+                    <span className="text-xs font-mono uppercase tracking-[0.08em] text-accent">
                       {item.publication}
                     </span>
                   </div>
-                  <span className="text-sm text-muted whitespace-nowrap flex-shrink-0">
+                  <span className="text-xs font-mono tracking-[0.06em] text-muted whitespace-nowrap flex-shrink-0">
                     {item.year}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground leading-tight">
+                <h3 className="text-lg md:text-xl font-bold text-foreground leading-tight tracking-tight">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted">
+                <p className="text-sm md:text-base text-muted leading-relaxed max-w-2xl">
                   {item.description}
                 </p>
-                <span className="text-sm text-muted hover:text-accent transition-colors inline-flex items-center gap-1">
+                <span className="text-xs font-mono tracking-[0.06em] text-muted group-hover:text-accent transition-colors inline-flex items-center gap-1 uppercase">
                   {item.linkText || "Read article"} →
                 </span>
               </div>
