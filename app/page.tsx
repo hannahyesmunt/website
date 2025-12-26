@@ -3,7 +3,6 @@ import Image from "next/image";
 
 const heroImages = [
   { src: "/images/main/bball.jpg", alt: "Editorial work" },
-  { src: "/images/main/IMG_5700.jpeg", alt: "Project work" },
   { src: "/images/main/Adaptation_6652_exposure1.webp", alt: "Adaptation editorial" },
   { src: "/images/main/Flatlay_077_websize.webp", alt: "Flatlay photography" },
   { src: "/images/main/Flatlay_060_websize.webp", alt: "Flatlay photography" },
