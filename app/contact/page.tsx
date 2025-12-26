@@ -7,12 +7,12 @@ export default function ContactPage() {
         <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
           Contact
         </span>
-        <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-8">
           Get in Touch
         </h1>
         <div className="space-y-10 md:space-y-12">
           <div>
-            <p className="text-base md:text-lg text-foreground leading-relaxed max-w-xl">
+            <p className="text-sm md:text-base text-foreground leading-relaxed max-w-xl">
               I'm always open to discussing new opportunities, collaborations, or answering questions about my work.
             </p>
           </div>

@@ -42,11 +42,11 @@ export default function MediaPage() {
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
             Press
           </span>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6">
+          <h1 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-6">
             Media / Press
           </h1>
           <div className="max-w-2xl">
-            <p className="text-base md:text-lg text-muted leading-relaxed">
+            <p className="text-sm md:text-base text-muted leading-relaxed">
               A curated selection of media coverage featuring my work in fashion, product development, and creative projects.
             </p>
           </div>

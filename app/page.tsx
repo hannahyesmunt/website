@@ -21,14 +21,14 @@ export default function Home() {
     <div className="min-h-screen bg-background flex flex-col">
       <div className="container mx-auto py-8 md:py-16 max-w-5xl flex-1">
         <div className="flex flex-col items-start text-left">
-          <h1 className="text-2xl md:text-3xl font-bold font-mono text-foreground tracking-tight mb-1">
+          <h1 className="text-xl md:text-2xl font-bold font-sans text-foreground tracking-tight mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-sm md:text-base font-mono text-muted mb-6 md:mb-4">
+          <p className="text-xs md:text-sm font-sans text-muted mb-6 md:mb-4">
             Product Developer / Assistant Designer
           </p>
           <div className="max-w-xl">
-            <p className="text-sm md:text-base font-mono text-muted leading-relaxed">
+            <p className="text-sm md:text-base font-sans text-muted leading-relaxed">
               Focused on functional design, product workflows, and inclusive apparel solutions
             </p>
           </div>

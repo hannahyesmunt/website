@@ -87,53 +87,53 @@ export default function Header() {
 
         {/* Mobile Menu Dropdown */}
         <nav className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 border-t border-border' : 'max-h-0'}`}>
-          <div className="px-4 py-4 flex flex-col gap-0.5">
+          <div className="px-4 py-3 flex flex-col gap-0">
             <Link
               href="/"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-2.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
             >
               Home
             </Link>
             <Link
               href="/professional"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-2.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-2.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-2.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
             >
               Pocket Design Lab
             </Link>
             <Link
               href="/media"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-2.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
             >
               Media / Press
             </Link>
             <Link
               href="/about"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-2.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
             >
               About
             </Link>
             <Link
               href="/contact"
               onClick={closeMenu}
-              className="text-muted hover:text-accent transition-colors py-2.5 text-base font-medium"
+              className="text-muted hover:text-accent transition-colors py-1.5 text-base font-medium"
             >
               Contact
             </Link>

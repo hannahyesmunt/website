@@ -70,12 +70,12 @@ export default async function ProjectPage(
 
         <div className="container mx-auto py-8 md:py-16 max-w-5xl">
           <div className="max-w-3xl">
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6 mt-2">
+            <h1 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight mb-6 mt-2">
               {project.title}
             </h1>
             
             <div className="max-w-2xl">
-              <p className="text-base md:text-lg text-foreground leading-relaxed">
+              <p className="text-sm md:text-base text-foreground leading-relaxed">
                 {project.overview}
               </p>
             </div>
@@ -89,7 +89,7 @@ export default async function ProjectPage(
             {project.designGoals && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Design Goals</h2>
-                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-base md:text-lg">
+                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-sm md:text-base">
                   {project.designGoals.map((goal, index) => (
                     <li key={index} className="leading-relaxed">{goal}</li>
                   ))}
@@ -102,7 +102,7 @@ export default async function ProjectPage(
             {project.features && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Material & Technical Features</h2>
-                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-base md:text-lg">
+                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-sm md:text-base">
                   {project.features.map((feature, index) => (
                     <li key={index} className="leading-relaxed">{feature}</li>
                   ))}
@@ -115,7 +115,7 @@ export default async function ProjectPage(
             {project.process && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Process & Approach</h2>
-                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-base md:text-lg">
+                <ul className="list-disc list-inside space-y-3 text-foreground/90 text-sm md:text-base">
                   {project.process.map((step, index) => (
                     <li key={index} className="leading-relaxed">{step}</li>
                   ))}
@@ -128,7 +128,7 @@ export default async function ProjectPage(
             {project.outcome && (
               <section>
                 <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Outcome</h2>
-                <p className="text-foreground/90 leading-relaxed text-base md:text-lg">
+                <p className="text-foreground/90 leading-relaxed text-sm md:text-base">
                   {project.outcome}
                 </p>
               </section>
