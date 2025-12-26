@@ -7,6 +7,13 @@ const heroImages = [
   { src: "/images/main/Flatlay_077_websize.webp", alt: "Flatlay photography" },
   { src: "/images/main/Flatlay_060_websize.webp", alt: "Flatlay photography" },
   { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro" },
+  { src: "/images/main/2024_06_05_Pocket_Design_Lab_388.webp", alt: "Pocket Design Lab" },
+  { src: "/images/main/Adaptation_7350_edit.webp", alt: "Adaptation editorial" },
+  { src: "/images/main/clo2.webp", alt: "CLO 3D design" },
+  { src: "/images/main/IMG_5703.jpeg", alt: "Technical work" },
+  { src: "/images/main/PDL+Studio+RAW-028.jpg", alt: "Pocket Design Lab studio" },
+  { src: "/images/main/PDL+Studio+RAW-042.jpg", alt: "Pocket Design Lab studio" },
+  { src: "/images/main/tieGuy1.webp", alt: "Editorial work" },
 ];
 
 export default function Home() {
@@ -14,14 +21,14 @@ export default function Home() {
     <div className="min-h-screen bg-background flex flex-col">
       <div className="container mx-auto py-8 md:py-16 max-w-5xl flex-1">
         <div className="flex flex-col items-start text-left">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-1">
+          <h1 className="text-2xl md:text-3xl font-bold font-mono text-foreground tracking-tight mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-base md:text-lg font-medium text-muted mb-6 md:mb-4">
+          <p className="text-sm md:text-base font-mono text-muted mb-6 md:mb-4">
             Product Developer / Assistant Designer
           </p>
-          <div className="max-w-2xl">
-            <p className="text-base md:text-lg text-muted leading-relaxed">
+          <div className="max-w-xl">
+            <p className="text-sm md:text-base font-mono text-muted leading-relaxed">
               Focused on functional design, product workflows, and inclusive apparel solutions
             </p>
           </div>
