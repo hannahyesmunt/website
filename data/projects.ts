@@ -197,9 +197,9 @@ export const projects: Project[] = [
       "Narrative storytelling"
     ],
     images: [
-      { src: "/images/PDL/GYMNASIA — PDL_files/GYMNASIA.jpeg", alt: "Gymnasia conceptual space", caption: "Conceptual fitness space" },
-      { src: "/images/PDL/GYMNASIA — PDL_files/gymnasia+exterior+2.png", alt: "Gymnasia exterior concept", caption: "Exterior concept" },
-      { src: "/images/PDL/GYMNASIA — PDL_files/gymnasia-interior.png", alt: "Gymnasia visual exploration", caption: "Visual exploration" }
+      { src: "/gymnasia/GYMNASIA.jpeg", alt: "Gymnasia conceptual space", caption: "Conceptual fitness space" },
+      { src: "/gymnasia/gymnasia+exterior+2.png", alt: "Gymnasia exterior concept", caption: "Exterior concept" },
+      { src: "/gymnasia/Screenshot+2025-07-27+at+5.07.14 PM.png", alt: "Gymnasia visual exploration", caption: "Visual exploration" }
     ]
   },
   {
@@ -226,9 +226,9 @@ export const projects: Project[] = [
       "Styling and visual presentation"
     ],
     images: [
-      { src: "/images/PDL/Technical Bonnet — PDL_files/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Contemporary technical bonnet made with ripstop nylon", caption: "Accessory design exploration combining a historic bonnet silhouette with modern ripstop nylon." },
-      { src: "/images/PDL/Technical Bonnet — PDL_files/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Detail view of technical bonnet construction", caption: "Material study highlighting lightweight, UV-protective, water-repellent performance fabric." },
-      { src: "/images/PDL/Technical Bonnet — PDL_files/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Styled technical bonnet worn in outdoor environment", caption: "Styled final look demonstrating the accessory's balance of form, function, and modern utility." }
+      { src: "/sportybonnet/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Contemporary technical bonnet made with ripstop nylon", caption: "Accessory design exploration combining a historic bonnet silhouette with modern ripstop nylon." },
+      { src: "/sportybonnet/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Detail view of technical bonnet construction", caption: "Material study highlighting lightweight, UV-protective, water-repellent performance fabric." },
+      { src: "/sportybonnet/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Styled technical bonnet worn in outdoor environment", caption: "Styled final look demonstrating the accessory's balance of form, function, and modern utility." }
     ]
   }
 ];
