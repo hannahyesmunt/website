@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: "Men's Performance and Lifestyle Apparel",
     category: "professional",
     year: "2025",
-    brand: "Skechers Apparel",
+    brand: "Skechers",
     role: "Product Development",
     thumbnail: { src: "/images/thumbnail/Skechers.jpg", alt: "Skechers Men's Performance Apparel" },
     overview:

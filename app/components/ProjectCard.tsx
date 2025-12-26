@@ -31,6 +31,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="mt-3 text-lg md:text-xl font-sans font-semibold tracking-tight text-foreground">
           {project.title}
         </h3>
+        {project.category === "professional" && project.brand && (
+          <span className="mt-1 text-xs font-mono uppercase tracking-[0.08em] text-muted">
+            {project.brand}
+          </span>
+        )}
       </div>
     </Link>
   );
