@@ -12,7 +12,7 @@ const heroImages = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <div className="container mx-auto px-4 py-12 max-w-4xl flex-1">
+      <div className="container mx-auto px-4 py-12 max-w-5xl flex-1">
         <div className="flex flex-col items-start text-left">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-1">
             Hannah Yesmunt
