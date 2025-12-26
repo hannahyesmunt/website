@@ -13,11 +13,13 @@ export default function Header() {
     <>
       {/* Desktop Sidebar */}
       <aside className="hidden md:flex fixed left-0 top-0 h-full w-48 border-r border-accent bg-background flex-col z-10">
-        <nav className="p-6 flex flex-col gap-6">
-          <Link href="/" className="text-xl font-semibold text-foreground hover:text-accent transition-colors">
-            Hannah Yesmunt
-          </Link>
-          <div className="flex flex-col gap-4">
+        <nav className="p-6 flex flex-col gap-4">
+            <Link
+              href="/"
+              className="text-3xl font-normal text-foreground hover:text-accent transition-colors font-[family-name:var(--font-tourney)] mb-4"
+            >
+              HY
+            </Link>
             <Link
               href="/"
               className="text-foreground/60 hover:text-accent transition-colors"
@@ -60,15 +62,17 @@ export default function Header() {
             >
               Contact
             </Link>
-          </div>
         </nav>
       </aside>
       
       {/* Mobile Header */}
       <header className="md:hidden fixed top-0 left-0 right-0 z-20 border-b border-accent bg-background">
         <div className="px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="text-xl font-semibold text-foreground hover:text-accent transition-colors">
-            Hannah Yesmunt
+          <Link
+            href="/"
+            className="text-2xl font-normal text-foreground hover:text-accent transition-colors font-[family-name:var(--font-tourney)]"
+          >
+            HY
           </Link>
           <button
             onClick={toggleMenu}

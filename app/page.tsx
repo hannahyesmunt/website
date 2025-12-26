@@ -2,40 +2,35 @@ import Link from "next/link";
 import Image from "next/image";
 
 const heroImages = [
-  { src: "/images/main/Adaptation_6652_exposure1.webp", alt: "Adaptation editorial" },
   { src: "/images/main/bball.jpg", alt: "Editorial work" },
-  { src: "/images/main/DOUBLE+TOP+6.webp", alt: "Editorial work" },
-  { src: "/images/main/Flatlay_050_websize+(1).webp", alt: "Flatlay photography" },
+  { src: "/images/main/IMG_5700.jpeg", alt: "Project work" },
+  { src: "/images/main/Adaptation_6652_exposure1.webp", alt: "Adaptation editorial" },
   { src: "/images/main/Flatlay_077_websize.webp", alt: "Flatlay photography" },
   { src: "/images/main/Flatlay_060_websize.webp", alt: "Flatlay photography" },
-  { src: "/images/main/untitled0578_faze2_websize.webp", alt: "Editorial work" },
-  { src: "/images/main/000055980003_websize.webp", alt: "Editorial work" },
-  { src: "/images/main/sa_coolpool_9687.webp", alt: "Saint Andro" },
-  { src: "/images/main/IMG_5700.jpeg", alt: "Project work" },
-  { src: "/images/main/590402588_17942281062086715_2578124886817200815_n.jpg", alt: "Editorial work" },
+  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro" },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <div className="container mx-auto px-4 py-24 max-w-4xl flex-1">
-        <div className="flex flex-col items-center text-center gap-8">
-          <h1 className="text-4xl md:text-5xl font-semibold text-foreground">
+      <div className="container mx-auto px-4 py-12 max-w-4xl flex-1">
+        <div className="flex flex-col items-start text-left">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-2xl md:text-3xl text-foreground/80 -mt-4">
+          <p className="text-xl font-semibold text-foreground/80 mb-4">
             Product Developer / Assistant Designer
           </p>
-          <p className="text-lg text-foreground/70 max-w-2xl leading-relaxed">
-            Focused on technical design, product workflows, and inclusive apparel solutions
+          <p className="text-base text-foreground/80">
+            Focused on functional design, product workflows, and inclusive apparel solutions
           </p>
 
-          {/* Photo Gallery */}
-          <div className="w-full mt-8">
-            <div className="columns-2 md:columns-3 gap-1">
+          {/* Photo Gallery - Masonry */}
+          <div className="w-full mt-10">
+            <div className="columns-2 md:columns-3 gap-2">
               {heroImages.map((image, index) => (
-                <div key={index} className="mb-1 break-inside-avoid">
-                  <div className="relative w-full overflow-hidden">
+                <div key={index} className="mb-2 break-inside-avoid">
+                  <div className="relative w-full overflow-hidden rounded-lg">
                     <Image
                       src={image.src}
                       alt={image.alt}
@@ -50,10 +45,10 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-foreground/60 mt-8">
+          <h2 className="text-2xl font-semibold text-foreground mt-20 text-center w-full">
             Explore my work below
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-4 mt-6 mx-auto">
             <Link
               href="/professional"
               className="px-6 py-3 border border-accent/50 text-foreground rounded-lg hover:border-accent hover:bg-accent/5 transition-colors text-center"

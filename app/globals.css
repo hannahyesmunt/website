@@ -4,14 +4,18 @@
   --background: #C2C4C6;
   --foreground: #1a1a1a;
   --accent: #ff4d2a;
+  --header: #45474A;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --color-header: var(--header);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-tourney: var(--font-tourney);
 }
 
 body {
