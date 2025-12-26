@@ -20,6 +20,7 @@ export interface Project {
   features?: string[];
   process?: string[];
   outcome?: string;
+  thumbnail?: { src: string; alt: string };
   images: ProjectImage[];
 }
 
@@ -31,6 +32,7 @@ export const projects: Project[] = [
     year: "2025",
     brand: "Skechers Apparel",
     role: "Product Development",
+    thumbnail: { src: "/images/thumbnails/skechers.jpg", alt: "Skechers Men's Performance Apparel" },
     overview:
       "At Skechers, I worked on the men's product development team supporting lifestyle and performance apparel across basketball, golf, court sports, and outerwear. My role focused on guiding styles from early design intent through sample development, ensuring each product aligned with performance needs, brand standards, and production realities.",
     responsibilities: [
@@ -73,6 +75,7 @@ export const projects: Project[] = [
     year: "2022-2025",
     brand: "Saint Andro Swimwear",
     role: "Founder & Designer",
+    thumbnail: { src: "/images/thumbnails/saint-andro.jpg", alt: "Saint Andro Oh Cool Compression Zip Top" },
     overview:
       "This case study highlights one of the key products we developed at Saint Andro: the Oh Cool Compression Zip Top. The garment is a versatile, high-performance piece designed to balance function, comfort, and inclusivity. Inspired by sporty, outdoor lifestyles, it supports movement, sun protection, and thermal regulation, making it ideal for swimming, water sports, or casual wear.\n\nThe focus here is on the design process, material exploration, and performance innovation that differentiate this top from conventional activewear.",
     specs: [
