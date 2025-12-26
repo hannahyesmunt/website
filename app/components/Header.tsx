@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex fixed left-0 top-0 h-full w-48 border-r border-border bg-background flex-col z-10">
+      <aside className="hidden md:flex fixed left-0 top-0 h-full w-48 border-r border-accent bg-background flex-col z-10">
         <nav className="p-6 flex flex-col gap-4">
             <Link
               href="/"
@@ -66,7 +66,7 @@ export default function Header() {
       </aside>
       
       {/* Mobile Header */}
-      <header className="md:hidden fixed top-0 left-0 right-0 z-20 border-b border-border bg-background">
+      <header className="md:hidden fixed top-0 left-0 right-0 z-20 border-b border-accent bg-background">
         <div className="px-4 py-4 flex items-center justify-between">
           <Link
             href="/"

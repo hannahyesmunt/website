@@ -76,7 +76,7 @@ export default function Home() {
       </div>
 
       {/* Media Teaser Section */}
-      <section className="border-t border-border bg-surface">
+      <section className="border-t border-accent bg-background">
         <div className="container mx-auto px-4 py-16 max-w-3xl">
           <div className="flex flex-col items-center text-center gap-6">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted">
