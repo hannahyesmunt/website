@@ -45,14 +45,14 @@ export default async function ProjectPage(
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="sticky top-0 z-20 bg-background border-b border-accent py-4">
+      <div className="sticky top-0 z-20 bg-background border-b border-border py-4">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="flex items-center justify-between gap-4">
             <Link
               href={backLink}
-              className="inline-flex items-center text-sm text-foreground/70 hover:text-foreground transition-colors"
+              className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors"
             >
-              <span className="mr-2">←</span>
+              <span className="mr-2 text-accent">←</span>
               Back to {categoryLabel}
             </Link>
             <h1 className="text-lg font-semibold text-foreground truncate">
@@ -67,14 +67,14 @@ export default async function ProjectPage(
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Overview</h2>
-          <p className="text-foreground/80 leading-relaxed">
+          <p className="text-foreground leading-relaxed">
             {project.overview}
           </p>
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-4">Responsibilities</h2>
-          <ul className="list-disc list-inside space-y-2 text-foreground/80">
+          <h2 className="text-2xl font-semibold text-foreground mb-4 border-l-2 border-accent pl-4">Responsibilities</h2>
+          <ul className="list-disc list-inside space-y-2 text-muted">
             {project.responsibilities.map((responsibility, index) => (
               <li key={index}>{responsibility}</li>
             ))}
@@ -82,18 +82,18 @@ export default async function ProjectPage(
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-4">Skills</h2>
-          <ul className="list-disc list-inside space-y-2 text-foreground/80">
+          <h2 className="text-2xl font-semibold text-foreground mb-4 border-l-2 border-accent pl-4">Skills</h2>
+          <ul className="flex flex-wrap gap-2 text-sm">
             {project.skills.map((skill, index) => (
-              <li key={index}>{skill}</li>
+              <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-muted">{skill}</li>
             ))}
           </ul>
         </section>
 
         {project.whatILearned && (
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-foreground mb-4">What I Learned</h2>
-            <p className="text-foreground/80 leading-relaxed">
+            <h2 className="text-2xl font-semibold text-foreground mb-4 border-l-2 border-accent pl-4">What I Learned</h2>
+            <p className="text-muted leading-relaxed italic bg-surface p-6 border-l-4 border-accent rounded-r-lg">
               {project.whatILearned}
             </p>
           </section>

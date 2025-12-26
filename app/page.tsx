@@ -18,10 +18,10 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-xl font-semibold text-foreground/80 mb-4">
+          <p className="text-xl font-semibold text-muted mb-4">
             Product Developer / Assistant Designer
           </p>
-          <p className="text-base text-foreground/80">
+          <p className="text-base text-muted">
             Focused on functional design, product workflows, and inclusive apparel solutions
           </p>
 
@@ -30,7 +30,7 @@ export default function Home() {
             <div className="columns-2 md:columns-3 gap-2">
               {heroImages.map((image, index) => (
                 <div key={index} className="mb-2 break-inside-avoid">
-                  <div className="relative w-full overflow-hidden rounded-lg">
+                  <div className="relative w-full overflow-hidden rounded-lg border border-border bg-surface">
                     <Image
                       src={image.src}
                       alt={image.alt}
@@ -51,19 +51,19 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 mt-6 mx-auto">
             <Link
               href="/professional"
-              className="px-6 py-3 border border-accent/50 text-foreground rounded-lg hover:border-accent hover:bg-accent/5 transition-colors text-center"
+              className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
-              className="px-6 py-3 border border-accent/50 text-foreground rounded-lg hover:border-accent hover:bg-accent/5 transition-colors text-center"
+              className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
-              className="px-6 py-3 border border-accent/50 text-foreground rounded-lg hover:border-accent hover:bg-accent/5 transition-colors text-center"
+              className="px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors text-center"
             >
               Pocket Design Lab
             </Link>
@@ -72,13 +72,13 @@ export default function Home() {
       </div>
 
       {/* Media Teaser Section */}
-      <section className="border-t border-accent/30 bg-background">
+      <section className="border-t border-border bg-surface">
         <div className="container mx-auto px-4 py-16 max-w-3xl">
           <div className="flex flex-col items-center text-center gap-6">
             <h2 className="text-2xl font-semibold text-foreground">
               Featured In
             </h2>
-            <p className="text-foreground/70 max-w-xl">
+            <p className="text-muted max-w-xl">
               Selected features highlighting my work in fashion, product development, and creative projects.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-12 mt-4">
@@ -87,26 +87,26 @@ export default function Home() {
                 alt="Something Different Magazine"
                 width={150}
                 height={50}
-                className="h-[60px] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                className="h-[60px] w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <Image
                 src="/images/main/submissionbeauty.logo.small.72dpi_r3.avif"
                 alt="Submission Beauty"
                 width={150}
                 height={50}
-                className="h-6 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                className="h-6 w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <Image
                 src="/images/main/250px-CreativeMornings_Logo.png"
                 alt="Creative Mornings"
                 width={150}
                 height={50}
-                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity mt-3"
+                className="h-14 w-auto object-contain opacity-50 hover:opacity-100 mt-3 grayscale hover:grayscale-0 transition-all"
               />
             </div>
             <Link
               href="/media"
-              className="mt-4 px-6 py-3 border border-accent/50 text-foreground rounded-lg hover:border-accent hover:bg-accent/5 transition-colors"
+              className="mt-4 px-6 py-3 border border-accent text-foreground rounded-lg hover:bg-accent hover:text-white transition-colors"
             >
               See All Media
             </Link>

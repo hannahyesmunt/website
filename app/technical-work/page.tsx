@@ -11,7 +11,7 @@ export default function TechnicalWorkPage() {
           <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-1">
             Technical Work
           </h1>
-          <p className="text-foreground/70 mt-4">
+          <p className="text-muted mt-4">
             Technical design, patternmaking, and garment construction projects from LATTC coursework.
           </p>
         </header>
@@ -22,7 +22,7 @@ export default function TechnicalWorkPage() {
             ))}
           </div>
         ) : (
-          <p className="text-foreground/70">Coming soon.</p>
+          <p className="text-muted">Coming soon.</p>
         )}
       </div>
     </div>

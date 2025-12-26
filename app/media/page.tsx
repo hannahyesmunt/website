@@ -42,7 +42,7 @@ export default function MediaPage() {
           <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-2">
             Media / Press
           </h1>
-          <p className="text-foreground/70 mt-6">
+          <p className="text-muted mt-6">
             A curated selection of media coverage featuring my work in fashion, product development, and creative projects.
           </p>
         </header>
@@ -54,7 +54,7 @@ export default function MediaPage() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block border border-accent/30 rounded-lg p-6 bg-background hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-200"
+              className="block border border-border rounded-lg p-6 bg-surface hover:border-accent hover:shadow-sm transition-all duration-200"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex items-start justify-between gap-4">
@@ -63,17 +63,17 @@ export default function MediaPage() {
                       {item.publication}
                     </span>
                   </div>
-                  <span className="text-sm text-foreground/50 whitespace-nowrap flex-shrink-0">
+                  <span className="text-sm text-muted whitespace-nowrap flex-shrink-0">
                     {item.year}
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-muted">
                   {item.description}
                 </p>
-                <span className="text-sm text-foreground/60 hover:text-accent transition-colors inline-flex items-center gap-1">
+                <span className="text-sm text-muted hover:text-accent transition-colors inline-flex items-center gap-1">
                   {item.linkText || "Read article"} →
                 </span>
               </div>

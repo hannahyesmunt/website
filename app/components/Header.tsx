@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex fixed left-0 top-0 h-full w-48 border-r border-accent bg-background flex-col z-10">
+      <aside className="hidden md:flex fixed left-0 top-0 h-full w-48 border-r border-border bg-background flex-col z-10">
         <nav className="p-6 flex flex-col gap-4">
             <Link
               href="/"
@@ -22,43 +22,43 @@ export default function Header() {
             </Link>
             <Link
               href="/"
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Home
             </Link>
             <Link
               href="/professional"
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Pocket Design Lab
             </Link>
             <Link
               href="/media"
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Media / Press
             </Link>
             <Link
               href="/about"
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Contact
             </Link>
@@ -66,7 +66,7 @@ export default function Header() {
       </aside>
       
       {/* Mobile Header */}
-      <header className="md:hidden fixed top-0 left-0 right-0 z-20 border-b border-accent bg-background">
+      <header className="md:hidden fixed top-0 left-0 right-0 z-20 border-b border-border bg-background">
         <div className="px-4 py-4 flex items-center justify-between">
           <Link
             href="/"
@@ -86,54 +86,54 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Dropdown */}
-        <nav className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 border-t border-accent' : 'max-h-0'}`}>
+        <nav className={`overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 border-t border-border' : 'max-h-0'}`}>
           <div className="px-4 py-4 flex flex-col gap-4">
             <Link
               href="/"
               onClick={closeMenu}
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Home
             </Link>
             <Link
               href="/professional"
               onClick={closeMenu}
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Professional
             </Link>
             <Link
               href="/technical-work"
               onClick={closeMenu}
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Technical Work
             </Link>
             <Link
               href="/pocket-design-lab"
               onClick={closeMenu}
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Pocket Design Lab
             </Link>
             <Link
               href="/media"
               onClick={closeMenu}
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Media / Press
             </Link>
             <Link
               href="/about"
               onClick={closeMenu}
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               About
             </Link>
             <Link
               href="/contact"
               onClick={closeMenu}
-              className="text-foreground/60 hover:text-accent transition-colors"
+              className="text-muted hover:text-accent transition-colors"
             >
               Contact
             </Link>

@@ -9,7 +9,7 @@ interface ImageWithCaptionProps {
 export default function ImageWithCaption({ src, alt, caption }: ImageWithCaptionProps) {
   return (
     <figure className="mb-4 break-inside-avoid">
-      <div className="relative w-full bg-foreground/5 rounded-lg overflow-hidden border border-accent/30">
+      <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
         <Image
           src={src}
           alt={alt}
@@ -20,7 +20,7 @@ export default function ImageWithCaption({ src, alt, caption }: ImageWithCaption
         />
       </div>
       {caption && (
-        <figcaption className="mt-2 text-sm text-foreground/60 text-center">
+        <figcaption className="mt-2 text-sm text-muted text-center">
           {caption}
         </figcaption>
       )}

@@ -11,7 +11,7 @@ export default function PocketDesignLabPage() {
           <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-1">
             Pocket Design Lab
           </h1>
-          <p className="text-foreground/70 mt-4">
+          <p className="text-muted mt-4">
             Curated personal experimentation projects exploring inclusive design, sustainable materials, and innovative silhouettes.
           </p>
         </header>
@@ -22,7 +22,7 @@ export default function PocketDesignLabPage() {
             ))}
           </div>
         ) : (
-          <p className="text-foreground/70">Coming soon.</p>
+          <p className="text-muted">Coming soon.</p>
         )}
       </div>
     </div>

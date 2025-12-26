@@ -11,7 +11,7 @@ export default function ProfessionalPage() {
           <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-1">
             Professional Work
           </h1>
-          <p className="text-foreground/70 mt-4">
+          <p className="text-muted mt-4">
             Selected projects from my professional experience in product development and design.
           </p>
         </header>

@@ -12,7 +12,7 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-foreground mb-4">
               Get in Touch
             </h2>
-            <p className="text-foreground/80 leading-relaxed mb-6">
+            <p className="text-foreground leading-relaxed mb-6">
               I'm always open to discussing new opportunities, collaborations, or answering questions about my work.
             </p>
           </div>
@@ -24,7 +24,7 @@ export default function ContactPage() {
               href="https://linkedin.com/in/hannahyesmunt"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/70 hover:text-foreground transition-colors underline"
+              className="text-muted hover:text-accent transition-colors underline"
             >
               linkedin.com/in/hannahyesmunt
             </Link>
@@ -37,7 +37,7 @@ export default function ContactPage() {
               href="https://instagram.com/pocketdesignlab"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/70 hover:text-foreground transition-colors underline"
+              className="text-muted hover:text-accent transition-colors underline"
             >
               @pocketdesignlab
             </Link>
@@ -48,7 +48,7 @@ export default function ContactPage() {
             </h3>
             <Link
               href="mailto:hannahyesmunt@gmail.com"
-              className="text-foreground/70 hover:text-foreground transition-colors underline"
+              className="text-muted hover:text-accent transition-colors underline"
             >
               hannahyesmunt@gmail.com
             </Link>
