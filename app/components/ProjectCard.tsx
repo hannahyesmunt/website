@@ -21,8 +21,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <Image
               src={project.thumbnail.src}
               alt={project.thumbnail.alt}
-              width={800}
-              height={isVertical ? 1067 : 600}
+              width={1000}
+              height={isVertical ? 1333 : 750}
               className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200 object-center"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />

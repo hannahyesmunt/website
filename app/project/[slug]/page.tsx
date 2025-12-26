@@ -67,72 +67,76 @@ export default async function ProjectPage(
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-12 max-w-3xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6 mt-2">
-            {project.title}
-          </h1>
-          
-          <div className="max-w-2xl">
-            <p className="text-base md:text-lg text-foreground leading-relaxed">
-              {project.overview}
-            </p>
-          </div>
-
-          {project.specs && <SpecBlock items={project.specs} />}
-          
-          <PolishDivider />
-
-          {project.designGoals && (
-            <section>
-              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Design Goals</h2>
-              <ul className="list-disc list-inside space-y-3 text-foreground/90">
-                {project.designGoals.map((goal, index) => (
-                  <li key={index} className="leading-relaxed">{goal}</li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          <PolishDivider />
-
-          {project.features && (
-            <section>
-              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Material & Technical Features</h2>
-              <ul className="list-disc list-inside space-y-3 text-foreground/90">
-                {project.features.map((feature, index) => (
-                  <li key={index} className="leading-relaxed">{feature}</li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          <PolishDivider />
-
-          {project.process && (
-            <section>
-              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Process & Approach</h2>
-              <ul className="list-disc list-inside space-y-3 text-foreground/90">
-                {project.process.map((step, index) => (
-                  <li key={index} className="leading-relaxed">{step}</li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          <PolishDivider />
-
-          {project.outcome && (
-            <section>
-              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Outcome</h2>
-              <p className="text-foreground/90 leading-relaxed">
-                {project.outcome}
+        <div className="container mx-auto px-4 py-12 max-w-5xl">
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6 mt-2">
+              {project.title}
+            </h1>
+            
+            <div className="max-w-2xl">
+              <p className="text-base md:text-lg text-foreground leading-relaxed">
+                {project.overview}
               </p>
-            </section>
-          )}
+            </div>
+
+            {project.specs && <SpecBlock items={project.specs} />}
+          </div>
+          
+          <div className="max-w-3xl">
+            <PolishDivider />
+
+            {project.designGoals && (
+              <section>
+                <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Design Goals</h2>
+                <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                  {project.designGoals.map((goal, index) => (
+                    <li key={index} className="leading-relaxed">{goal}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <PolishDivider />
+
+            {project.features && (
+              <section>
+                <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Material & Technical Features</h2>
+                <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                  {project.features.map((feature, index) => (
+                    <li key={index} className="leading-relaxed">{feature}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <PolishDivider />
+
+            {project.process && (
+              <section>
+                <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Process & Approach</h2>
+                <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                  {project.process.map((step, index) => (
+                    <li key={index} className="leading-relaxed">{step}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <PolishDivider />
+
+            {project.outcome && (
+              <section>
+                <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Outcome</h2>
+                <p className="text-foreground/90 leading-relaxed">
+                  {project.outcome}
+                </p>
+              </section>
+            )}
+          </div>
 
           <div className="mt-16">
             <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-12">
               {project.images.map((image, index) => (
                 <ImageWithCaption
                   key={index}
@@ -167,50 +171,52 @@ export default async function ProjectPage(
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 max-w-3xl">
-        <ProjectHeader project={project} />
+      <div className="container mx-auto px-4 py-12 max-w-5xl">
+        <div className="max-w-3xl">
+          <ProjectHeader project={project} />
 
-        <section className="mb-12">
-          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
-          <div className="max-w-2xl">
-            <p className="text-base md:text-lg text-foreground leading-relaxed">
-              {project.overview}
-            </p>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Responsibilities</span>
-          <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-muted leading-relaxed">
-            {project.responsibilities.map((responsibility, index) => (
-              <li key={index}>{responsibility}</li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mb-12">
-          <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Skills</span>
-          <ul className="flex flex-wrap gap-2">
-            {project.skills.map((skill, index) => (
-              <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
-            ))}
-          </ul>
-        </section>
-
-        {project.whatILearned && (
           <section className="mb-12">
-            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">What I Learned</span>
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
             <div className="max-w-2xl">
-              <p className="text-base md:text-lg text-muted leading-relaxed italic bg-surface p-6 border-l-4 border-accent rounded-r-lg">
-                {project.whatILearned}
+              <p className="text-base md:text-lg text-foreground leading-relaxed">
+                {project.overview}
               </p>
             </div>
           </section>
-        )}
+
+          <section className="mb-12">
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Responsibilities</span>
+            <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-muted leading-relaxed">
+              {project.responsibilities.map((responsibility, index) => (
+                <li key={index}>{responsibility}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Skills</span>
+            <ul className="flex flex-wrap gap-2">
+              {project.skills.map((skill, index) => (
+                <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
+              ))}
+            </ul>
+          </section>
+
+          {project.whatILearned && (
+            <section className="mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">What I Learned</span>
+              <div className="max-w-2xl">
+                <p className="text-base md:text-lg text-muted leading-relaxed italic bg-surface p-6 border-l-4 border-accent rounded-r-lg">
+                  {project.whatILearned}
+                </p>
+              </div>
+            </section>
+          )}
+        </div>
 
         <section className="mb-12">
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8 block">Images</span>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {project.images.map((image, index) => (
               <ImageWithCaption
                 key={index}
