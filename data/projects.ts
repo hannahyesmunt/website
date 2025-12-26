@@ -32,7 +32,7 @@ export const projects: Project[] = [
     year: "2025",
     brand: "Skechers Apparel",
     role: "Product Development",
-    thumbnail: { src: "/images/thumbnails/skechers.jpg", alt: "Skechers Men's Performance Apparel" },
+    thumbnail: { src: "/images/thumbnail/Skechers.jpg", alt: "Skechers Men's Performance Apparel" },
     overview:
       "At Skechers, I worked on the men's product development team supporting lifestyle and performance apparel across basketball, golf, court sports, and outerwear. My role focused on guiding styles from early design intent through sample development, ensuring each product aligned with performance needs, brand standards, and production realities.",
     responsibilities: [
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     year: "2022-2025",
     brand: "Saint Andro Swimwear",
     role: "Founder & Designer",
-    thumbnail: { src: "/images/thumbnails/saint-andro.jpg", alt: "Saint Andro Oh Cool Compression Zip Top" },
+    thumbnail: { src: "/images/thumbnail/saintandro.jpg", alt: "Saint Andro Oh Cool Compression Zip Top" },
     overview:
       "This case study highlights one of the key products we developed at Saint Andro: the Oh Cool Compression Zip Top. The garment is a versatile, high-performance piece designed to balance function, comfort, and inclusivity. Inspired by sporty, outdoor lifestyles, it supports movement, sun protection, and thermal regulation, making it ideal for swimming, water sports, or casual wear.\n\nThe focus here is on the design process, material exploration, and performance innovation that differentiate this top from conventional activewear.",
     specs: [
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     category: "technical",
     year: "Fall 2025",
     role: "Student — Pattern Making & Design I",
-    thumbnail: { src: "/images/IMG_5703.jpeg", alt: "Passenger Princess Commuter Jacket final garment" },
+    thumbnail: { src: "/images/thumbnail/Technical.jpeg", alt: "Passenger Princess Commuter Jacket final garment" },
     overview: "Passenger Princess Commuter Jacket is a technical outerwear project developed as the final assignment for the Pattern Making & Design I evening course. The jacket reinterprets classic princess-seam tailoring through a commuter-focused lens, integrating high-visibility elements and performance materials to support nighttime travel, safety, and freedom of movement. The project was motivated by a personal accident, which sharpened my focus on designing garments that prioritize protection, visibility, and mobility.",
     responsibilities: [
       "Drafted mid-armhole princess seams (front and back) to shape the body while supporting mobility",
@@ -179,7 +179,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "July 2025",
     role: "Designer / Concept Developer",
-    thumbnail: { src: "/images/PDL/GYMNASIA — PDL_files/GYMNASIA.jpeg", alt: "Gymnasia conceptual fitness space" },
+    thumbnail: { src: "/images/thumbnail/GYMNASIA.jpeg", alt: "Gymnasia conceptual fitness space" },
     overview: "Gymnasia is a conceptual exploration into the future of fitness spaces, reimagining where and how people move, train, and connect. The project considers fitness environments not only as functional spaces, but as sites of identity, ritual, and expression.",
     responsibilities: [
       "Developed a narrative-driven concept exploring inclusive movement spaces",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "June 2024",
     role: "Designer / Accessory Developer",
-    thumbnail: { src: "/images/PDL/Technical Bonnet — PDL_files/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Sporty Bonnet accessory design" },
+    thumbnail: { src: "/images/thumbnail/Bonnet.jpeg", alt: "Sporty Bonnet accessory design" },
     overview: "Sporty Bonnet is a conceptual accessory design project that reinterprets the traditional bonnet through a contemporary, performance-driven lens. Developed in collaboration with a Los Angeles–based artist, the project merges historical silhouette with modern materials and functionality.",
     responsibilities: [
       "Developed a contemporary reinterpretation of a historical accessory silhouette",

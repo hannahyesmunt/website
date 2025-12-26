@@ -7,6 +7,9 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const isVertical = project.category === "professional" || project.category === "technical";
+  const aspectClass = isVertical ? "aspect-[3/4]" : "aspect-[4/3]";
+
   return (
     <Link
       href={`/project/${project.slug}`}
@@ -14,13 +17,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     >
       <div className="flex flex-col">
         {project.thumbnail && (
-          <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border bg-surface">
+          <div className={`${aspectClass} overflow-hidden rounded-lg border border-border bg-surface`}>
             <Image
               src={project.thumbnail.src}
               alt={project.thumbnail.alt}
               width={800}
-              height={600}
-              className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200"
+              height={isVertical ? 1067 : 600}
+              className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200 object-center"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
