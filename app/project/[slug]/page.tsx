@@ -3,6 +3,9 @@ import Link from "next/link";
 import { getProjectBySlug } from "@/data/projects";
 import ProjectHeader from "@/app/components/ProjectHeader";
 import ImageWithCaption from "@/app/components/ImageWithCaption";
+import SpecBlock from "@/app/components/SpecBlock";
+
+const PolishDivider = () => <div className="my-8 md:my-10 border-t border-border" />;
 
 function getBackLink(category: "professional" | "technical" | "pocket-design-lab"): string {
   switch (category) {
@@ -42,6 +45,108 @@ export default async function ProjectPage(
 
   const backLink = getBackLink(project.category);
   const categoryLabel = getCategoryLabel(project.category);
+
+  // Special layout for Beyond The Bikini Case Study
+  if (slug === "case-study-beyond-the-bikini") {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="sticky top-0 z-20 bg-background border-b border-border py-4">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <div className="flex items-center justify-between gap-4">
+              <Link
+                href={backLink}
+                className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors"
+              >
+                <span className="mr-2 text-accent">←</span>
+                Back to {categoryLabel}
+              </Link>
+              <h1 className="text-lg font-semibold text-foreground truncate">
+                {project.title}
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 py-12 max-w-3xl">
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6 mt-2">
+            {project.title}
+          </h1>
+          
+          <div className="max-w-2xl">
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              {project.overview}
+            </p>
+          </div>
+
+          {project.specs && <SpecBlock items={project.specs} />}
+          
+          <PolishDivider />
+
+          {project.designGoals && (
+            <section>
+              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Design Goals</h2>
+              <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                {project.designGoals.map((goal, index) => (
+                  <li key={index} className="leading-relaxed">{goal}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <PolishDivider />
+
+          {project.features && (
+            <section>
+              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Material & Technical Features</h2>
+              <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                {project.features.map((feature, index) => (
+                  <li key={index} className="leading-relaxed">{feature}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <PolishDivider />
+
+          {project.process && (
+            <section>
+              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Process & Approach</h2>
+              <ul className="list-disc list-inside space-y-3 text-foreground/90">
+                {project.process.map((step, index) => (
+                  <li key={index} className="leading-relaxed">{step}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <PolishDivider />
+
+          {project.outcome && (
+            <section>
+              <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Outcome</h2>
+              <p className="text-foreground/90 leading-relaxed">
+                {project.outcome}
+              </p>
+            </section>
+          )}
+
+          <div className="mt-16">
+            <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
+            <div className="grid grid-cols-1 gap-8">
+              {project.images.map((image, index) => (
+                <ImageWithCaption
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  caption={image.caption}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">

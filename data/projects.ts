@@ -15,6 +15,11 @@ export interface Project {
   responsibilities: string[];
   skills: string[];
   whatILearned?: string;
+  specs?: { label: string; value: string }[];
+  designGoals?: string[];
+  features?: string[];
+  process?: string[];
+  outcome?: string;
   images: ProjectImage[];
 }
 
@@ -70,6 +75,32 @@ export const projects: Project[] = [
     role: "Founder & Designer",
     overview:
       "This case study highlights one of the key products we developed at Saint Andro: the Oh Cool Compression Zip Top. The garment is a versatile, high-performance piece designed to balance function, comfort, and inclusivity. Inspired by sporty, outdoor lifestyles, it supports movement, sun protection, and thermal regulation, making it ideal for swimming, water sports, or casual wear.\n\nThe focus here is on the design process, material exploration, and performance innovation that differentiate this top from conventional activewear.",
+    specs: [
+      { label: "Product", value: "Oh Cool Compression Zip Top" },
+      { label: "Size Range", value: "XS – 3XL" },
+      { label: "Material", value: "Scuba-style compression (Recycled Polyester/Spandex)" },
+      { label: "Closure", value: "Center-front lightweight performance zipper" },
+      { label: "Use Case", value: "Swimming, Water Sports, Thermal Regulation" },
+      { label: "Tooling", value: "CLO 3D, Industrial Sewing, Technical Drafting" }
+    ],
+    designGoals: [
+      "Provide adjustable, mid-level coverage to accommodate multiple body types",
+      "Integrate sun protection (UPF-rated) for outdoor use",
+      "Maintain freedom of movement for sport or daily activity",
+      "Create a unisex silhouette that is functional and fashion-forward"
+    ],
+    features: [
+      "Scuba-style fabric simulating cooling and thermoregulating properties",
+      "Sustainable and recycled fabric options to align with brand values",
+      "Performance-driven inclusive sizing and unisex pattern engineering",
+      "Integrated UPF-rated sun protection for extended outdoor use"
+    ],
+    process: [
+      "Tested various scuba-style and thermo-regulating fabrics for stretch, cooling, and drape",
+      "Evaluated mobility, range of motion, and sun coverage through physical prototyping",
+      "Used CLO 3D to create virtual prototypes and refine style lines before physical production"
+    ],
+    outcome: "The Oh Cool Compression Zip Top combines technical innovation with thoughtful design, providing a garment that is adaptable, performance-ready, and inclusive. It exemplifies Saint Andro's commitment to high-quality, functional, and fashion-forward swimwear for all bodies.",
     responsibilities: [
       "Provide adjustable, mid-level coverage to accommodate multiple body types",
       "Integrate sun protection (UPF-rated) for outdoor use",
@@ -89,7 +120,6 @@ export const projects: Project[] = [
       "Prototype iteration & performance testing",
       "CLO 3D garment visualization and virtual prototyping"
     ],
-    whatILearned: "The Oh Cool Compression Zip Top combines technical innovation with thoughtful design, providing a garment that is adaptable, performance-ready, and inclusive. It exemplifies Saint Andro's commitment to high-quality, functional, and fashion-forward swimwear for all bodies.",
     images: [
       { src: "/images/sa/1sa.png", alt: "Saint Andro Oh Cool Compression Zip Top", caption: "Conceptual ideation" },
       { src: "/images/sa/2ST.A S1.4 ZIP UP TOP.png", alt: "Saint Andro Zip Up Top technical flat", caption: "Technical flat" },

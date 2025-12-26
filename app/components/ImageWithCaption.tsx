@@ -20,7 +20,7 @@ export default function ImageWithCaption({ src, alt, caption }: ImageWithCaption
         />
       </div>
       {caption && (
-        <figcaption className="mt-2 text-sm text-muted text-center">
+        <figcaption className="mt-2 text-xs font-mono tracking-[0.06em] text-muted text-center">
           {caption}
         </figcaption>
       )}
