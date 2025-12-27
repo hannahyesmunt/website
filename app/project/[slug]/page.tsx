@@ -1,9 +1,15 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getProjectBySlug } from "@/data/projects";
+import { getProjectBySlug, projects } from "@/data/projects";
 import ProjectHeader from "@/app/components/ProjectHeader";
 import ImageWithCaption from "@/app/components/ImageWithCaption";
 import SpecBlock from "@/app/components/SpecBlock";
+
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
 
 const PolishDivider = () => <div className="my-8 md:my-10 border-t border-border" />;
 
