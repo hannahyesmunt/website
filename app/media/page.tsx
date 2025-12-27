@@ -88,6 +88,7 @@ export default function MediaPage() {
           ))}
         </div>
       </div>
+    </div>
   );
 }
 

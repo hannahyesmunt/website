@@ -24,11 +24,11 @@ export default function Home() {
           <h1 className="text-xl md:text-2xl font-bold font-mono uppercase tracking-[0.1em] text-foreground mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-[10px] md:text-xs font-sans uppercase tracking-wider text-muted mb-6 md:mb-4">
+          <p className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-6 md:mb-4">
             Product Developer / Assistant Designer
           </p>
           <div className="max-w-xl">
-            <p className="text-xs md:text-sm font-sans text-muted leading-relaxed">
+            <p className="text-[11px] md:text-xs font-sans text-muted leading-relaxed">
               Focused on functional design, product workflows, and inclusive apparel solutions
             </p>
           </div>
