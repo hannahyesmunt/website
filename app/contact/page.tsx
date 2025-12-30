@@ -22,12 +22,12 @@ export default function ContactPage() {
                 LinkedIn
               </h3>
               <Link
-                href="https://linkedin.com/in/hannahyesmunt"
+                href="https://www.linkedin.com/in/hannah-yesmunt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs md:text-sm text-foreground hover:text-accent transition-colors underline underline-offset-4 decoration-accent/30 hover:decoration-accent"
               >
-                hannahyesmunt
+                hannah-yesmunt
               </Link>
             </div>
             <div>
