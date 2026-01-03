@@ -29,6 +29,24 @@ const tourney = Tourney({
 export const metadata: Metadata = {
   title: "Hannah Yesmunt - Portfolio",
   description: "Assistant Designer / Assistant Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
+  openGraph: {
+    title: "Hannah Yesmunt - Portfolio",
+    description: "Assistant Designer / Assistant Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
+    images: [
+      {
+        url: "/about/SAdetroit1.jpg",
+        width: 800,
+        height: 1000,
+        alt: "Hannah Yesmunt",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hannah Yesmunt - Portfolio",
+    description: "Assistant Designer / Assistant Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
+    images: ["/about/SAdetroit1.jpg"],
+  },
 };
 
 export default function RootLayout({
