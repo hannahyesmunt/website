@@ -21,7 +21,7 @@ export default function AboutPage() {
           </div>
 
           {/* Image Gallery */}
-          <div className="flex flex-col gap-8 w-full">
+          <div className="flex flex-col gap-8 w-full md:pt-32">
             <div className="relative w-full rounded-lg border border-border bg-surface shadow-sm overflow-hidden">
               <Image
                 src="/about/SAdetroit1.jpg"
