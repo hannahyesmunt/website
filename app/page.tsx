@@ -21,14 +21,14 @@ export default function Home() {
     <div className="min-h-screen bg-background flex flex-col">
       <div className="container mx-auto py-8 md:py-16 max-w-5xl flex-1">
         <div className="flex flex-col items-start text-left">
-          <h1 className="text-xl md:text-2xl font-bold font-mono uppercase tracking-[0.1em] text-foreground mb-1">
+          <h1 className="text-2xl md:text-3xl font-bold font-mono uppercase tracking-[0.1em] text-foreground mb-1">
             Hannah Yesmunt
           </h1>
-          <p className="text-xs md:text-sm font-mono uppercase tracking-[0.08em] text-muted mb-2 md:mb-1">
-            Product Developer / Assistant Designer
+          <p className="text-sm md:text-base font-mono uppercase tracking-[0.08em] text-muted mb-2 md:mb-1">
+            Product Developer / Designer
           </p>
           <div className="max-w-xl">
-            <p className="text-xs md:text-sm font-sans text-muted leading-relaxed">
+            <p className="text-sm md:text-base font-sans text-muted leading-relaxed">
               Focused on functional design, product workflows, and inclusive apparel solutions
             </p>
           </div>
@@ -94,13 +94,15 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-4 px-4">
-              <Image
-                src="/images/main/press/sd l-01.avif"
-                alt="Something Different Magazine"
-                width={150}
-                height={50}
-                className="h-[50px] md:h-[60px] w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
-              />
+              <div className="bg-black px-4 py-2 rounded">
+                <Image
+                  src="/images/main/press/sd l-01.avif"
+                  alt="Something Different Magazine"
+                  width={150}
+                  height={50}
+                  className="h-[30px] md:h-[40px] w-auto object-contain grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all"
+                />
+              </div>
               <Image
                 src="/images/main/press/submissionbeauty.logo.small.72dpi_r3.avif"
                 alt="Submission Beauty"

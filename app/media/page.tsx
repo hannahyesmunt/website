@@ -50,10 +50,10 @@ export default function MediaPage() {
             Media / Press
           </span>
           <h1 className="text-xl md:text-2xl font-bold text-foreground tracking-tight mb-6">
-            Media / Press
+            Mentions in the Media
           </h1>
           <div className="max-w-2xl">
-            <p className="text-xs md:text-sm text-muted leading-relaxed">
+            <p className="text-sm md:text-base text-muted leading-relaxed">
               A curated selection of media coverage featuring my work in fashion, product development, and creative projects.
             </p>
           </div>

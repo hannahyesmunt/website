@@ -14,14 +14,14 @@ export default function AboutPage() {
               Hannah Yesmunt
             </h1>
             <div className="max-w-full">
-              <p className="text-xs md:text-sm text-foreground leading-relaxed break-words">
+              <p className="text-sm md:text-base text-foreground leading-relaxed break-words">
                 I'm a Los Angeles–based designer and product developer exploring the intersections of fashion, sports, and identity. I specialize in translating concepts into functional apparel, from technical flats and patterns to prototypes and finished garments. At the center of my work is creating designs that prioritize freedom of movement, self-expression, and play.
               </p>
             </div>
           </div>
 
           {/* Image Gallery */}
-          <div className="flex flex-col gap-8 w-full md:pt-32">
+          <div className="flex flex-col gap-8 w-full md:pt-24">
             <div className="relative w-full rounded-lg border border-border bg-surface shadow-sm overflow-hidden">
               <Image
                 src="/about/SAdetroit1.jpg"

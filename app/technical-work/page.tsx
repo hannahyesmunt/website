@@ -9,13 +9,13 @@ export default function TechnicalWorkPage() {
       <div className="container mx-auto py-8 md:py-16 max-w-5xl">
         <header className="mb-10 md:mb-12">
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
-            Category
+            Technical Work
           </span>
           <h1 className="text-xl md:text-2xl font-bold text-foreground tracking-tight mb-6">
-            Technical Work
+            Technical Skills in Practice
           </h1>
           <div className="max-w-2xl">
-            <p className="text-xs md:text-sm text-muted leading-relaxed">
+            <p className="text-sm md:text-base text-muted leading-relaxed">
               Technical design, patternmaking, and garment construction projects from LATTC coursework.
             </p>
           </div>

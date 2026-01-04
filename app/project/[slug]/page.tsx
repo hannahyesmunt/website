@@ -29,7 +29,7 @@ function getBackLink(category: "professional" | "technical" | "pocket-design-lab
 function getCategoryLabel(category: "professional" | "technical" | "pocket-design-lab"): string {
   switch (category) {
     case "professional":
-      return "Professional Work";
+      return "Professional";
     case "technical":
       return "Technical Work";
     case "pocket-design-lab":
