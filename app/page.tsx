@@ -2,18 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 
 const heroImages = [
-  { src: "/images/main/bball.jpg", alt: "Editorial work" },
-  { src: "/images/main/Adaptation_6652_exposure1.webp", alt: "Adaptation editorial" },
-  { src: "/images/main/Flatlay_077_websize.webp", alt: "Flatlay photography" },
-  { src: "/images/main/Flatlay_060_websize.webp", alt: "Flatlay photography" },
-  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro" },
-  { src: "/images/main/2024_06_05_Pocket_Design_Lab_388.webp", alt: "Pocket Design Lab" },
-  { src: "/images/main/Adaptation_7350_edit.webp", alt: "Adaptation editorial" },
+  { src: "/images/main/bball.jpg", alt: "Jabari Walker in SkechCloud Elevate set" },
+  { src: "/images/main/PDL+Studio+RAW-028.jpg", alt: "Pocket Design Lab - Gorpcore Skirt" },
+  { src: "/images/main/Flatlay_077_websize.webp", alt: "Saint Andro Zip-Off Capris" },
+  { src: "/images/main/Flatlay_060_websize.webp", alt: "Saint Andro Baggy Hiking Pants" },
+  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro 2-Way Swim Top" },
+  { src: "/images/main/2024_06_05_Pocket_Design_Lab_388.webp", alt: 'Pocket Design Lab "Technical Bonnet"' },
   { src: "/images/main/clo2.webp", alt: "CLO 3D design" },
+  { src: "/images/main/Adaptation_6652_exposure1.webp", alt: "Adaptation editorial" },
   { src: "/images/main/IMG_5703.jpeg", alt: "Technical work" },
-  { src: "/images/main/PDL+Studio+RAW-028.jpg", alt: "Pocket Design Lab studio" },
-  { src: "/images/main/PDL+Studio+RAW-042.jpg", alt: "Pocket Design Lab studio" },
-  { src: "/images/main/tieGuy1.webp", alt: "Editorial work" },
+  { src: "/images/main/Adaptation_7350_edit.webp", alt: '"Sporty Bonnet" for Adaptation Editorial' },
+  { src: "/images/main/PDL+Studio+RAW-042.jpg", alt: 'Pocket Design Lab "Spring Jacket"' },
+  { src: "/images/main/tieGuy1.webp", alt: 'Editorial Work "CORPCORE"' },
 ];
 
 export default function Home() {
@@ -37,16 +37,28 @@ export default function Home() {
           <div className="w-full mt-12 md:mt-10">
             <div className="columns-2 md:columns-3 gap-3 md:gap-2">
               {heroImages.map((image, index) => (
-                <div key={index} className="mb-3 md:mb-2 break-inside-avoid">
+                <div key={index} className="mb-4 md:mb-2 break-inside-avoid group cursor-default">
                   <div className="relative w-full overflow-hidden rounded-lg border border-border bg-surface shadow-sm">
                     <Image
                       src={image.src}
                       alt={image.alt}
                       width={800}
                       height={600}
-                      className="w-full h-auto object-cover"
+                      className="w-full h-auto object-cover transition-all duration-300 md:group-hover:scale-105 md:group-hover:opacity-40"
                       sizes="(max-width: 768px) 50vw, 33vw"
                     />
+                    {/* Desktop Hover Description */}
+                    <div className="hidden md:flex absolute inset-0 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                      <p className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-foreground text-center leading-relaxed">
+                        {image.alt}
+                      </p>
+                    </div>
+                  </div>
+                  {/* Mobile Description */}
+                  <div className="md:hidden mt-2 px-1">
+                    <p className="text-[10px] font-mono uppercase tracking-[0.08em] text-muted leading-tight">
+                      {image.alt}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -94,7 +106,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-4 px-4">
-              <div className="bg-black px-4 py-2 rounded">
+              <div className="bg-zinc-900 px-4 py-2 rounded">
                 <Image
                   src="/images/main/press/sd l-01.avif"
                   alt="Something Different Magazine"
