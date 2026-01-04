@@ -47,7 +47,7 @@ export default function MediaPage() {
       <div className="container mx-auto py-8 md:py-16 max-w-5xl">
         <header className="mb-10 md:mb-12">
           <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
-            Press
+            Media / Press
           </span>
           <h1 className="text-xl md:text-2xl font-bold text-foreground tracking-tight mb-6">
             Media / Press
