@@ -130,7 +130,7 @@ export const projects: Project[] = [
       { src: "/images/sa/4ZIP TOP RENDER_Custom_View_1.png", alt: "Saint Andro Zip Top custom view", caption: "3D render custom view" },
       { src: "/images/sa/5000055980003_websize.webp", alt: "Saint Andro product photography", caption: "Product photography" },
       { src: "/images/sa/6untitled0398_expsr_faze_websize.jpg", alt: "Saint Andro editorial", caption: "Editorial" },
-      { src: "/images/sa/7Maxcam_PST00041_websize.jpg", alt: "Saint Andro fit testing", caption: "Fit testing" }
+      { src: "/images/sa/PST00088_websize.jpg", alt: "Saint Andro fit testing", caption: "Fit testing" }
     ]
   },
   {
