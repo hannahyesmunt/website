@@ -18,6 +18,13 @@ const mediaItems: MediaItem[] = [
     year: "2023",
   },
   {
+    publication: "Ferris State University",
+    title: "Saint Andro: Swimwear Designed for All",
+    description: "An in-depth feature exploring the brand narrative and design philosophy behind Saint Andro's inclusive swimwear.",
+    link: "https://www.ferris.edu/news/archive/2023/december/st-andro.htm",
+    year: "2023",
+  },
+  {
     publication: "Submission Beauty Magazine",
     title: "ADAPTATION",
     description: "Exploring how personal style adapts to climate change through upcycled and redesigned pieces. Styling by Hannah Yesmunt.",
