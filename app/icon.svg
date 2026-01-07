@@ -1,0 +1,28 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+      --bg-color: #EEF1F4;
+      --text-color: #1F2933;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #1F2933;
+        --text-color: #EEF1F4;
+      }
+    }
+    .bg { fill: var(--bg-color); }
+    .text { fill: var(--text-color); }
+  </style>
+  <rect width="32" height="32" rx="4" class="bg"/>
+  <text 
+    x="50%" 
+    y="55%" 
+    dominant-baseline="middle" 
+    text-anchor="middle" 
+    font-family="monospace" 
+    font-weight="900" 
+    font-size="14" 
+    letter-spacing="-0.5"
+    class="text"
+  >HY</text>
+</svg>

@@ -47,6 +47,10 @@ export const metadata: Metadata = {
     description: "Designer / Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
     images: ["/about/SAdetroit1.jpg"],
   },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
