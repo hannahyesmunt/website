@@ -18,19 +18,19 @@ const mediaItems: MediaItem[] = [
     year: "2024",
   },
   {
+    publication: "Esque",
+    title: "The Best Swimwear for All Genders",
+    description: "Featured Saint Andro Swimwear in an editorial selection of functional and inclusive swimwear solutions.",
+    link: "https://www.esque.us/p/the-best-swimwear-for-all-genders",
+    year: "2024",
+  },
+  {
     publication: "Creative Mornings",
     title: "Guest Speaker July 2024",
     description: "Presented on the theme of 'Trust' at CreativeMornings Grand Rapids, MI.",
     link: "https://creativemornings.com/",
     year: "2024",
     linkText: "View website",
-  },
-  {
-    publication: "Esque",
-    title: "The Best Swimwear for All Genders",
-    description: "Featured Saint Andro Swimwear in an editorial selection of functional and inclusive swimwear solutions.",
-    link: "https://www.esque.us/p/the-best-swimwear-for-all-genders",
-    year: "2024",
   },
   {
     publication: "IN Magazine",
