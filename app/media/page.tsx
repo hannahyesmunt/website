@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// Deployment Check ID: 123456
 interface MediaItem {
   publication: string;
   title: string;
