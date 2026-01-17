@@ -15,7 +15,7 @@ export default function AboutPage() {
             </h1>
             <div className="max-w-full">
               <p className="text-sm md:text-base text-foreground leading-relaxed break-words">
-                I'm a Los Angeles–based designer and product developer exploring the intersections of fashion, sports, and identity. I specialize in translating concepts into functional apparel, from technical flats and patterns to prototypes and finished garments. At the center of my work is creating designs that prioritize freedom of movement, self-expression, and play.
+                I&apos;m a Los Angeles–based designer and product developer exploring the intersections of fashion, sports, and identity. I specialize in translating concepts into functional apparel, from technical flats and patterns to prototypes and finished garments. At the center of my work is creating designs that prioritize freedom of movement, self-expression, and play.
               </p>
             </div>
           </div>

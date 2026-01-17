@@ -13,7 +13,7 @@ export default function ContactPage() {
         <div className="space-y-10 md:space-y-12">
           <div>
             <p className="text-sm md:text-base text-foreground leading-relaxed max-w-xl">
-              I'm always open to discussing new opportunities, collaborations, or answering questions about my work.
+              I&apos;m always open to discussing new opportunities, collaborations, or answering questions about my work.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 pt-10 md:pt-8 border-t border-border">
