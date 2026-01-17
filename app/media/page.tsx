@@ -11,20 +11,6 @@ interface MediaItem {
 
 const mediaItems: MediaItem[] = [
   {
-    publication: "Something Different Magazine",
-    title: "CORPCORE",
-    description: "An ironic look at corporate culture and the dreams it may crush. Collection conceived, sewn, & styled by Hannah Yesmunt & Kiernan McKay.",
-    link: "https://www.sdmag.net/post/corpcore",
-    year: "2023",
-  },
-  {
-    publication: "Ferris State University",
-    title: "Saint Andro: Swimwear Designed for All",
-    description: "An in-depth feature exploring the brand narrative and design philosophy behind Saint Andro's inclusive swimwear.",
-    link: "https://www.ferris.edu/news/archive/2023/december/st-andro.htm",
-    year: "2023",
-  },
-  {
     publication: "Submission Beauty Magazine",
     title: "ADAPTATION",
     description: "Exploring how personal style adapts to climate change through upcycled and redesigned pieces. Styling by Hannah Yesmunt.",
@@ -45,6 +31,27 @@ const mediaItems: MediaItem[] = [
     description: "Featured Saint Andro Swimwear in an editorial selection of functional and inclusive swimwear solutions.",
     link: "https://www.esque.us/p/the-best-swimwear-for-all-genders",
     year: "2024",
+  },
+  {
+    publication: "IN Magazine",
+    title: "What Ever Happened to Queer Signalling?",
+    description: "An interview and feature exploring the evolution of queer fashion and the significance of signaling within the community.",
+    link: "https://inmagazine.ca/2024/10/what-ever-happened-to-queer-signalling/",
+    year: "2024",
+  },
+  {
+    publication: "Something Different Magazine",
+    title: "CORPCORE",
+    description: "An ironic look at corporate culture and the dreams it may crush. Collection conceived, sewn, & styled by Hannah Yesmunt & Kiernan McKay.",
+    link: "https://www.sdmag.net/post/corpcore",
+    year: "2023",
+  },
+  {
+    publication: "Ferris State University",
+    title: "Saint Andro: Swimwear Designed for All",
+    description: "An in-depth feature exploring the brand narrative and design philosophy behind Saint Andro's inclusive swimwear.",
+    link: "https://www.ferris.edu/news/archive/2023/december/st-andro.htm",
+    year: "2023",
   },
 ];
 
