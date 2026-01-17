@@ -36,6 +36,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {project.brand}
           </span>
         )}
+        {project.category === "pocket-design-lab" && project.role && (
+          <span className="mt-1 text-xs font-mono uppercase tracking-[0.08em] text-muted">
+            {project.role}
+          </span>
+        )}
       </div>
     </Link>
   );

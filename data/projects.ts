@@ -174,6 +174,29 @@ export const projects: Project[] = [
     ]
   },
   {
+    slug: "corpcore",
+    title: "CORPCORE",
+    category: "pocket-design-lab",
+    year: "2024",
+    role: "Co-Creative Direction + Design",
+    thumbnail: { src: "/images/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE fashion world-building case study" },
+    overview: "Corpcore is a satirical fashion world where mundane office objects and corporate uniforms collide. Through character-driven looks, object-to-garment translation, and playful irony, the project explores how work culture becomes performance—blending convention, absurdity, and storytelling.\n\nThis project was developed as a collaborative world-building exercise, combining styling, garment design, props/graphics, and editorial image-making into one cohesive universe.",
+    responsibilities: [
+      "Co-developed the creative concept and world narrative",
+      "Led look development and styling direction",
+      "Supported garment/prop execution and storytelling from early ideation through final imagery"
+    ],
+    skills: [
+      "Creative direction",
+      "World-building",
+      "Styling",
+      "Garment design",
+      "Editorial image-making",
+      "Collaborative design"
+    ],
+    images: []
+  },
+  {
     slug: "gymnasia-imagining-new-places-to-move",
     title: "Gymnasia — Imagining New Places to Move",
     category: "pocket-design-lab",
