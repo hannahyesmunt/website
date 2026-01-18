@@ -175,7 +175,7 @@ export const projects: Project[] = [
   },
   {
     slug: "archive-to-future",
-    title: "ARCHIVE TO FUTURE",
+    title: "Conceptual Design Study",
     category: "pocket-design-lab",
     year: "2023",
     role: "Androgynous tailoring inspired by 16th century dress",
