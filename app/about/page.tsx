@@ -27,7 +27,7 @@ export default function AboutPage() {
               alt="Hannah Yesmunt"
               width={600}
               height={750}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover block"
               priority
             />
           </div>
@@ -37,7 +37,7 @@ export default function AboutPage() {
               alt="Hannah Yesmunt"
               width={600}
               height={450}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover block"
             />
           </div>
         </div>
