@@ -179,7 +179,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2023",
     role: "Conceptual Design Study",
-    thumbnail: { src: "/pocket-design-lab/archive-to-future/image-4.jpeg", alt: "ARCHIVE TO FUTURE" },
+    thumbnail: { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "ARCHIVE TO FUTURE" },
     overview: "Androgynous tailoring inspired by 16th century dress.\n\nA conceptual design study exploring how historical dress can inform modern, androgynous tailoring. Using 16th century archival references as a starting point, I translated key silhouette and proportion cues—especially the French hood—into a contemporary wearable garment. The project includes CLO 3D visualization to refine the form before physical execution.",
     responsibilities: [
       "Historical research (FIT archive reference)",
