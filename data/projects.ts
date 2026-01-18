@@ -174,6 +174,33 @@ export const projects: Project[] = [
     ]
   },
   {
+    slug: "archive-to-future",
+    title: "ARCHIVE TO FUTURE",
+    category: "pocket-design-lab",
+    year: "2026",
+    role: "Androgynous tailoring inspired by 16th century dress",
+    thumbnail: { src: "/pocket-design-lab/archive-to-future/hero-1.jpeg", alt: "ARCHIVE TO FUTURE - CLO 3D render" },
+    overview: "A conceptual design study exploring how historical dress can inform modern, androgynous tailoring. Using 16th century archival references as a starting point, I translated key silhouette and proportion cues—especially the French hood—into a contemporary wearable garment. The project includes CLO 3D visualization to refine the form before physical execution.",
+    responsibilities: [
+      "Historical research (FIT archive reference)",
+      "Androgynous silhouette development",
+      "Silhouette translation (16th century → modern uniform)",
+      "Material & trim exploration",
+      "CLO 3D garment visualization + iteration",
+      "Concept-to-wearable prototype"
+    ],
+    skills: [
+      "CLO 3D",
+      "Research / Reference Curation",
+      "Material + Trim Exploration"
+    ],
+    images: [
+      { src: "/pocket-design-lab/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "" }
+    ]
+  },
+  {
     slug: "corpcore",
     title: "CORPCORE",
     category: "pocket-design-lab",
