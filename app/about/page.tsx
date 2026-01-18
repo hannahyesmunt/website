@@ -20,13 +20,13 @@ export default function AboutPage() {
         </div>
 
         {/* Image Gallery */}
-        <div className="flex flex-col gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
           <div className="relative w-full rounded-lg border border-border bg-surface shadow-sm overflow-hidden">
             <Image
               src="/about/SAdetroit1.jpg"
               alt="Hannah Yesmunt"
-              width={800}
-              height={1000}
+              width={600}
+              height={750}
               className="w-full h-auto object-cover"
               priority
             />
@@ -35,8 +35,8 @@ export default function AboutPage() {
             <Image
               src="/about/Screenshot+2023-03-01+at+12.15.16+PM.jpeg"
               alt="Hannah Yesmunt"
-              width={800}
-              height={600}
+              width={600}
+              height={450}
               className="w-full h-auto object-cover"
             />
           </div>
