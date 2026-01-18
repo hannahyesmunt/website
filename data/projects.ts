@@ -196,7 +196,7 @@ export const projects: Project[] = [
     ],
     images: [
       { src: "/pocket-design-lab/archive-to-future/image-5-new.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Process documentation" },
-      { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "Historical reference photo" },
+      { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "CLO 3D Furturistic French Hood" },
       { src: "/pocket-design-lab/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "Final Sewn Garment" },
       { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Final sewn garment" },
       { src: "/pocket-design-lab/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
