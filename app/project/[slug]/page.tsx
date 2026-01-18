@@ -422,7 +422,7 @@ export default async function ProjectPage(
 
           <section className="mb-10 md:mb-12">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
-              {slug === "archive-to-future" ? "Key Components" : "Responsibilities"}
+              {slug === "archive-to-future" ? "Project Highlights" : "Responsibilities"}
             </span>
             <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
               {project.responsibilities.map((responsibility, index) => (
