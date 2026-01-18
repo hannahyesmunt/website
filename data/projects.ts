@@ -201,7 +201,7 @@ export const projects: Project[] = [
       { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Final sewn garment" },
       { src: "/pocket-design-lab/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Process documentation" },
       { src: "/pocket-design-lab/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Process documentation" },
-      { src: "/pocket-design-lab/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Process documentation" }
+      { src: "/pocket-design-lab/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" }
     ]
   },
   {
