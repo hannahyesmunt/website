@@ -21,7 +21,7 @@ export default function AboutPage() {
 
         {/* Image Gallery */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
-          <div className="relative w-full rounded-lg border border-border bg-surface shadow-sm overflow-hidden [&>img]:block [&>img]:m-0">
+          <div className="relative w-full rounded-lg border border-border bg-surface shadow-sm overflow-hidden p-0 [&>img]:block [&>img]:m-0 [&>img]:p-0 [&>img]:leading-none">
             <Image
               src="/about/SAdetroit1.jpg"
               alt="Hannah Yesmunt"
@@ -31,7 +31,7 @@ export default function AboutPage() {
               priority
             />
           </div>
-          <div className="relative w-full rounded-lg border border-border bg-surface shadow-sm overflow-hidden [&>img]:block [&>img]:m-0">
+          <div className="relative w-full rounded-lg border border-border bg-surface shadow-sm overflow-hidden p-0 [&>img]:block [&>img]:m-0 [&>img]:p-0 [&>img]:leading-none">
             <Image
               src="/about/Screenshot+2023-03-01+at+12.15.16+PM.jpeg"
               alt="Hannah Yesmunt"
