@@ -168,8 +168,8 @@ export default async function ProjectPage(
                         <Image
                           src={image.src}
                           alt={image.alt}
-                          width={1200}
-                          height={900}
+                          width={1000}
+                          height={750}
                           className="w-full h-auto object-cover"
                           sizes="(max-width: 768px) 50vw, 33vw"
                         />
@@ -198,17 +198,17 @@ export default async function ProjectPage(
           <div className="mt-16 mb-16">
             <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Ideation / Moodboard</h2>
             {ideationImages.length > 0 ? (
-              <div className="max-w-4xl">
+              <div className="max-w-3xl">
                 {ideationImages.map((image, index) => (
                   <figure key={index} className="mb-0">
                     <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
                       <Image
                         src={image.src}
                         alt={image.alt}
-                        width={1600}
-                        height={1200}
+                        width={1200}
+                        height={900}
                         className="w-full h-auto object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1000px"
                       />
                     </div>
                     {image.caption && (
@@ -220,7 +220,7 @@ export default async function ProjectPage(
                 ))}
               </div>
             ) : (
-              <div className="max-w-4xl">
+              <div className="max-w-3xl">
                 <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border aspect-[4/3] flex items-center justify-center">
                   <p className="text-xs font-mono tracking-[0.06em] text-muted">Ideation images placeholder</p>
                 </div>
@@ -240,8 +240,8 @@ export default async function ProjectPage(
                         <Image
                           src={image.src}
                           alt={image.alt}
-                          width={1200}
-                          height={900}
+                          width={1000}
+                          height={750}
                           className="w-full h-auto object-cover"
                           sizes="(max-width: 768px) 50vw, 33vw"
                         />

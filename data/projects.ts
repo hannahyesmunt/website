@@ -197,7 +197,13 @@ export const projects: Project[] = [
     images: [
       { src: "/pocket-design-lab/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "" },
       { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "" },
-      { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "" }
+      { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/image-4.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/image-5.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/image-6.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "" },
+      { src: "/pocket-design-lab/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "" }
     ]
   },
   {

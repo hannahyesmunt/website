@@ -13,10 +13,10 @@ export default function ImageWithCaption({ src, alt, caption }: ImageWithCaption
         <Image
           src={src}
           alt={alt}
-          width={1200}
-          height={900}
+          width={1000}
+          height={750}
           className="w-full h-auto object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1200px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 1000px"
         />
       </div>
       {caption && (
