@@ -453,42 +453,15 @@ export default async function ProjectPage(
         <div className="mt-16">
           <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
           {slug === "archive-to-future" ? (
-            <div className="grid grid-cols-1 gap-8 md:gap-12">
-              {project.images.map((image, index) => {
-                // Display hero-1.jpeg (index 0) and image-5.jpeg (index 4) side by side
-                if (index === 0) {
-                  const image5 = project.images.find(img => img.src.includes("image-5"));
-                  return (
-                    <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                      <ImageWithCaption
-                        src={image.src}
-                        alt={image.alt}
-                        caption={image.caption}
-                      />
-                      {image5 && (
-                        <ImageWithCaption
-                          src={image5.src}
-                          alt={image5.alt}
-                          caption={image5.caption}
-                        />
-                      )}
-                    </div>
-                  );
-                }
-                // Skip image-5.jpeg since it's already rendered above
-                if (image.src.includes("image-5")) {
-                  return null;
-                }
-                // Render all other images normally
-                return (
-                  <ImageWithCaption
-                    key={index}
-                    src={image.src}
-                    alt={image.alt}
-                    caption={image.caption}
-                  />
-                );
-              })}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              {project.images.map((image, index) => (
+                <ImageWithCaption
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  caption={image.caption}
+                />
+              ))}
             </div>
           ) : (
             <div className="grid grid-cols-1 gap-8 md:gap-12">
