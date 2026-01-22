@@ -371,14 +371,15 @@ export default async function ProjectPage(
 
           <div className="mt-16">
             <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
-            <div className="grid grid-cols-1 gap-8 md:gap-12">
+            <div className="columns-2 md:columns-3 gap-3 md:gap-2">
               {project.images.map((image, index) => (
-                <ImageWithCaption
-                  key={index}
-                  src={image.src}
-                  alt={image.alt}
-                  caption={image.caption}
-                />
+                <div key={index} className="break-inside-avoid [&>figure]:mb-4 [&>figure]:md:mb-2">
+                  <ImageWithCaption
+                    src={image.src}
+                    alt={image.alt}
+                    caption={image.caption}
+                  />
+                </div>
               ))}
             </div>
           </div>
