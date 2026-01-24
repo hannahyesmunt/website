@@ -288,7 +288,7 @@ export const projects: Project[] = [
       { src: "/images/pdl/trash collection/IMG_7821.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/IMG_7890.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-019.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-032.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
