@@ -181,7 +181,7 @@ export const projects: Project[] = [
     title: "WORKWEAR FIT STUDY",
     category: "pocket-design-lab",
     year: "2022",
-    role: "Fit Study / Patternmaker",
+    role: "Patternmaker / Designer",
     thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
     overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach designed for a petite frame. This project investigates how durable, structured workwear can be adapted for smaller bodies while maintaining true workwear function.",
     problem: "In-store workwear shopping revealed a significant gap: men's workwear offers durable, structured, protective silhouettes, while women's options often default to tapered fits or lightweight stretch fabrics that compromise true workwear function. This study addresses that gap through proportion-driven patternmaking and androgynous silhouette development.",
