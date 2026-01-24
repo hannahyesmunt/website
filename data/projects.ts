@@ -243,7 +243,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2023",
     role: "Designer / Patternmaker / Sewer",
-    thumbnail: { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION (Reworked)" },
+    thumbnail: { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION (Reworked)" },
     overview: "A materiality-led capsule translating Michigan's Winter-to-Spring transition into functional layers—built for dirty snow, wet sidewalks, and unpredictable temperature swings.",
     problem: "The ugliest weather period: wet, dirty snow + slush + mud + salt. Clothing gets destroyed; \"nice\" outerwear feels wrong for the environment. Need a system that embraces grime: durable, washable, non-precious. Translate seasonal transition into material shifts: insulated → lighter → translucent.",
     responsibilities: [
