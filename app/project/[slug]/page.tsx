@@ -412,6 +412,17 @@ export default async function ProjectPage(
         <div className="max-w-3xl">
           <ProjectHeader project={project} />
 
+          {project.problem && (
+            <section className="mb-10 md:mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Problem</span>
+              <div className="max-w-2xl">
+                <p className="text-xs md:text-sm text-foreground leading-relaxed">
+                  {project.problem}
+                </p>
+              </div>
+            </section>
+          )}
+
           <section className="mb-10 md:mb-12">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
             <div className="max-w-2xl">
@@ -420,6 +431,28 @@ export default async function ProjectPage(
               </p>
             </div>
           </section>
+
+          {project.researchNotes && project.researchNotes.length > 0 && (
+            <section className="mb-10 md:mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Research Notes</span>
+              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+                {project.researchNotes.map((note, index) => (
+                  <li key={index}>{note}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {project.output && project.output.length > 0 && (
+            <section className="mb-10 md:mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Prototype Capsule</span>
+              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+                {project.output.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           <section className="mb-10 md:mb-12">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
@@ -445,9 +478,17 @@ export default async function ProjectPage(
             <section className="mb-10 md:mb-12">
               <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">What I Learned</span>
               <div className="max-w-2xl">
-                <p className="text-xs md:text-sm text-muted leading-relaxed italic bg-surface p-5 md:p-6 border-l-4 border-accent rounded-r-lg">
-                  {project.whatILearned}
-                </p>
+                {Array.isArray(project.whatILearned) ? (
+                  <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+                    {project.whatILearned.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-xs md:text-sm text-muted leading-relaxed italic bg-surface p-5 md:p-6 border-l-4 border-accent rounded-r-lg">
+                    {project.whatILearned}
+                  </p>
+                )}
               </div>
             </section>
           )}

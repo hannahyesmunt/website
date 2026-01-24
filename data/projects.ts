@@ -14,12 +14,15 @@ export interface Project {
   overview: string;
   responsibilities: string[];
   skills: string[];
-  whatILearned?: string;
+  whatILearned?: string | string[];
   specs?: { label: string; value: string }[];
   designGoals?: string[];
   features?: string[];
   process?: string[];
   outcome?: string;
+  problem?: string;
+  researchNotes?: string[];
+  output?: string[];
   thumbnail?: { src: string; alt: string };
   images: ProjectImage[];
 }
@@ -171,6 +174,68 @@ export const projects: Project[] = [
       { src: "/images/IMG_5681.jpeg", alt: "Construction process", caption: "Process documentation" },
       { src: "/images/IMG_5692.jpeg", alt: "Passenger Princess Commuter Jacket back view", caption: "Final garment, back side" },
       { src: "/images/IMG_5700.jpeg", alt: "Final details and finishing", caption: "Final details" }
+    ]
+  },
+  {
+    slug: "workwear-fit-study",
+    title: "WORKWEAR FIT STUDY",
+    category: "pocket-design-lab",
+    year: "2024",
+    role: "Durable androgynous workwear designed for a 5'1\" frame.",
+    thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
+    overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach built for a 5'1\" body. This project investigates how durable, structured workwear can be adapted for shorter frames while maintaining true workwear function and protection.",
+    problem: "In-store workwear shopping (especially in Michigan) showed a major gap: men's workwear offers durable, structured, protective silhouettes, while women's workwear often defaults to tapered \"feminine\" fits or lightweight stretch options that don't align with true workwear needs. This study explores workwear proportions, protection, and functionality through a fit-first, androgynous approach built for a 5'1\" body.",
+    researchNotes: [
+      "Men's workwear prioritized durability, structure, and protection",
+      "Women's workwear often shifted toward tapered fits and lighter materials",
+      "Many \"workwear\" options for women relied on stretch fabric and legging-like construction",
+      "Fit and proportion issues were amplified for shorter bodies (5'1\")",
+      "True function demanded better silhouettes, mobility, and coverage without feminizing the design"
+    ],
+    output: [
+      "Sherpa-lined Detroit-style work jacket (hero piece)",
+      "Eisenhower-style unlined work jacket",
+      "Matching work pants (set)",
+      "Quilted chore coat",
+      "Work vest",
+      "Winter coat"
+    ],
+    responsibilities: [
+      "Fit + proportion study (5'1\" frame)",
+      "Androgynous silhouette development",
+      "Function-driven design + durability",
+      "Patternmaking + prototyping",
+      "Cut + sew garment construction",
+      "Material + trim exploration",
+      "Workwear detailing + hardware decisions"
+    ],
+    skills: [
+      "Patternmaking",
+      "Fit Study",
+      "Workwear Design",
+      "Cut + Sew Construction",
+      "Material Exploration",
+      "Prototyping"
+    ],
+    whatILearned: [
+      "Silhouette and proportion shift dramatically when scaling workwear down to a shorter frame",
+      "Workwear needs structure and protection first — aesthetics come second",
+      "Material selection (weight, drape, durability) defines perceived function",
+      "Pocket placement, collar shape, and hem length change the entire \"workwear read\"",
+      "Iteration in prototyping is the fastest way to validate fit + mobility",
+      "\"Shrink it + pink it\" fails when the end use requires durability and protection"
+    ],
+    images: [
+      { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_2823.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_2678.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Development process" },
+      { src: "/images/pdl/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Development process" },
+      { src: "/images/pdl/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Development process" },
+      { src: "/images/pdl/workwear/IMG_2685.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Development process" },
+      { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Development process" },
+      { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Development process" }
     ]
   },
   {
