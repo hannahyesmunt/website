@@ -319,7 +319,7 @@ export const projects: Project[] = [
   },
   {
     slug: "sporty-bonnet-accessory-design",
-    title: "Sporty Bonnet — Accessory Design Exploration",
+    title: "SPORTY BONNET",
     category: "pocket-design-lab",
     year: "June 2024",
     role: "Designer / Accessory Developer",
