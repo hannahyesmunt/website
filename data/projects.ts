@@ -290,7 +290,7 @@ export const projects: Project[] = [
       { src: "/images/pdl/trash collection/PDL Studio RAW-019.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-032.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final - Midweight Wind Resistant Jacket" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Wind Resistant Jacket - Reversible Side" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Final flat lay" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Wet Wind Protection Jacket" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-042.jpeg", alt: "TRASH COLLECTION process studio", caption: "Spring Jacket / Final" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" },
