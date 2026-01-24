@@ -421,6 +421,11 @@ export default async function ProjectPage(
               Androgynous tailoring inspired by 16th century dress.
             </p>
           )}
+          {slug === "trash-collection-rework" && (
+            <p className="text-sm md:text-base text-muted mb-8 -mt-4">
+              Performance-layering pieces designed for the wet, mucky thaw—made to be worn hard, not kept precious.
+            </p>
+          )}
 
           {project.problem && (
             <section className="mb-10 md:mb-12">
@@ -484,6 +489,47 @@ export default async function ProjectPage(
             </ul>
           </section>
 
+          {project.materialSystem && (
+            <section className="mb-10 md:mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Material System</span>
+              <div className="max-w-2xl">
+                <p className="text-xs md:text-sm text-foreground leading-relaxed">
+                  {project.materialSystem}
+                </p>
+              </div>
+            </section>
+          )}
+
+          {project.theCapsule && project.theCapsule.length > 0 && (
+            <section className="mb-10 md:mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">The Capsule</span>
+              <div className="max-w-2xl space-y-4">
+                {project.theCapsule.map((garment, index) => (
+                  <div key={index} className="border-b border-border pb-4 last:border-0">
+                    <h4 className="text-xs md:text-sm font-semibold text-foreground mb-1">{garment.name}</h4>
+                    <p className="text-xs md:text-sm text-muted leading-relaxed">
+                      <span className="font-medium">Material:</span> {garment.material}
+                    </p>
+                    <p className="text-xs md:text-sm text-muted leading-relaxed">
+                      <span className="font-medium">Function:</span> {garment.function}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {project.process && project.process.length > 0 && (
+            <section className="mb-10 md:mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Process</span>
+              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+                {project.process.map((step, index) => (
+                  <li key={index}>{step}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {project.whatILearned && (
             <section className="mb-10 md:mb-12">
               <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">What I Learned</span>
@@ -500,6 +546,17 @@ export default async function ProjectPage(
                   </p>
                 )}
               </div>
+            </section>
+          )}
+
+          {project.nextIterations && project.nextIterations.length > 0 && (
+            <section className="mb-10 md:mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Next Iterations</span>
+              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+                {project.nextIterations.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </section>
           )}
         </div>

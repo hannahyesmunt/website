@@ -23,6 +23,9 @@ export interface Project {
   problem?: string;
   researchNotes?: string[];
   output?: string[];
+  materialSystem?: string;
+  theCapsule?: { name: string; material: string; function: string }[];
+  nextIterations?: string[];
   thumbnail?: { src: string; alt: string };
   images: ProjectImage[];
 }
@@ -232,6 +235,81 @@ export const projects: Project[] = [
       { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
       { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
       { src: "/images/pdl/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
+    ]
+  },
+  {
+    slug: "trash-collection-rework",
+    title: "TRASH COLLECTION (Reworked)",
+    category: "pocket-design-lab",
+    year: "2023",
+    role: "Designer / Patternmaker / Sewer",
+    thumbnail: { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION (Reworked)" },
+    overview: "A materiality-led capsule translating Michigan's Winter-to-Spring transition into functional layers—built for dirty snow, wet sidewalks, and unpredictable temperature swings.",
+    problem: "The ugliest weather period: wet, dirty snow + slush + mud + salt. Clothing gets destroyed; \"nice\" outerwear feels wrong for the environment. Need a system that embraces grime: durable, washable, non-precious. Translate seasonal transition into material shifts: insulated → lighter → translucent.",
+    responsibilities: [
+      "Performance material exploration + contrast (insulation → ripstop → mesh)",
+      "Layering system design (modularity, venting, coverage)",
+      "Non-precious philosophy (garments that can get wrecked)",
+      "Silhouette + proportion experimentation",
+      "Weather function (wind, wet, thermal management)",
+      "Trim + finishing choices that support abuse + repair"
+    ],
+    skills: [
+      "Material Exploration",
+      "Layering System Design",
+      "Patternmaking",
+      "Cut + Sew Construction",
+      "Performance Textiles",
+      "Prototyping"
+    ],
+    materialSystem: "Fleece-lined snow-pant weight for cold protection. Midweight performance shells for wet wind. See-through ripstop nylon mesh as the \"spring reveal\" layer. A \"trash-looking\" material as an intentional rejection of preciousness.",
+    theCapsule: [
+      { name: "Garment 1", material: "Fleece-lined insulation", function: "Cold protection" },
+      { name: "Garment 2", material: "Performance shell", function: "Wet wind barrier" },
+      { name: "Garment 3", material: "Ripstop nylon", function: "Lightweight layer" },
+      { name: "Garment 4", material: "See-through ripstop mesh", function: "Spring reveal layer" },
+      { name: "Garment 5", material: "Performance textile", function: "Modular layering" },
+      { name: "Garment 6", material: "Durable shell", function: "Non-precious outerwear" }
+    ],
+    process: [
+      "Material research and sourcing for performance textiles",
+      "Layering system prototyping and testing",
+      "Pattern development for modular pieces",
+      "Construction refinement for durability and washability",
+      "Fit testing in actual weather conditions"
+    ],
+    whatILearned: [
+      "Material changes can tell seasonal narrative without graphics",
+      "Transparency/mesh changes proportion + layering logic",
+      "Construction choices matter most for wet/dirty wear",
+      "\"Non-precious\" intent affects design decisions (finishes, trims, durability)",
+      "Layering systems require modular thinking from the start",
+      "Weather function demands material hierarchy: insulation → shell → venting"
+    ],
+    nextIterations: [
+      "Refine mesh layer proportions and placement",
+      "Expand color palette for seasonal transition",
+      "Test additional material combinations",
+      "Develop repair-friendly construction details"
+    ],
+    images: [
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8600.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8725.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8774.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/IMG_5849.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/IMG_7670.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/IMG_7675.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/IMG_7821.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/IMG_7890.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-019.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-032.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-042.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-052.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" }
     ]
   },
   {
