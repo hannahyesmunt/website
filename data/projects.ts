@@ -290,7 +290,7 @@ export const projects: Project[] = [
   },
   {
     slug: "gymnasia-imagining-new-places-to-move",
-    title: "Gymnasia — Imagining New Places to Move",
+    title: "GYMNASIA",
     category: "pocket-design-lab",
     year: "July 2025",
     role: "Designer / Concept Developer",

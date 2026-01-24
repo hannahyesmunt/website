@@ -411,6 +411,11 @@ export default async function ProjectPage(
       <div className="container mx-auto py-8 md:py-16 max-w-5xl">
         <div className="max-w-3xl">
           <ProjectHeader project={project} />
+          {slug === "gymnasia-imagining-new-places-to-move" && (
+            <p className="text-sm md:text-base text-muted mb-8 -mt-4">
+              Imagining New Places to Move
+            </p>
+          )}
 
           {project.problem && (
             <section className="mb-10 md:mb-12">
