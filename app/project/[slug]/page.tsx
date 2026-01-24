@@ -416,6 +416,11 @@ export default async function ProjectPage(
               Imagining New Places to Move
             </p>
           )}
+          {slug === "archive-to-future" && (
+            <p className="text-sm md:text-base text-muted mb-8 -mt-4">
+              Androgynous tailoring inspired by 16th century dress.
+            </p>
+          )}
 
           {project.problem && (
             <section className="mb-10 md:mb-12">
