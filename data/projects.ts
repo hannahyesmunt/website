@@ -285,12 +285,6 @@ export const projects: Project[] = [
       "\"Non-precious\" intent affects design decisions (finishes, trims, durability)",
       "Layering systems require modular thinking from the start"
     ],
-    nextIterations: [
-      "Refine mesh layer proportions and placement",
-      "Expand color palette for seasonal transition",
-      "Test additional material combinations",
-      "Develop repair-friendly construction details"
-    ],
     images: [
       { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
       { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8600.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
