@@ -421,11 +421,6 @@ export default async function ProjectPage(
               Androgynous tailoring inspired by 16th century dress.
             </p>
           )}
-          {slug === "trash-collection-rework" && (
-            <p className="text-sm md:text-base text-muted mb-8 -mt-4">
-              Performance-layering pieces designed for the wet, mucky thaw—made to be worn hard, not kept precious.
-            </p>
-          )}
 
           <section className="mb-10 md:mb-12">
             <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
