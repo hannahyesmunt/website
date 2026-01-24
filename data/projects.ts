@@ -293,7 +293,7 @@ export const projects: Project[] = [
       { src: "/images/pdl/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-042.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" },
       { src: "/images/pdl/trash collection/PDL Studio RAW-052.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" }
     ]
   },
