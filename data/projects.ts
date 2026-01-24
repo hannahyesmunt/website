@@ -225,7 +225,6 @@ export const projects: Project[] = [
     ],
     images: [
       { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_2823.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
       { src: "/images/pdl/workwear/IMG_2678.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
       { src: "/images/pdl/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
       { src: "/images/pdl/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Development process" },
