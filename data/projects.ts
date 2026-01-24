@@ -197,8 +197,7 @@ export const projects: Project[] = [
       "Eisenhower-style unlined work jacket",
       "Matching work pants (set)",
       "Quilted chore coat",
-      "Work vest",
-      "Winter coat"
+      "Work vest"
     ],
     responsibilities: [
       "Fit and proportion study for petite frames",
