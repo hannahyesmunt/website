@@ -283,7 +283,7 @@ export const projects: Project[] = [
       { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8725.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
       { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8774.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
       { src: "/images/pdl/trash collection/IMG_5849.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/pdl/trash collection/IMG_7670.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/IMG_7670.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
       { src: "/images/pdl/trash collection/IMG_7675.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/IMG_7821.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
       { src: "/images/pdl/trash collection/IMG_7890.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
