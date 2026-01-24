@@ -193,7 +193,7 @@ export const projects: Project[] = [
       "True function demanded better silhouettes, mobility, and coverage without feminizing the design"
     ],
     output: [
-      "Sherpa-lined Detroit-style work jacket (hero piece)",
+      "Sherpa-lined Detroit-style winter jacket",
       "Eisenhower-style unlined work jacket",
       "Matching work pants (set)",
       "Quilted chore coat",
