@@ -427,6 +427,15 @@ export default async function ProjectPage(
             </p>
           )}
 
+          <section className="mb-10 md:mb-12">
+            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
+            <div className="max-w-2xl">
+              <p className="text-xs md:text-sm text-foreground leading-relaxed">
+                {project.overview}
+              </p>
+            </div>
+          </section>
+
           {project.problem && (
             <section className="mb-10 md:mb-12">
               <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Problem</span>
@@ -437,15 +446,6 @@ export default async function ProjectPage(
               </div>
             </section>
           )}
-
-          <section className="mb-10 md:mb-12">
-            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
-            <div className="max-w-2xl">
-              <p className="text-xs md:text-sm text-foreground leading-relaxed">
-                {project.overview}
-              </p>
-            </div>
-          </section>
 
           {project.researchNotes && project.researchNotes.length > 0 && (
             <section className="mb-10 md:mb-12">
