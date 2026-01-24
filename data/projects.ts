@@ -263,14 +263,6 @@ export const projects: Project[] = [
       "Prototyping"
     ],
     materialSystem: "Fleece-lined snow-pant weight for cold protection. Midweight performance shells for wet wind. See-through ripstop nylon mesh as the \"spring reveal\" layer. A \"trash-looking\" material as an intentional rejection of preciousness.",
-    theCapsule: [
-      { name: "Garment 1", material: "Fleece-lined insulation", function: "Cold protection" },
-      { name: "Garment 2", material: "Performance shell", function: "Wet wind barrier" },
-      { name: "Garment 3", material: "Ripstop nylon", function: "Lightweight layer" },
-      { name: "Garment 4", material: "See-through ripstop mesh", function: "Spring reveal layer" },
-      { name: "Garment 5", material: "Performance textile", function: "Modular layering" },
-      { name: "Garment 6", material: "Durable shell", function: "Non-precious outerwear" }
-    ],
     process: [
       "Material research and sourcing for performance textiles",
       "Layering system prototyping and testing",
