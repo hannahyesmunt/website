@@ -239,7 +239,7 @@ export const projects: Project[] = [
   },
   {
     slug: "trash-collection-rework",
-    title: "TRASH COLLECTION (Reworked)",
+    title: "SLUSHWORLD",
     category: "pocket-design-lab",
     year: "2023",
     role: "Designer / Patternmaker / Sewer",
