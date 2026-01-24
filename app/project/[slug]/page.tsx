@@ -512,6 +512,28 @@ export default async function ProjectPage(
                 />
               ))}
             </div>
+          ) : slug === "gymnasia-imagining-new-places-to-move" ? (
+            <div className="grid grid-cols-1 gap-8 md:gap-12 max-w-4xl">
+              {project.images.map((image, index) => (
+                <figure key={index} className="mb-0">
+                  <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={1600}
+                      height={1200}
+                      className="w-full h-auto object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1200px"
+                    />
+                  </div>
+                  {image.caption && (
+                    <figcaption className="mt-3 px-2 text-xs font-mono tracking-[0.06em] text-muted text-center leading-relaxed">
+                      {image.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              ))}
+            </div>
           ) : (
             <div className="columns-2 md:columns-3 gap-3 md:gap-2">
               {project.images.map((image, index) => {
