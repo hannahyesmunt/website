@@ -183,13 +183,13 @@ export const projects: Project[] = [
     year: "2024",
     role: "Fit Study / Patternmaker",
     thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
-    overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach built for a 5'1\" body. This project investigates how durable, structured workwear can be adapted for shorter frames while maintaining true workwear function and protection.",
-    problem: "In-store workwear shopping (especially in Michigan) showed a major gap: men's workwear offers durable, structured, protective silhouettes, while women's workwear often defaults to tapered \"feminine\" fits or lightweight stretch options that don't align with true workwear needs. This study explores workwear proportions, protection, and functionality through a fit-first, androgynous approach built for a 5'1\" body.",
+    overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach designed for a petite frame. This project investigates how durable, structured workwear can be adapted for smaller bodies while maintaining true workwear function.",
+    problem: "In-store workwear shopping revealed a significant gap: men's workwear offers durable, structured, protective silhouettes, while women's options often default to tapered fits or lightweight stretch fabrics that compromise true workwear function. This study addresses that gap through proportion-driven patternmaking and androgynous silhouette development.",
     researchNotes: [
       "Men's workwear prioritized durability, structure, and protection",
       "Women's workwear often shifted toward tapered fits and lighter materials",
-      "Many \"workwear\" options for women relied on stretch fabric and legging-like construction",
-      "Fit and proportion issues were amplified for shorter bodies (5'1\")",
+      "Many options for women relied on stretch fabric and legging-like construction",
+      "Fit and proportion issues were amplified for petite frames",
       "True function demanded better silhouettes, mobility, and coverage without feminizing the design"
     ],
     output: [
@@ -201,13 +201,13 @@ export const projects: Project[] = [
       "Winter coat"
     ],
     responsibilities: [
-      "Fit + proportion study (5'1\" frame)",
+      "Fit and proportion study for petite frames",
       "Androgynous silhouette development",
-      "Function-driven design + durability",
-      "Patternmaking + prototyping",
-      "Cut + sew garment construction",
-      "Material + trim exploration",
-      "Workwear detailing + hardware decisions"
+      "Function-driven design and durability testing",
+      "Patternmaking and prototyping",
+      "Cut and sew garment construction",
+      "Material and trim exploration",
+      "Workwear detailing and hardware selection"
     ],
     skills: [
       "Patternmaking",
@@ -218,12 +218,12 @@ export const projects: Project[] = [
       "Prototyping"
     ],
     whatILearned: [
-      "Silhouette and proportion shift dramatically when scaling workwear down to a shorter frame",
-      "Workwear needs structure and protection first — aesthetics come second",
+      "Silhouette and proportion shift dramatically when scaling workwear for smaller frames",
+      "Structure and protection must come first — aesthetics follow function",
       "Material selection (weight, drape, durability) defines perceived function",
-      "Pocket placement, collar shape, and hem length change the entire \"workwear read\"",
-      "Iteration in prototyping is the fastest way to validate fit + mobility",
-      "\"Shrink it + pink it\" fails when the end use requires durability and protection"
+      "Pocket placement, collar shape, and hem length define the overall workwear read",
+      "Iterative prototyping is the fastest path to validating fit and mobility",
+      "\"Shrink it and pink it\" fails when durability and protection are the core requirements"
     ],
     images: [
       { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
