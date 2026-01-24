@@ -230,7 +230,8 @@ export const projects: Project[] = [
       { src: "/images/pdl/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Sherpa lining close up" },
       { src: "/images/pdl/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
       { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
-      { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" }
+      { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
+      { src: "/images/pdl/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
     ]
   },
   {
