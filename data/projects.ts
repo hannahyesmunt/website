@@ -217,7 +217,6 @@ export const projects: Project[] = [
       "Prototyping"
     ],
     whatILearned: [
-      "Silhouette and proportion shift dramatically when scaling workwear for smaller frames",
       "Structure and protection must come first — aesthetics follow function",
       "Material selection (weight, drape, durability) defines perceived function",
       "Pocket placement, collar shape, and hem length define the overall workwear read",
