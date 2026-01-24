@@ -283,8 +283,7 @@ export const projects: Project[] = [
       "Transparency/mesh changes proportion + layering logic",
       "Construction choices matter most for wet/dirty wear",
       "\"Non-precious\" intent affects design decisions (finishes, trims, durability)",
-      "Layering systems require modular thinking from the start",
-      "Weather function demands material hierarchy: insulation → shell → venting"
+      "Layering systems require modular thinking from the start"
     ],
     nextIterations: [
       "Refine mesh layer proportions and placement",
