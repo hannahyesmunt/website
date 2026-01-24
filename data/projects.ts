@@ -180,7 +180,7 @@ export const projects: Project[] = [
     slug: "workwear-fit-study",
     title: "WORKWEAR FIT STUDY",
     category: "pocket-design-lab",
-    year: "2024",
+    year: "2022",
     role: "Fit Study / Patternmaker",
     thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
     overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach designed for a petite frame. This project investigates how durable, structured workwear can be adapted for smaller bodies while maintaining true workwear function.",
