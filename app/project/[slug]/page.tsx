@@ -508,17 +508,44 @@ export default async function ProjectPage(
               ))}
             </div>
           ) : (
-            <div className="columns-2 md:columns-3 gap-3 md:gap-2">
-              {project.images.map((image, index) => (
-                <div key={index} className="break-inside-avoid [&>figure]:mb-4 [&>figure]:md:mb-2">
-                  <ImageWithCaption
-                    src={image.src}
-                    alt={image.alt}
-                    caption={image.caption}
-                  />
+            <>
+              <div className="columns-2 md:columns-3 gap-3 md:gap-2">
+                {project.images.map((image, index) => {
+                  const isMewoBackground = image.src.includes("mewobackground");
+                  if (isMewoBackground) return null;
+                  return (
+                    <div key={index} className="break-inside-avoid [&>figure]:mb-4 [&>figure]:md:mb-2">
+                      <ImageWithCaption
+                        src={image.src}
+                        alt={image.alt}
+                        caption={image.caption}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+              {project.images.find(img => img.src.includes("mewobackground")) && (
+                <div className="mt-8 md:mt-12 max-w-4xl mx-auto">
+                  <figure className="mb-4">
+                    <div className="relative w-full overflow-hidden">
+                      <Image
+                        src={project.images.find(img => img.src.includes("mewobackground"))!.src}
+                        alt={project.images.find(img => img.src.includes("mewobackground"))!.alt}
+                        width={1600}
+                        height={1200}
+                        className="w-full h-auto"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1200px"
+                      />
+                    </div>
+                    {project.images.find(img => img.src.includes("mewobackground"))?.caption && (
+                      <figcaption className="mt-3 px-2 text-xs font-mono tracking-[0.06em] text-muted text-center leading-relaxed">
+                        {project.images.find(img => img.src.includes("mewobackground"))!.caption}
+                      </figcaption>
+                    )}
+                  </figure>
                 </div>
-              ))}
-            </div>
+              )}
+            </>
           )}
         </div>
       </div>
