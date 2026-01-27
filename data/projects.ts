@@ -352,37 +352,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    slug: "archive-to-future",
-    title: "ARCHIVE TO FUTURE",
-    category: "pocket-design-lab",
-    year: "2023",
-    role: "Designer / Researcher",
-    thumbnail: { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "ARCHIVE TO FUTURE" },
-    overview: "A conceptual design study exploring how historical dress can inform modern, androgynous tailoring. Using 16th century archival references as a starting point, I translated key silhouette and proportion cues—especially the French hood—into a contemporary wearable garment. The project includes CLO 3D visualization to refine the form before physical execution.",
-    responsibilities: [
-      "Historical research (FIT archive reference)",
-      "Androgynous silhouette development",
-      "Silhouette translation (16th century → modern uniform)",
-      "Material & trim exploration",
-      "CLO 3D garment visualization + iteration",
-      "Concept-to-wearable prototype"
-    ],
-    skills: [
-      "CLO 3D",
-      "Research / Reference Curation",
-      "Material + Trim Exploration"
-    ],
-    images: [
-      { src: "/pocket-design-lab/archive-to-future/image-5-new.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "CLO 3D Futuristic French Hood" },
-      { src: "/pocket-design-lab/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "Final Sewn Garment" },
-      { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" }
-    ]
-  },
-  {
     slug: "gymnasia-imagining-new-places-to-move",
     title: "GYMNASIA",
     category: "pocket-design-lab",
