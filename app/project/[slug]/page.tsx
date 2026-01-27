@@ -57,51 +57,51 @@ export default async function ProjectPage(
   if (slug === "corpcore") {
     // Hero images array
     const heroImages: { src: string; alt: string; caption?: string }[] = [
-      { src: "/images/corpcore/hero/Corpcore2001-0771_expsr.jpg", alt: "CORPCORE editorial image", caption: "" },
-      { src: "/images/corpcore/hero/Corpcore2001-1236_expsr.jpg", alt: "CORPCORE editorial image", caption: "" },
-      { src: "/images/corpcore/hero/corpLadderDepartment1.jpg", alt: "CORPCORE Corporate Ladder Department", caption: "" },
-      { src: "/images/corpcore/hero/corpLadderDepartment2.jpg", alt: "CORPCORE Corporate Ladder Department", caption: "" },
-      { src: "/images/corpcore/hero/corporateAthlete1.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
-      { src: "/images/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
-      { src: "/images/corpcore/hero/corporateAthlete3.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
-      { src: "/images/corpcore/hero/intern1.jpg", alt: "CORPCORE Intern", caption: "" },
-      { src: "/images/corpcore/hero/intern2.jpg", alt: "CORPCORE Intern", caption: "" },
-      { src: "/images/corpcore/hero/IThelp1.jpg", alt: "CORPCORE IT Help", caption: "" },
-      { src: "/images/corpcore/hero/IThelp2.jpg", alt: "CORPCORE IT Help", caption: "" },
-      { src: "/images/corpcore/hero/IThelp3.jpg", alt: "CORPCORE IT Help", caption: "" },
-      { src: "/images/corpcore/hero/Mr.Corp1.jpg", alt: "CORPCORE Mr. Corp", caption: "" },
-      { src: "/images/corpcore/hero/Mr.Corp2.jpg", alt: "CORPCORE Mr. Corp", caption: "" },
-      { src: "/images/corpcore/hero/secretarysitwear1.jpg", alt: "CORPCORE Secretary Sitwear", caption: "" },
-      { src: "/images/corpcore/hero/secretarysitwear2.jpg", alt: "CORPCORE Secretary Sitwear", caption: "" },
-      { src: "/images/corpcore/hero/tieGuy1.jpg", alt: "CORPCORE Tie Guy", caption: "" },
-      { src: "/images/corpcore/hero/tieGuy2.jpg", alt: "CORPCORE Tie Guy", caption: "" },
-      { src: "/images/corpcore/hero/tieGuy3.jpg", alt: "CORPCORE Tie Guy", caption: "" },
+      { src: "/images/PDL/corpcore/hero/Corpcore2001-0771_expsr.jpg", alt: "CORPCORE editorial image", caption: "" },
+      { src: "/images/PDL/corpcore/hero/Corpcore2001-1236_expsr.jpg", alt: "CORPCORE editorial image", caption: "" },
+      { src: "/images/PDL/corpcore/hero/corpLadderDepartment1.jpg", alt: "CORPCORE Corporate Ladder Department", caption: "" },
+      { src: "/images/PDL/corpcore/hero/corpLadderDepartment2.jpg", alt: "CORPCORE Corporate Ladder Department", caption: "" },
+      { src: "/images/PDL/corpcore/hero/corporateAthlete1.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
+      { src: "/images/PDL/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
+      { src: "/images/PDL/corpcore/hero/corporateAthlete3.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
+      { src: "/images/PDL/corpcore/hero/intern1.jpg", alt: "CORPCORE Intern", caption: "" },
+      { src: "/images/PDL/corpcore/hero/intern2.jpg", alt: "CORPCORE Intern", caption: "" },
+      { src: "/images/PDL/corpcore/hero/IThelp1.jpg", alt: "CORPCORE IT Help", caption: "" },
+      { src: "/images/PDL/corpcore/hero/IThelp2.jpg", alt: "CORPCORE IT Help", caption: "" },
+      { src: "/images/PDL/corpcore/hero/IThelp3.jpg", alt: "CORPCORE IT Help", caption: "" },
+      { src: "/images/PDL/corpcore/hero/Mr.Corp1.jpg", alt: "CORPCORE Mr. Corp", caption: "" },
+      { src: "/images/PDL/corpcore/hero/Mr.Corp2.jpg", alt: "CORPCORE Mr. Corp", caption: "" },
+      { src: "/images/PDL/corpcore/hero/secretarysitwear1.jpg", alt: "CORPCORE Secretary Sitwear", caption: "" },
+      { src: "/images/PDL/corpcore/hero/secretarysitwear2.jpg", alt: "CORPCORE Secretary Sitwear", caption: "" },
+      { src: "/images/PDL/corpcore/hero/tieGuy1.jpg", alt: "CORPCORE Tie Guy", caption: "" },
+      { src: "/images/PDL/corpcore/hero/tieGuy2.jpg", alt: "CORPCORE Tie Guy", caption: "" },
+      { src: "/images/PDL/corpcore/hero/tieGuy3.jpg", alt: "CORPCORE Tie Guy", caption: "" },
     ];
 
     // Ideation / Moodboard images array
     const ideationImages: { src: string; alt: string; caption?: string }[] = [
-      { src: "/images/corpcore/process/PNG image.jpeg", alt: "CORPCORE ideation and moodboard", caption: "" },
+      { src: "/images/PDL/corpcore/process/PNG image.jpeg", alt: "CORPCORE ideation and moodboard", caption: "" },
     ];
 
     // Process images array
     const processImages: { src: string; alt: string; caption?: string }[] = [
-      { src: "/images/corpcore/process/Corpcore_LeighAnnCobb-151.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Corpcore_LeighAnnCobb-154 (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/IMG_5640.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/IMG_6575.jpg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/IMG_6579.jpg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/IMG_8955.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/IMG_8999.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/IMG_9393.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/PNG image (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-2-gDONG.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-2-OCkiG.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-2-OGjeD.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-2-wxw22 (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-2-wxw22.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-3.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-4-LYWb1.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/corpcore/process/Unknown-5-7h7lV.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Corpcore_LeighAnnCobb-151.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Corpcore_LeighAnnCobb-154 (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/IMG_5640.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/IMG_6575.jpg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/IMG_6579.jpg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/IMG_8955.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/IMG_8999.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/IMG_9393.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/PNG image (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-2-gDONG.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-2-OCkiG.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-2-OGjeD.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-2-wxw22 (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-2-wxw22.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-3.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-4-LYWb1.jpeg", alt: "CORPCORE process documentation", caption: "" },
+      { src: "/images/PDL/corpcore/process/Unknown-5-7h7lV.jpeg", alt: "CORPCORE process documentation", caption: "" },
     ];
 
     return (
@@ -569,7 +569,7 @@ export default async function ProjectPage(
                 />
               ))}
             </div>
-          ) : slug === "gymnasia-imagining-new-places-to-move" ? (
+          ) : slug === "gymnasia-imagining-new-places-to-move" || slug === "sporty-bonnet-accessory-design" ? (
             <div className="grid grid-cols-1 gap-8 md:gap-12 max-w-4xl">
               {project.images.map((image, index) => (
                 <figure key={index} className="mb-0">

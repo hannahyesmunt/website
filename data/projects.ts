@@ -60,18 +60,18 @@ export const projects: Project[] = [
     ],
     whatILearned: "Developing at scale sharpened my ability to balance design intent with cost, materials, and production constraints—skills I now apply to smaller, more experimental projects as well.",
     images: [
-      { src: "/images/skechers/final%20images/550430447_17934039627086715_8389909274568741390_n.jpg", alt: "Skechers final product", caption: "Final product" },
-      { src: "/images/skechers/final%20images/590402588_17942281062086715_2578124886817200815_n.jpg", alt: "Skechers final product", caption: "Final product" },
-      { src: "/images/skechers/final%20images/1753985055479.jpeg", alt: "Skechers final product", caption: "Final product" },
-      { src: "/images/skechers/final%20images/JA297_BLK.avif", alt: "Skechers final product", caption: "Final product" },
-      { src: "/images/skechers/IMG_3907.jpeg", alt: "Skechers development process", caption: "Development process" },
-      { src: "/images/skechers/IMG_4286.jpeg", alt: "Skechers development process", caption: "Development process" },
-      { src: "/images/skechers/IMG_4431.jpeg", alt: "Skechers development process", caption: "Development process" },
-      { src: "/images/skechers/IMG_4512.jpeg", alt: "Skechers development process", caption: "Development process" },
-      { src: "/images/skechers/IMG_4631.jpeg", alt: "Skechers development process", caption: "Development process" },
-      { src: "/images/skechers/IMG_4720.jpeg", alt: "Skechers development process", caption: "Development process" },
-      { src: "/images/skechers/IMG_4724.jpeg", alt: "Skechers development process", caption: "Development process" },
-      { src: "/images/skechers/IMG_4725.jpeg", alt: "Skechers development process", caption: "Development process" }
+      { src: "/images/professional/skechers/final%20images/550430447_17934039627086715_8389909274568741390_n.jpg", alt: "Skechers final product", caption: "Final product" },
+      { src: "/images/professional/skechers/final%20images/590402588_17942281062086715_2578124886817200815_n.jpg", alt: "Skechers final product", caption: "Final product" },
+      { src: "/images/professional/skechers/final%20images/1753985055479.jpeg", alt: "Skechers final product", caption: "Final product" },
+      { src: "/images/professional/skechers/final%20images/JA297_BLK.avif", alt: "Skechers final product", caption: "Final product" },
+      { src: "/images/professional/skechers/IMG_3907.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/professional/skechers/IMG_4286.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/professional/skechers/IMG_4431.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/professional/skechers/IMG_4512.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/professional/skechers/IMG_4631.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/professional/skechers/IMG_4720.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/professional/skechers/IMG_4724.jpeg", alt: "Skechers development process", caption: "Development process" },
+      { src: "/images/professional/skechers/IMG_4725.jpeg", alt: "Skechers development process", caption: "Development process" }
     ]
   },
   {
@@ -130,13 +130,13 @@ export const projects: Project[] = [
       "CLO 3D garment visualization and virtual prototyping"
     ],
     images: [
-      { src: "/images/sa/1sa.png", alt: "Saint Andro Oh Cool Compression Zip Top", caption: "Conceptual ideation" },
-      { src: "/images/sa/2ST.A S1.4 ZIP UP TOP.png", alt: "Saint Andro Zip Up Top technical flat", caption: "Technical flat" },
-      { src: "/images/sa/3ZIP TOP RENDER.png", alt: "Saint Andro Zip Top render", caption: "3D render" },
-      { src: "/images/sa/4ZIP TOP RENDER_Custom_View_1.png", alt: "Saint Andro Zip Top custom view", caption: "3D render custom view" },
-      { src: "/images/sa/5000055980003_websize.webp", alt: "Saint Andro product photography", caption: "Product photography" },
-      { src: "/images/sa/6untitled0398_expsr_faze_websize.jpg", alt: "Saint Andro editorial", caption: "Editorial" },
-      { src: "/images/sa/PST00088_websize.jpg", alt: "Saint Andro fit testing", caption: "Fit testing" }
+      { src: "/images/professional/sa/1sa.png", alt: "Saint Andro Oh Cool Compression Zip Top", caption: "Conceptual ideation" },
+      { src: "/images/professional/sa/2ST.A S1.4 ZIP UP TOP.png", alt: "Saint Andro Zip Up Top technical flat", caption: "Technical flat" },
+      { src: "/images/professional/sa/3ZIP TOP RENDER.png", alt: "Saint Andro Zip Top render", caption: "3D render" },
+      { src: "/images/professional/sa/4ZIP TOP RENDER_Custom_View_1.png", alt: "Saint Andro Zip Top custom view", caption: "3D render custom view" },
+      { src: "/images/professional/sa/5000055980003_websize.webp", alt: "Saint Andro product photography", caption: "Product photography" },
+      { src: "/images/professional/sa/6untitled0398_expsr_faze_websize.jpg", alt: "Saint Andro editorial", caption: "Editorial" },
+      { src: "/images/professional/sa/PST00088_websize.jpg", alt: "Saint Andro fit testing", caption: "Fit testing" }
     ]
   },
   {
@@ -167,16 +167,16 @@ export const projects: Project[] = [
       "Concept-to-pattern execution"
     ],
     images: [
-      { src: "/images/IMG_5703.jpeg", alt: "Passenger Princess Commuter Jacket front view", caption: "Final garment" },
-      { src: "/images/IMG_5578.jpeg", alt: "Pattern drafting process", caption: "Pattern drafting" },
-      { src: "/images/IMG_5650.jpeg", alt: "Fit testing session", caption: "Fit testing" },
-      { src: "/images/IMG_5654.jpeg", alt: "Pattern card documentation", caption: "Pattern card" },
-      { src: "/images/IMG_5655 2.jpeg", alt: "Extended sleeve cap with darts", caption: "Extended sleeve cap with darts" },
-      { src: "/images/IMG_5662 2.jpeg", alt: "Final patterns laid out", caption: "Final patterns" },
-      { src: "/images/IMG_5677.jpeg", alt: "Reflective piping detail", caption: "Detail work" },
-      { src: "/images/IMG_5681.jpeg", alt: "Construction process", caption: "Process documentation" },
-      { src: "/images/IMG_5692.jpeg", alt: "Passenger Princess Commuter Jacket back view", caption: "Final garment, back side" },
-      { src: "/images/IMG_5700.jpeg", alt: "Final details and finishing", caption: "Final details" }
+      { src: "/images/technical/IMG_5703.jpeg", alt: "Passenger Princess Commuter Jacket front view", caption: "Final garment" },
+      { src: "/images/technical/IMG_5578.jpeg", alt: "Pattern drafting process", caption: "Pattern drafting" },
+      { src: "/images/technical/IMG_5650.jpeg", alt: "Fit testing session", caption: "Fit testing" },
+      { src: "/images/technical/IMG_5654.jpeg", alt: "Pattern card documentation", caption: "Pattern card" },
+      { src: "/images/technical/IMG_5655 2.jpeg", alt: "Extended sleeve cap with darts", caption: "Extended sleeve cap with darts" },
+      { src: "/images/technical/IMG_5662 2.jpeg", alt: "Final patterns laid out", caption: "Final patterns" },
+      { src: "/images/technical/IMG_5677.jpeg", alt: "Reflective piping detail", caption: "Detail work" },
+      { src: "/images/technical/IMG_5681.jpeg", alt: "Construction process", caption: "Process documentation" },
+      { src: "/images/technical/IMG_5692.jpeg", alt: "Passenger Princess Commuter Jacket back view", caption: "Final garment, back side" },
+      { src: "/images/technical/IMG_5700.jpeg", alt: "Final details and finishing", caption: "Final details" }
     ]
   },
   {
@@ -185,7 +185,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2024",
     role: "Co-Creative Director / Designer",
-    thumbnail: { src: "/images/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE fashion world-building case study" },
+    thumbnail: { src: "/images/PDL/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE fashion world-building case study" },
     overview: "Corpcore is a satirical fashion world where mundane office objects and corporate uniforms collide. Through character-driven looks, object-to-garment translation, and playful irony, the project explores how work culture becomes performance—blending convention, absurdity, and storytelling.\n\nThis project was developed as a collaborative world-building exercise, combining styling, garment design, props/graphics, and editorial image-making into one cohesive universe.",
     responsibilities: [
       "Co-developed the creative concept and world narrative",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2023",
     role: "Designer / Patternmaker / Sewer",
-    thumbnail: { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION (Reworked)" },
+    thumbnail: { src: "/images/PDL/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION (Reworked)" },
     overview: "A materiality-led capsule translating Michigan's Winter-to-Spring transition into functional layers—built for dirty snow, wet sidewalks, and unpredictable temperature swings.",
     problem: "The ugliest weather period: wet, dirty snow + slush + mud + salt. Clothing gets destroyed; \"nice\" outerwear feels wrong for the environment. Need a system that embraces grime: durable, washable, non-precious.",
     responsibilities: [
@@ -243,23 +243,23 @@ export const projects: Project[] = [
       "Layering systems require modular thinking from the start"
     ],
     images: [
-      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8600.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8725.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8774.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/pdl/trash collection/IMG_5849.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/pdl/trash collection/IMG_7670.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
-      { src: "/images/pdl/trash collection/IMG_7675.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
-      { src: "/images/pdl/trash collection/IMG_7821.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/pdl/trash collection/IMG_7890.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-019.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-032.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final - Midweight Wind Resistant Jacket" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Final flat lay" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Reversible Side" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-042.jpeg", alt: "TRASH COLLECTION process studio", caption: "Spring Jacket / Final" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" },
-      { src: "/images/pdl/trash collection/PDL Studio RAW-052.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" }
+      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8600.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8725.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8774.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/PDL/trash collection/IMG_5849.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/PDL/trash collection/IMG_7670.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
+      { src: "/images/PDL/trash collection/IMG_7675.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
+      { src: "/images/PDL/trash collection/IMG_7821.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/PDL/trash collection/IMG_7890.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-019.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-032.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final - Midweight Wind Resistant Jacket" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Final flat lay" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Reversible Side" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-042.jpeg", alt: "TRASH COLLECTION process studio", caption: "Spring Jacket / Final" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" },
+      { src: "/images/PDL/trash collection/PDL Studio RAW-052.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" }
     ]
   },
   {
@@ -268,7 +268,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2023",
     role: "Designer / Researcher",
-    thumbnail: { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "ARCHIVE TO FUTURE" },
+    thumbnail: { src: "/images/PDL/archive-to-future/reference-1.jpeg", alt: "ARCHIVE TO FUTURE" },
     overview: "A conceptual design study exploring how historical dress can inform modern, androgynous tailoring. Using 16th century archival references as a starting point, I translated key silhouette and proportion cues—especially the French hood—into a contemporary wearable garment. The project includes CLO 3D visualization to refine the form before physical execution.",
     responsibilities: [
       "Historical research (FIT archive reference)",
@@ -284,13 +284,13 @@ export const projects: Project[] = [
       "Material + Trim Exploration"
     ],
     images: [
-      { src: "/pocket-design-lab/archive-to-future/image-5-new.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "CLO 3D Futuristic French Hood" },
-      { src: "/pocket-design-lab/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "Final Sewn Garment" },
-      { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/pocket-design-lab/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" }
+      { src: "/images/PDL/archive-to-future/image-5-new.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/images/PDL/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "CLO 3D Futuristic French Hood" },
+      { src: "/images/PDL/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "Final Sewn Garment" },
+      { src: "/images/PDL/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Historical Reference Photo" },
+      { src: "/images/PDL/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/images/PDL/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/images/PDL/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" }
     ]
   },
   {
@@ -299,7 +299,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2022",
     role: "Designer / Patternmaker / Sewer",
-    thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
+    thumbnail: { src: "/images/PDL/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
     overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach designed for a petite frame. This project investigates how durable, structured workwear can be adapted for smaller bodies while maintaining true workwear function.",
     problem: "In-store workwear shopping revealed a significant gap: men's workwear offers durable, structured, protective silhouettes, while women's options often default to tapered fits or lightweight stretch fabrics that compromise true workwear function. This study addresses that gap through proportion-driven patternmaking and androgynous silhouette development.",
     researchNotes: [
@@ -341,14 +341,14 @@ export const projects: Project[] = [
       "\"Shrink it and pink it\" fails when durability and protection are the core requirements"
     ],
     images: [
-      { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Sherpa lining close up" },
-      { src: "/images/pdl/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
-      { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
-      { src: "/images/pdl/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
+      { src: "/images/PDL/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
+      { src: "/images/PDL/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
+      { src: "/images/PDL/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
+      { src: "/images/PDL/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Sherpa lining close up" },
+      { src: "/images/PDL/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
+      { src: "/images/PDL/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
+      { src: "/images/PDL/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
+      { src: "/images/PDL/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
     ]
   },
   {
@@ -375,9 +375,9 @@ export const projects: Project[] = [
       "Narrative storytelling"
     ],
     images: [
-      { src: "/gymnasia/GYMNASIA.jpeg", alt: "Gymnasia conceptual space", caption: "Conceptual fitness space" },
-      { src: "/gymnasia/gymnasia+exterior+2.png", alt: "Gymnasia exterior concept", caption: "Exterior concept" },
-      { src: "/gymnasia/Screenshot+2025-07-27+at+5.07.14 PM.png", alt: "Gymnasia visual exploration", caption: "Visual exploration" }
+      { src: "/images/PDL/gymnasia/GYMNASIA.jpeg", alt: "Gymnasia conceptual space", caption: "Conceptual fitness space" },
+      { src: "/images/PDL/gymnasia/gymnasia+exterior+2.png", alt: "Gymnasia exterior concept", caption: "Exterior concept" },
+      { src: "/images/PDL/gymnasia/Screenshot+2025-07-27+at+5.07.14 PM.png", alt: "Gymnasia visual exploration", caption: "Visual exploration" }
     ]
   },
   {
@@ -404,9 +404,9 @@ export const projects: Project[] = [
       "Styling and visual presentation"
     ],
     images: [
-      { src: "/sportybonnet/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Contemporary technical bonnet made with ripstop nylon", caption: "Accessory design exploration combining a historic bonnet silhouette with modern ripstop nylon." },
-      { src: "/sportybonnet/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Detail view of technical bonnet construction", caption: "Material study highlighting lightweight, UV-protective, water-repellent performance fabric." },
-      { src: "/sportybonnet/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Styled technical bonnet worn in outdoor environment", caption: "Styled final look demonstrating the accessory's balance of form, function, and modern utility." }
+      { src: "/images/PDL/sportybonnet/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Contemporary technical bonnet made with ripstop nylon" },
+      { src: "/images/PDL/sportybonnet/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Detail view of technical bonnet construction" },
+      { src: "/images/PDL/sportybonnet/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Styled technical bonnet worn in outdoor environment" }
     ]
   }
 ];

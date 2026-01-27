@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: "Designer / Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
     images: [
       {
-        url: "/about/SAdetroit1.jpg",
+        url: "/images/about/SAdetroit1.jpg",
         width: 800,
         height: 1000,
         alt: "Hannah Yesmunt",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hannah Yesmunt - Portfolio",
     description: "Designer / Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
-    images: ["/about/SAdetroit1.jpg"],
+    images: ["/images/about/SAdetroit1.jpg"],
   },
   icons: {
     icon: "/icon.svg",
