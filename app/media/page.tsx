@@ -40,6 +40,14 @@ const mediaItems: MediaItem[] = [
     year: "2024",
   },
   {
+    publication: "The Phabies",
+    title: "The Phabies — Music Video Feature (2024)",
+    description: "Independent music video collaboration featuring Saint Andro swimwear.",
+    link: "https://www.youtube.com/watch?v=upcrQ_kpY4M",
+    year: "2024",
+    linkText: "Watch video",
+  },
+  {
     publication: "Something Different Magazine",
     title: "CORPCORE",
     description: "An ironic look at corporate culture and the dreams it may crush. Collection conceived, sewn, & styled by Hannah Yesmunt & Kiernan McKay.",
