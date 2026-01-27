@@ -110,8 +110,7 @@ export default async function ProjectPage(
 
     // Moodboard images
     const moodboardImages = [
-      { src: "/images/PDL/corpcore/Moodboard/PNG image.jpeg", alt: "CORPCORE moodboard" },
-      { src: "/images/PDL/corpcore/Moodboard/Unknown-2-OCkiG.jpeg", alt: "CORPCORE moodboard reference" }
+      { src: "/images/PDL/corpcore/Moodboard/moodboard.png", alt: "CORPCORE moodboard" }
     ];
 
     return (
@@ -144,32 +143,28 @@ export default async function ProjectPage(
                 </h1>
                 <div className="flex flex-wrap items-center gap-3 text-xs font-mono tracking-[0.06em] text-muted uppercase">
                   <span>{project.role}</span>
+                  <span className="text-border">•</span>
+                  <span>{project.year}</span>
                 </div>
               </div>
             </header>
 
-            {/* Overview */}
-            <div className="max-w-2xl mb-10 md:mb-12">
-              <p className="text-xs md:text-sm text-foreground leading-relaxed whitespace-pre-line">
-                {project.overview}
-              </p>
-            </div>
-
-            {/* My Contributions */}
+            {/* Background / Overview */}
             <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">My Contributions</span>
+              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Background</span>
               <div className="max-w-2xl">
-                <p className="text-xs md:text-sm text-foreground leading-relaxed">
-                  Co-developed the creative concept and world narrative, led look development and styling direction, and supported garment/prop execution and storytelling from early ideation through final imagery.
+                <p className="text-xs md:text-sm text-foreground leading-relaxed whitespace-pre-line">
+                  {project.overview}
                 </p>
               </div>
             </section>
+
           </div>
 
           {/* Moodboard / Ideation */}
           <div className="mt-16 mb-16">
             <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Ideation / Moodboard</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="max-w-3xl">
               {moodboardImages.map((image, index) => (
                 <figure key={index} className="mb-0">
                   <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
@@ -179,7 +174,7 @@ export default async function ProjectPage(
                       width={1200}
                       height={900}
                       className="w-full h-auto object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1000px"
                     />
                   </div>
                 </figure>

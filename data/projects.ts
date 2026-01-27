@@ -183,10 +183,10 @@ export const projects: Project[] = [
     slug: "corpcore",
     title: "CORPCORE",
     category: "pocket-design-lab",
-    year: "2024",
+    year: "2023",
     role: "Co-Creative Director / Designer",
     thumbnail: { src: "/images/PDL/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE fashion world-building case study" },
-    overview: "Corpcore is a satirical fashion world where mundane office objects and corporate uniforms collide. Through character-driven looks, object-to-garment translation, and playful irony, the project explores how work culture becomes performance—blending convention, absurdity, and storytelling.\n\nThis project was developed as a collaborative world-building exercise, combining styling, garment design, props/graphics, and editorial image-making into one cohesive universe.",
+    overview: "The first time Kiernan (co-creative director) and I sat down in our company's basement cafeteria, we realized we had a lot in common.\n\"We should make a jacket together,\" I offered.\n\nAfter that first meeting, we kept talking about corporate life — half-joking at first, then more seriously. One idea turned into another, and before we realized it, we had built an entire world. We named it Corpcore — a satirical corporate fashion world largely inspired by our own 9-5 jobs. We created seven personas, each speaking to outdated dress codes, unspoken rules and rituals, and power structures that are worth critiquing as we enter a new age of work.\n\nThis project was so fun, we joked that we could have kept going indefinitely, developing more and more personas we connected with — but we had to cut ourselves off in order to finish within our very short (very man-made) deadline.\n\nAnyways, welcome to Corpcore.\nWhere coffee is free and dreams are crushed.",
     responsibilities: [
       "Co-developed the creative concept and world narrative",
       "Led look development and styling direction",
