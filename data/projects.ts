@@ -180,62 +180,27 @@ export const projects: Project[] = [
     ]
   },
   {
-    slug: "workwear-fit-study",
-    title: "WORKWEAR FIT STUDY",
+    slug: "corpcore",
+    title: "CORPCORE",
     category: "pocket-design-lab",
-    year: "2022",
-    role: "Designer / Patternmaker / Sewer",
-    thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
-    overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach designed for a petite frame. This project investigates how durable, structured workwear can be adapted for smaller bodies while maintaining true workwear function.",
-    problem: "In-store workwear shopping revealed a significant gap: men's workwear offers durable, structured, protective silhouettes, while women's options often default to tapered fits or lightweight stretch fabrics that compromise true workwear function. This study addresses that gap through proportion-driven patternmaking and androgynous silhouette development.",
-    researchNotes: [
-      "Men's workwear prioritized durability, structure, and protection",
-      "Women's workwear often shifted toward tapered fits and lighter materials",
-      "Many options for women relied on stretch fabric and legging-like construction",
-      "Fit and proportion issues were amplified for petite frames",
-      "True function demanded better silhouettes, mobility, and coverage without feminizing the design"
-    ],
-    output: [
-      "Sherpa-lined Detroit-style winter jacket",
-      "Eisenhower-style unlined work jacket",
-      "Matching work pants (set)",
-      "Quilted chore coat",
-      "Work vest"
-    ],
+    year: "2024",
+    role: "Co-Creative Director / Designer",
+    thumbnail: { src: "/images/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE fashion world-building case study" },
+    overview: "Corpcore is a satirical fashion world where mundane office objects and corporate uniforms collide. Through character-driven looks, object-to-garment translation, and playful irony, the project explores how work culture becomes performance—blending convention, absurdity, and storytelling.\n\nThis project was developed as a collaborative world-building exercise, combining styling, garment design, props/graphics, and editorial image-making into one cohesive universe.",
     responsibilities: [
-      "Fit and proportion study for petite frames",
-      "Androgynous silhouette development",
-      "Function-driven design and durability testing",
-      "Patternmaking and prototyping",
-      "Cut and sew garment construction",
-      "Material and trim exploration",
-      "Workwear detailing and hardware selection"
+      "Co-developed the creative concept and world narrative",
+      "Led look development and styling direction",
+      "Supported garment/prop execution and storytelling from early ideation through final imagery"
     ],
     skills: [
-      "Patternmaking",
-      "Fit Study",
-      "Workwear Design",
-      "Cut + Sew Construction",
-      "Material Exploration",
-      "Prototyping"
+      "Creative direction",
+      "World-building",
+      "Styling",
+      "Garment design",
+      "Editorial image-making",
+      "Collaborative design"
     ],
-    whatILearned: [
-      "Structure and protection must come first — aesthetics follow function",
-      "Material selection (weight, drape, durability) defines perceived function",
-      "Pocket placement, collar shape, and hem length define the overall workwear read",
-      "Iterative prototyping is the fastest path to validating fit and mobility",
-      "\"Shrink it and pink it\" fails when durability and protection are the core requirements"
-    ],
-    images: [
-      { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Sherpa lining close up" },
-      { src: "/images/pdl/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
-      { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
-      { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
-      { src: "/images/pdl/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
-    ]
+    images: []
   },
   {
     slug: "trash-collection-rework",
@@ -298,27 +263,93 @@ export const projects: Project[] = [
     ]
   },
   {
-    slug: "corpcore",
-    title: "CORPCORE",
+    slug: "archive-to-future",
+    title: "ARCHIVE TO FUTURE",
     category: "pocket-design-lab",
-    year: "2024",
-    role: "Co-Creative Director / Designer",
-    thumbnail: { src: "/images/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE fashion world-building case study" },
-    overview: "Corpcore is a satirical fashion world where mundane office objects and corporate uniforms collide. Through character-driven looks, object-to-garment translation, and playful irony, the project explores how work culture becomes performance—blending convention, absurdity, and storytelling.\n\nThis project was developed as a collaborative world-building exercise, combining styling, garment design, props/graphics, and editorial image-making into one cohesive universe.",
+    year: "2023",
+    role: "Designer / Researcher",
+    thumbnail: { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "ARCHIVE TO FUTURE" },
+    overview: "A conceptual design study exploring how historical dress can inform modern, androgynous tailoring. Using 16th century archival references as a starting point, I translated key silhouette and proportion cues—especially the French hood—into a contemporary wearable garment. The project includes CLO 3D visualization to refine the form before physical execution.",
     responsibilities: [
-      "Co-developed the creative concept and world narrative",
-      "Led look development and styling direction",
-      "Supported garment/prop execution and storytelling from early ideation through final imagery"
+      "Historical research (FIT archive reference)",
+      "Androgynous silhouette development",
+      "Silhouette translation (16th century → modern uniform)",
+      "Material & trim exploration",
+      "CLO 3D garment visualization + iteration",
+      "Concept-to-wearable prototype"
     ],
     skills: [
-      "Creative direction",
-      "World-building",
-      "Styling",
-      "Garment design",
-      "Editorial image-making",
-      "Collaborative design"
+      "CLO 3D",
+      "Research / Reference Curation",
+      "Material + Trim Exploration"
     ],
-    images: []
+    images: [
+      { src: "/pocket-design-lab/archive-to-future/image-5-new.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/pocket-design-lab/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "CLO 3D Futuristic French Hood" },
+      { src: "/pocket-design-lab/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "Final Sewn Garment" },
+      { src: "/pocket-design-lab/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Historical Reference Photo" },
+      { src: "/pocket-design-lab/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/pocket-design-lab/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/pocket-design-lab/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" }
+    ]
+  },
+  {
+    slug: "workwear-fit-study",
+    title: "WORKWEAR FIT STUDY",
+    category: "pocket-design-lab",
+    year: "2022",
+    role: "Designer / Patternmaker / Sewer",
+    thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
+    overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach designed for a petite frame. This project investigates how durable, structured workwear can be adapted for smaller bodies while maintaining true workwear function.",
+    problem: "In-store workwear shopping revealed a significant gap: men's workwear offers durable, structured, protective silhouettes, while women's options often default to tapered fits or lightweight stretch fabrics that compromise true workwear function. This study addresses that gap through proportion-driven patternmaking and androgynous silhouette development.",
+    researchNotes: [
+      "Men's workwear prioritized durability, structure, and protection",
+      "Women's workwear often shifted toward tapered fits and lighter materials",
+      "Many options for women relied on stretch fabric and legging-like construction",
+      "Fit and proportion issues were amplified for petite frames",
+      "True function demanded better silhouettes, mobility, and coverage without feminizing the design"
+    ],
+    output: [
+      "Sherpa-lined Detroit-style winter jacket",
+      "Eisenhower-style unlined work jacket",
+      "Matching work pants (set)",
+      "Quilted chore coat",
+      "Work vest"
+    ],
+    responsibilities: [
+      "Fit and proportion study for petite frames",
+      "Androgynous silhouette development",
+      "Function-driven design and durability testing",
+      "Patternmaking and prototyping",
+      "Cut and sew garment construction",
+      "Material and trim exploration",
+      "Workwear detailing and hardware selection"
+    ],
+    skills: [
+      "Patternmaking",
+      "Fit Study",
+      "Workwear Design",
+      "Cut + Sew Construction",
+      "Material Exploration",
+      "Prototyping"
+    ],
+    whatILearned: [
+      "Structure and protection must come first — aesthetics follow function",
+      "Material selection (weight, drape, durability) defines perceived function",
+      "Pocket placement, collar shape, and hem length define the overall workwear read",
+      "Iterative prototyping is the fastest path to validating fit and mobility",
+      "\"Shrink it and pink it\" fails when durability and protection are the core requirements"
+    ],
+    images: [
+      { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Sherpa lining close up" },
+      { src: "/images/pdl/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
+      { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
+      { src: "/images/pdl/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
+    ]
   },
   {
     slug: "archive-to-future",
