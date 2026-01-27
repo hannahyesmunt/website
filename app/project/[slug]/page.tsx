@@ -55,53 +55,63 @@ export default async function ProjectPage(
 
   // Special layout for CORPCORE
   if (slug === "corpcore") {
-    // Hero images array
-    const heroImages: { src: string; alt: string; caption?: string }[] = [
-      { src: "/images/PDL/corpcore/hero/Corpcore2001-0771_expsr.jpg", alt: "CORPCORE editorial image", caption: "" },
-      { src: "/images/PDL/corpcore/hero/Corpcore2001-1236_expsr.jpg", alt: "CORPCORE editorial image", caption: "" },
-      { src: "/images/PDL/corpcore/hero/corpLadderDepartment1.jpg", alt: "CORPCORE Corporate Ladder Department", caption: "" },
-      { src: "/images/PDL/corpcore/hero/corpLadderDepartment2.jpg", alt: "CORPCORE Corporate Ladder Department", caption: "" },
-      { src: "/images/PDL/corpcore/hero/corporateAthlete1.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
-      { src: "/images/PDL/corpcore/hero/corporateAthlete2.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
-      { src: "/images/PDL/corpcore/hero/corporateAthlete3.jpg", alt: "CORPCORE Corporate Athlete", caption: "" },
-      { src: "/images/PDL/corpcore/hero/intern1.jpg", alt: "CORPCORE Intern", caption: "" },
-      { src: "/images/PDL/corpcore/hero/intern2.jpg", alt: "CORPCORE Intern", caption: "" },
-      { src: "/images/PDL/corpcore/hero/IThelp1.jpg", alt: "CORPCORE IT Help", caption: "" },
-      { src: "/images/PDL/corpcore/hero/IThelp2.jpg", alt: "CORPCORE IT Help", caption: "" },
-      { src: "/images/PDL/corpcore/hero/IThelp3.jpg", alt: "CORPCORE IT Help", caption: "" },
-      { src: "/images/PDL/corpcore/hero/Mr.Corp1.jpg", alt: "CORPCORE Mr. Corp", caption: "" },
-      { src: "/images/PDL/corpcore/hero/Mr.Corp2.jpg", alt: "CORPCORE Mr. Corp", caption: "" },
-      { src: "/images/PDL/corpcore/hero/secretarysitwear1.jpg", alt: "CORPCORE Secretary Sitwear", caption: "" },
-      { src: "/images/PDL/corpcore/hero/secretarysitwear2.jpg", alt: "CORPCORE Secretary Sitwear", caption: "" },
-      { src: "/images/PDL/corpcore/hero/tieGuy1.jpg", alt: "CORPCORE Tie Guy", caption: "" },
-      { src: "/images/PDL/corpcore/hero/tieGuy2.jpg", alt: "CORPCORE Tie Guy", caption: "" },
-      { src: "/images/PDL/corpcore/hero/tieGuy3.jpg", alt: "CORPCORE Tie Guy", caption: "" },
+    // Persona data structure
+    const personas = [
+      {
+        id: "tie-guy",
+        title: "TIE GUY",
+        callout: "The eternal middle manager. A man defined by his collection of statement ties—each one a desperate bid for personality within dress code compliance.",
+        folder: "TIE GUY",
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpg", "11.jpg", "12.jpg"]
+      },
+      {
+        id: "secretary",
+        title: "THE SECRETARY",
+        callout: "Keeper of schedules, gatekeeper of the corner office. Her ergonomic keyboard and sensible heels are the tools of quiet corporate power.",
+        folder: "The SECRETARY",
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg"]
+      },
+      {
+        id: "intern",
+        title: "THE INTERN",
+        callout: "Fresh out of college, armed with a lanyard and unearned confidence. The coffee runner, the note-taker, the future of this company (allegedly).",
+        folder: "THE INTERN",
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"]
+      },
+      {
+        id: "ceo",
+        title: "THE CEO — \"MR. CORP\"",
+        callout: "The corner office incarnate. Power suits, power moves, power lunches. He built this company from the ground up (with a small loan from his father).",
+        folder: "THE CEO \"MR. CORP\"",
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "6.jpg", "7.jpg"]
+      },
+      {
+        id: "corporate-athlete",
+        title: "THE CORPORATE ATHLETE",
+        callout: "Peloton before sunrise, protein shake at her standing desk. She treats quarterly reports like marathon training—everything is a competition.",
+        folder: "The CORPORATE ATHLETE",
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "7.5.png", "8.jpeg", "9.jpg", "10.jpg"]
+      },
+      {
+        id: "facilities",
+        title: "FACILITIES CREW",
+        callout: "The unsung heroes who keep the lights on. They know every secret of the building—the broken elevator, the haunted supply closet, where the good snacks are hidden.",
+        folder: "FACILITIES CREW",
+        images: ["1.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg", "11.jpg", "12.jpeg"]
+      },
+      {
+        id: "it-department",
+        title: "IT DEPARTMENT",
+        callout: "Have you tried turning it off and on again? The wizards behind the curtain, fluent in jargon, allergic to fluorescent lighting.",
+        folder: "IT DEPARTMENT",
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "9.jpg", "10.jpg"]
+      }
     ];
 
-    // Ideation / Moodboard images array
-    const ideationImages: { src: string; alt: string; caption?: string }[] = [
-      { src: "/images/PDL/corpcore/process/PNG image.jpeg", alt: "CORPCORE ideation and moodboard", caption: "" },
-    ];
-
-    // Process images array
-    const processImages: { src: string; alt: string; caption?: string }[] = [
-      { src: "/images/PDL/corpcore/process/Corpcore_LeighAnnCobb-151.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Corpcore_LeighAnnCobb-154 (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/IMG_5640.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/IMG_6575.jpg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/IMG_6579.jpg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/IMG_8955.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/IMG_8999.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/IMG_9393.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/PNG image (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-2-gDONG.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-2-OCkiG.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-2-OGjeD.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-2-wxw22 (1).jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-2-wxw22.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-3.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-4-LYWb1.jpeg", alt: "CORPCORE process documentation", caption: "" },
-      { src: "/images/PDL/corpcore/process/Unknown-5-7h7lV.jpeg", alt: "CORPCORE process documentation", caption: "" },
+    // Moodboard images
+    const moodboardImages = [
+      { src: "/images/PDL/corpcore/Moodboard/PNG image.jpeg", alt: "CORPCORE moodboard" },
+      { src: "/images/PDL/corpcore/Moodboard/Unknown-2-OCkiG.jpeg", alt: "CORPCORE moodboard reference" }
     ];
 
     return (
@@ -156,114 +166,73 @@ export default async function ProjectPage(
             </section>
           </div>
 
-          {/* Hero Gallery */}
-          <div className="mt-16 mb-16">
-            <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Hero Gallery</h2>
-            {heroImages.length > 0 ? (
-              <div className="columns-2 md:columns-3 gap-3 md:gap-2">
-                {heroImages.map((image, index) => (
-                  <div key={index} className="mb-4 md:mb-2 break-inside-avoid">
-                    <figure className="mb-0">
-                      <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          width={1000}
-                          height={750}
-                          className="w-full h-auto object-cover"
-                          sizes="(max-width: 768px) 50vw, 33vw"
-                        />
-                      </div>
-                      {image.caption && (
-                        <figcaption className="mt-3 px-2 text-xs font-mono tracking-[0.06em] text-muted text-center leading-relaxed">
-                          {image.caption}
-                        </figcaption>
-                      )}
-                    </figure>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="columns-2 md:columns-3 gap-3 md:gap-2">
-                <div className="mb-4 md:mb-2 break-inside-avoid">
-                  <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border aspect-[4/3] flex items-center justify-center">
-                    <p className="text-xs font-mono tracking-[0.06em] text-muted">Hero images placeholder</p>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Ideation / Moodboard */}
+          {/* Moodboard / Ideation */}
           <div className="mt-16 mb-16">
             <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Ideation / Moodboard</h2>
-            {ideationImages.length > 0 ? (
-              <div className="max-w-3xl">
-                {ideationImages.map((image, index) => (
-                  <figure key={index} className="mb-0">
-                    <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={1200}
-                        height={900}
-                        className="w-full h-auto object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1000px"
-                      />
-                    </div>
-                    {image.caption && (
-                      <figcaption className="mt-3 px-2 text-xs font-mono tracking-[0.06em] text-muted text-center leading-relaxed">
-                        {image.caption}
-                      </figcaption>
-                    )}
-                  </figure>
-                ))}
-              </div>
-            ) : (
-              <div className="max-w-3xl">
-                <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border aspect-[4/3] flex items-center justify-center">
-                  <p className="text-xs font-mono tracking-[0.06em] text-muted">Ideation images placeholder</p>
-                </div>
-              </div>
-            )}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {moodboardImages.map((image, index) => (
+                <figure key={index} className="mb-0">
+                  <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={1200}
+                      height={900}
+                      className="w-full h-auto object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                </figure>
+              ))}
+            </div>
           </div>
 
-          {/* Process Gallery */}
-          <div className="mt-16 mb-16">
-            <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Process Gallery</h2>
-            {processImages.length > 0 ? (
-              <div className="columns-2 md:columns-3 gap-3 md:gap-2">
-                {processImages.map((image, index) => (
-                  <div key={index} className="mb-4 md:mb-2 break-inside-avoid">
-                    <figure className="mb-0">
+          {/* Persona Sections */}
+          <div className="mt-20">
+            <h2 className="text-lg md:text-xl font-bold text-foreground tracking-tight mb-4 uppercase">The Personas</h2>
+            <p className="text-xs md:text-sm text-muted leading-relaxed max-w-2xl mb-16">
+              Seven characters inhabit the CORPCORE universe—each one a satirical reflection of corporate archetypes, brought to life through styling, garment design, and world-building.
+            </p>
+
+            {personas.map((persona, personaIndex) => (
+              <div key={persona.id} className="mb-20 md:mb-24">
+                {/* Persona Header */}
+                <div className="border-t border-border pt-8 mb-8">
+                  <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-2 block">
+                    Persona {String(personaIndex + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-lg md:text-xl font-bold text-foreground tracking-tight uppercase">
+                    {persona.title}
+                  </h3>
+                </div>
+
+                {/* Persona Callout */}
+                <div className="max-w-2xl mb-10">
+                  <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 block">Character Notes</span>
+                  <p className="text-xs md:text-sm text-foreground leading-relaxed italic border-l-2 border-accent pl-4">
+                    {persona.callout}
+                  </p>
+                </div>
+
+                {/* Persona Gallery */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                  {persona.images.map((imageName, imageIndex) => (
+                    <figure key={imageIndex} className="mb-0">
                       <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
                         <Image
-                          src={image.src}
-                          alt={image.alt}
+                          src={`/images/PDL/corpcore/${encodeURIComponent(persona.folder)}/${imageName}`}
+                          alt={`${persona.title} - Image ${imageIndex + 1}`}
                           width={1000}
                           height={750}
                           className="w-full h-auto object-cover"
                           sizes="(max-width: 768px) 50vw, 33vw"
                         />
                       </div>
-                      {image.caption && (
-                        <figcaption className="mt-3 px-2 text-xs font-mono tracking-[0.06em] text-muted text-center leading-relaxed">
-                          {image.caption}
-                        </figcaption>
-                      )}
                     </figure>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="columns-2 md:columns-3 gap-3 md:gap-2">
-                <div className="mb-4 md:mb-2 break-inside-avoid">
-                  <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border aspect-[4/3] flex items-center justify-center">
-                    <p className="text-xs font-mono tracking-[0.06em] text-muted">Process images placeholder</p>
-                  </div>
+                  ))}
                 </div>
               </div>
-            )}
+            ))}
           </div>
 
           {/* Credits Footer */}
