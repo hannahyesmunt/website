@@ -62,49 +62,56 @@ export default async function ProjectPage(
         title: "TIE GUY",
         callout: "The eternal middle manager. A man defined by his collection of statement ties—each one a desperate bid for personality within dress code compliance.",
         folder: "TIE GUY",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpg", "11.jpg", "12.jpg"]
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpg", "11.jpg", "0004324_0004324-R1-E029.jpg"],
+        heroImage: "12.jpg"
       },
       {
         id: "secretary",
         title: "THE SECRETARY",
         callout: "Keeper of schedules, gatekeeper of the corner office. Her ergonomic keyboard and sensible heels are the tools of quiet corporate power.",
         folder: "The SECRETARY",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg"]
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg"],
+        heroImage: "10.jpg"
       },
       {
         id: "intern",
         title: "THE INTERN",
         callout: "Fresh out of college, armed with a lanyard and unearned confidence. The coffee runner, the note-taker, the future of this company (allegedly).",
         folder: "THE INTERN",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"]
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "7.jpg", "8.jpg"],
+        heroImage: "6.jpg"
       },
       {
         id: "ceo",
         title: "THE CEO — \"MR. CORP\"",
         callout: "The corner office incarnate. Power suits, power moves, power lunches. He built this company from the ground up (with a small loan from his father).",
         folder: "THE CEO \"MR. CORP\"",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "6.jpg", "7.jpg"]
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "6.jpg"],
+        heroImage: "7.jpg"
       },
       {
         id: "corporate-athlete",
         title: "THE CORPORATE ATHLETE",
         callout: "Peloton before sunrise, protein shake at her standing desk. She treats quarterly reports like marathon training—everything is a competition.",
         folder: "The CORPORATE ATHLETE",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "7.5.png", "8.jpeg", "9.jpg", "10.jpg"]
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "7.5.png", "9.jpg", "10.jpg", "0004324_0004324-R1-E012.jpg"],
+        heroImage: "8.jpg"
       },
       {
         id: "facilities",
         title: "FACILITIES CREW",
         callout: "The unsung heroes who keep the lights on. They know every secret of the building—the broken elevator, the haunted supply closet, where the good snacks are hidden.",
         folder: "FACILITIES CREW",
-        images: ["1.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg", "11.jpg", "12.jpeg"]
+        images: ["1.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg", "11.jpg"],
+        heroImage: "12.jpeg"
       },
       {
         id: "it-department",
         title: "IT DEPARTMENT",
         callout: "Have you tried turning it off and on again? The wizards behind the curtain, fluent in jargon, allergic to fluorescent lighting.",
         folder: "IT DEPARTMENT",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "9.jpg", "10.jpg"]
+        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "10.jpg"],
+        heroImage: "9.jpg"
       }
     ];
 
@@ -185,9 +192,38 @@ export default async function ProjectPage(
           {/* Persona Sections */}
           <div className="mt-20">
             <h2 className="text-lg md:text-xl font-bold text-foreground tracking-tight mb-4 uppercase">The Personas</h2>
-            <p className="text-xs md:text-sm text-muted leading-relaxed max-w-2xl mb-16">
+            <p className="text-xs md:text-sm text-muted leading-relaxed max-w-2xl mb-12">
               Seven characters inhabit the CORPCORE universe—each one a satirical reflection of corporate archetypes, brought to life through styling, garment design, and world-building.
             </p>
+
+            {/* Hero Gallery - All Personas Preview */}
+            <div className="columns-2 md:columns-3 gap-4 md:gap-5 mb-20">
+              {/* Reordered for better visual balance */}
+              {[
+                personas.find(p => p.id === "tie-guy"),
+                personas.find(p => p.id === "ceo"),
+                personas.find(p => p.id === "secretary"),
+                personas.find(p => p.id === "corporate-athlete"),
+                personas.find(p => p.id === "intern"),
+                personas.find(p => p.id === "facilities"),
+                personas.find(p => p.id === "it-department"),
+              ].filter(p => p && p.heroImage).map((persona) => (
+                <div key={persona!.id} className="mb-4 md:mb-5 break-inside-avoid">
+                  <figure className="mb-0">
+                    <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
+                      <Image
+                        src={`/images/PDL/corpcore/${encodeURIComponent(persona!.folder)}/${persona!.heroImage}`}
+                        alt={`${persona!.title} - Featured`}
+                        width={1200}
+                        height={900}
+                        className="w-full h-auto object-cover"
+                        sizes="(max-width: 768px) 50vw, 33vw"
+                      />
+                    </div>
+                  </figure>
+                </div>
+              ))}
+            </div>
 
             {personas.map((persona, personaIndex) => (
               <div key={persona.id} className="mb-20 md:mb-24">
@@ -226,8 +262,33 @@ export default async function ProjectPage(
                     </figure>
                   ))}
                 </div>
+
               </div>
             ))}
+          </div>
+
+          {/* Skills Section */}
+          <div className="mt-16 pt-8 border-t border-border">
+            <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-6">Skills</h2>
+            <ul className="flex flex-wrap gap-2">
+              {[
+                "World-Building",
+                "Creative Direction",
+                "Styling",
+                "Garment Design",
+                "Patternmaking",
+                "Cut + Sew Construction",
+                "Character Development",
+                "Prop Design",
+                "Collaborative Design",
+                "Concept Development",
+                "Visual Storytelling"
+              ].map((skill, index) => (
+                <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted">
+                  {skill}
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Credits Footer */}
