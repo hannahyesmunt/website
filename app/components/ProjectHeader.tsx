@@ -6,12 +6,12 @@ interface ProjectHeaderProps {
 
 export default function ProjectHeader({ project }: ProjectHeaderProps) {
   return (
-    <header className="border-b border-border pb-8 mb-8">
-      <div className="flex flex-col gap-2">
-        <h1 className="text-xl md:text-2xl font-bold text-foreground tracking-tight">
+    <header className="border-b border-border pb-6 md:pb-8 mb-6 md:mb-8">
+      <div className="flex flex-col gap-1.5 md:gap-2">
+        <h1 className="text-lg md:text-2xl font-bold text-foreground tracking-tight">
           {project.title}
         </h1>
-        <div className="flex flex-wrap items-center gap-3 text-xs font-mono tracking-[0.06em] text-muted uppercase">
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted uppercase">
           {project.brand && (
             <>
               <span>{project.brand}</span>

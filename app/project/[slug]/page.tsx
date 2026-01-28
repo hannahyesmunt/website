@@ -5,6 +5,7 @@ import { getProjectBySlug, projects } from "@/data/projects";
 import ProjectHeader from "@/app/components/ProjectHeader";
 import ImageWithCaption from "@/app/components/ImageWithCaption";
 import SpecBlock from "@/app/components/SpecBlock";
+import ScrollGallery from "@/app/components/ScrollGallery";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -55,63 +56,56 @@ export default async function ProjectPage(
 
   // Special layout for CORPCORE
   if (slug === "corpcore") {
-    // Persona data structure
+    // Persona data structure - images ordered: hero (highest number) first, then 1, 2, 3, etc.
     const personas = [
       {
         id: "tie-guy",
         title: "TIE GUY",
         callout: "The eternal middle manager. A man defined by his collection of statement ties—each one a desperate bid for personality within dress code compliance.",
         folder: "TIE GUY",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpg", "11.jpg", "0004324_0004324-R1-E029.jpg"],
-        heroImage: "12.jpg"
+        images: ["10.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "11.jpg", "0004324_0004324-R1-E029.jpg", "12.jpg"]
       },
       {
         id: "secretary",
         title: "THE SECRETARY",
         callout: "Keeper of schedules, gatekeeper of the corner office. Her ergonomic keyboard and sensible heels are the tools of quiet corporate power.",
         folder: "The SECRETARY",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg"],
-        heroImage: "10.jpg"
+        images: ["10.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg"]
       },
       {
         id: "intern",
         title: "THE INTERN",
         callout: "Fresh out of college, armed with a lanyard and unearned confidence. The coffee runner, the note-taker, the future of this company (allegedly).",
         folder: "THE INTERN",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "7.jpg", "8.jpg"],
-        heroImage: "6.jpg"
+        images: ["6.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "7.jpg", "8.jpg"]
       },
       {
         id: "ceo",
         title: "THE CEO — \"MR. CORP\"",
         callout: "The corner office incarnate. Power suits, power moves, power lunches. He built this company from the ground up (with a small loan from his father).",
         folder: "THE CEO \"MR. CORP\"",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "6.jpg"],
-        heroImage: "7.jpg"
+        images: ["5.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "6.jpg", "7.jpg"]
       },
       {
         id: "corporate-athlete",
         title: "THE CORPORATE ATHLETE",
         callout: "Peloton before sunrise, protein shake at her standing desk. She treats quarterly reports like marathon training—everything is a competition.",
         folder: "The CORPORATE ATHLETE",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "7.5.png", "9.jpg", "10.jpg", "0004324_0004324-R1-E012.jpg"],
-        heroImage: "8.jpg"
+        images: ["8.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "7.5.png", "9.jpg", "10.jpg", "0004324_0004324-R1-E012.jpg"]
       },
       {
         id: "facilities",
         title: "FACILITIES CREW",
         callout: "The unsung heroes who keep the lights on. They know every secret of the building—the broken elevator, the haunted supply closet, where the good snacks are hidden.",
         folder: "FACILITIES CREW",
-        images: ["1.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg", "11.jpg"],
-        heroImage: "12.jpeg"
+        images: ["12.jpeg", "1.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg", "11.jpg"]
       },
       {
         id: "it-department",
         title: "IT DEPARTMENT",
         callout: "Have you tried turning it off and on again? The wizards behind the curtain, fluent in jargon, allergic to fluorescent lighting.",
         folder: "IT DEPARTMENT",
-        images: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "10.jpg"],
-        heroImage: "9.jpg"
+        images: ["10.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "9.jpg"]
       }
     ];
 
@@ -122,33 +116,33 @@ export default async function ProjectPage(
 
     return (
       <div className="min-h-screen bg-background">
-        <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border py-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="flex items-center justify-between gap-4">
+        <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border py-3 md:py-4">
+          <div className="container mx-auto max-w-5xl px-4 md:px-0">
+            <div className="flex items-center justify-between gap-3 md:gap-4">
               <Link
                 href={backLink}
-                className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors py-1 px-2 -ml-2"
+                className="inline-flex items-center text-xs md:text-sm text-muted hover:text-accent transition-colors py-1 px-1 md:px-2 -ml-1 md:-ml-2"
               >
-                <span className="mr-2 text-accent">←</span>
+                <span className="mr-1 md:mr-2 text-accent">←</span>
                 <span className="hidden sm:inline">Back to {categoryLabel}</span>
-                <span className="sm:hidden text-xs uppercase font-mono tracking-wider">Back</span>
+                <span className="sm:hidden text-[10px] uppercase font-mono tracking-wider">Back</span>
               </Link>
-              <h1 className="text-sm md:text-lg font-bold text-foreground truncate max-w-[200px] md:max-w-none uppercase font-mono tracking-tight">
+              <h1 className="text-xs md:text-lg font-bold text-foreground truncate max-w-[140px] md:max-w-none uppercase font-mono tracking-tight">
                 {project.title}
               </h1>
             </div>
           </div>
         </div>
 
-        <div className="container mx-auto py-8 md:py-16 max-w-5xl">
+        <div className="container mx-auto py-6 md:py-16 max-w-5xl px-4 md:px-0">
           {/* Project Header */}
-          <div className="max-w-3xl mb-10 md:mb-12">
-            <header className="border-b border-border pb-8 mb-8">
-              <div className="flex flex-col gap-2">
-                <h1 className="text-xl md:text-2xl font-bold text-foreground tracking-tight">
+          <div className="max-w-3xl mb-8 md:mb-12">
+            <header className="border-b border-border pb-6 md:pb-8 mb-6 md:mb-8">
+              <div className="flex flex-col gap-1.5 md:gap-2">
+                <h1 className="text-lg md:text-2xl font-bold text-foreground tracking-tight">
                   {project.title}
                 </h1>
-                <div className="flex flex-wrap items-center gap-3 text-xs font-mono tracking-[0.06em] text-muted uppercase">
+                <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted uppercase">
                   <span>{project.role}</span>
                   <span className="text-border">•</span>
                   <span>{project.year}</span>
@@ -157,8 +151,8 @@ export default async function ProjectPage(
             </header>
 
             {/* Background / Overview */}
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Background</span>
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Background</span>
               <div className="max-w-2xl">
                 <p className="text-xs md:text-sm text-foreground leading-relaxed whitespace-pre-line">
                   {project.overview}
@@ -169,12 +163,12 @@ export default async function ProjectPage(
           </div>
 
           {/* Moodboard / Ideation */}
-          <div className="mt-16 mb-16">
-            <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Ideation / Moodboard</h2>
-            <div className="max-w-3xl">
+          <div className="mt-10 md:mt-16 mb-10 md:mb-16">
+            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-6 md:mb-8">Ideation / Moodboard</h2>
+            <div className="max-w-full md:max-w-3xl">
               {moodboardImages.map((image, index) => (
                 <figure key={index} className="mb-0">
-                  <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
+                  <div className="relative w-full bg-surface rounded-md md:rounded-lg overflow-hidden border border-border">
                     <Image
                       src={image.src}
                       alt={image.alt}
@@ -190,87 +184,44 @@ export default async function ProjectPage(
           </div>
 
           {/* Persona Sections */}
-          <div className="mt-20">
-            <h2 className="text-lg md:text-xl font-bold text-foreground tracking-tight mb-4 uppercase">The Personas</h2>
-            <p className="text-xs md:text-sm text-muted leading-relaxed max-w-2xl mb-12">
-              Seven characters inhabit the CORPCORE universe—each one a satirical reflection of corporate archetypes, brought to life through styling, garment design, and world-building.
-            </p>
-
-            {/* Hero Gallery - All Personas Preview */}
-            <div className="columns-2 md:columns-3 gap-4 md:gap-5 mb-20">
-              {/* Reordered for better visual balance */}
-              {[
-                personas.find(p => p.id === "tie-guy"),
-                personas.find(p => p.id === "ceo"),
-                personas.find(p => p.id === "secretary"),
-                personas.find(p => p.id === "corporate-athlete"),
-                personas.find(p => p.id === "intern"),
-                personas.find(p => p.id === "facilities"),
-                personas.find(p => p.id === "it-department"),
-              ].filter(p => p && p.heroImage).map((persona) => (
-                <div key={persona!.id} className="mb-4 md:mb-5 break-inside-avoid">
-                  <figure className="mb-0">
-                    <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
-                      <Image
-                        src={`/images/PDL/corpcore/${encodeURIComponent(persona!.folder)}/${persona!.heroImage}`}
-                        alt={`${persona!.title} - Featured`}
-                        width={1200}
-                        height={900}
-                        className="w-full h-auto object-cover"
-                        sizes="(max-width: 768px) 50vw, 33vw"
-                      />
-                    </div>
-                  </figure>
-                </div>
-              ))}
-            </div>
-
+          <div className="mt-12 md:mt-20">
             {personas.map((persona, personaIndex) => (
-              <div key={persona.id} className="mb-20 md:mb-24">
+              <div key={persona.id} className="mb-12 md:mb-24">
                 {/* Persona Header */}
-                <div className="border-t border-border pt-8 mb-8">
-                  <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-2 block">
+                <div className="border-t border-border pt-5 md:pt-8 mb-5 md:mb-8">
+                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-1.5 md:mb-2 block">
                     Persona {String(personaIndex + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-lg md:text-xl font-bold text-foreground tracking-tight uppercase">
+                  <h3 className="text-base md:text-xl font-bold text-foreground tracking-tight uppercase">
                     {persona.title}
                   </h3>
                 </div>
 
                 {/* Persona Callout */}
-                <div className="max-w-2xl mb-10">
-                  <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 block">Character Notes</span>
-                  <p className="text-xs md:text-sm text-foreground leading-relaxed italic border-l-2 border-accent pl-4">
+                <div className="max-w-2xl mb-6 md:mb-10">
+                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-2 md:mb-3 block">Character Notes</span>
+                  <p className="text-xs md:text-sm text-foreground leading-relaxed italic border-l-2 border-accent pl-3 md:pl-4">
                     {persona.callout}
                   </p>
                 </div>
 
                 {/* Persona Gallery */}
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-                  {persona.images.map((imageName, imageIndex) => (
-                    <figure key={imageIndex} className="mb-0">
-                      <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
-                        <Image
-                          src={`/images/PDL/corpcore/${encodeURIComponent(persona.folder)}/${imageName}`}
-                          alt={`${persona.title} - Image ${imageIndex + 1}`}
-                          width={1000}
-                          height={750}
-                          className="w-full h-auto object-cover"
-                          sizes="(max-width: 768px) 50vw, 33vw"
-                        />
-                      </div>
-                    </figure>
-                  ))}
-                </div>
+                <ScrollGallery
+                  images={persona.images.map((imageName, imageIndex) => ({
+                    src: `/images/PDL/corpcore/${encodeURIComponent(persona.folder)}/${imageName}`,
+                    alt: `${persona.title} - Image ${imageIndex + 1}`
+                  }))}
+                  desktopVisible={3}
+                />
 
               </div>
             ))}
           </div>
 
           {/* Skills Section */}
-          <div className="mt-16 pt-8 border-t border-border">
-            <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-6">Skills</h2>
-            <ul className="flex flex-wrap gap-2">
+          <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-border">
+            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 md:mb-6">Skills</h2>
+            <ul className="flex flex-wrap gap-1.5 md:gap-2">
               {[
                 "World-Building",
                 "Creative Direction",
@@ -284,7 +235,7 @@ export default async function ProjectPage(
                 "Concept Development",
                 "Visual Storytelling"
               ].map((skill, index) => (
-                <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted">
+                <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[9px] md:text-xs font-mono tracking-[0.06em] text-muted">
                   {skill}
                 </li>
               ))}
@@ -292,9 +243,9 @@ export default async function ProjectPage(
           </div>
 
           {/* Credits Footer */}
-          <div className="mt-16 pt-8 border-t border-border">
-            <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4">Credits</h2>
-            <div className="text-xs md:text-sm text-muted leading-relaxed space-y-1">
+          <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-border">
+            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4">Credits</h2>
+            <div className="text-[11px] md:text-sm text-muted leading-relaxed space-y-0.5 md:space-y-1">
               <p>Design / Co-Creative Direction: Hannah Yesmunt + Kiernan McKay</p>
               <p>Photography: Leigh Ann Cobb</p>
               <p>Makeup: Kathy Price</p>
@@ -415,40 +366,40 @@ export default async function ProjectPage(
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border py-4">
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex items-center justify-between gap-4">
+      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-sm border-b border-border py-3 md:py-4">
+        <div className="container mx-auto max-w-5xl px-4 md:px-0">
+          <div className="flex items-center justify-between gap-3 md:gap-4">
             <Link
               href={backLink}
-              className="inline-flex items-center text-sm text-muted hover:text-accent transition-colors py-1 px-2 -ml-2"
+              className="inline-flex items-center text-xs md:text-sm text-muted hover:text-accent transition-colors py-1 px-1 md:px-2 -ml-1 md:-ml-2"
             >
-              <span className="mr-2 text-accent">←</span>
+              <span className="mr-1 md:mr-2 text-accent">←</span>
               <span className="hidden sm:inline">Back to {categoryLabel}</span>
-              <span className="sm:hidden text-xs uppercase font-mono tracking-wider">Back</span>
+              <span className="sm:hidden text-[10px] uppercase font-mono tracking-wider">Back</span>
             </Link>
-            <h1 className="text-sm md:text-lg font-bold text-foreground truncate max-w-[200px] md:max-w-none uppercase font-mono tracking-tight">
+            <h1 className="text-xs md:text-lg font-bold text-foreground truncate max-w-[140px] md:max-w-none uppercase font-mono tracking-tight">
               {project.title}
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto py-8 md:py-16 max-w-5xl">
+      <div className="container mx-auto py-6 md:py-16 max-w-5xl px-4 md:px-0">
         <div className="max-w-3xl">
           <ProjectHeader project={project} />
           {slug === "gymnasia-imagining-new-places-to-move" && (
-            <p className="text-sm md:text-base text-muted mb-8 -mt-4">
+            <p className="text-xs md:text-base text-muted mb-6 md:mb-8 -mt-3 md:-mt-4">
               Imagining New Places to Move
             </p>
           )}
           {slug === "archive-to-future" && (
-            <p className="text-sm md:text-base text-muted mb-8 -mt-4">
+            <p className="text-xs md:text-base text-muted mb-6 md:mb-8 -mt-3 md:-mt-4">
               Androgynous tailoring inspired by 16th century dress.
             </p>
           )}
 
-          <section className="mb-10 md:mb-12">
-            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Overview</span>
+          <section className="mb-8 md:mb-12">
+            <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Overview</span>
             <div className="max-w-2xl">
               <p className="text-xs md:text-sm text-foreground leading-relaxed">
                 {project.overview}
@@ -457,8 +408,8 @@ export default async function ProjectPage(
           </section>
 
           {project.problem && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Problem</span>
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Problem</span>
               <div className="max-w-2xl">
                 <p className="text-xs md:text-sm text-foreground leading-relaxed">
                   {project.problem}
@@ -468,9 +419,9 @@ export default async function ProjectPage(
           )}
 
           {project.researchNotes && project.researchNotes.length > 0 && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Research Notes</span>
-              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Research Notes</span>
+              <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
                 {project.researchNotes.map((note, index) => (
                   <li key={index}>{note}</li>
                 ))}
@@ -479,9 +430,9 @@ export default async function ProjectPage(
           )}
 
           {project.output && project.output.length > 0 && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Prototype Capsule</span>
-              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Prototype Capsule</span>
+              <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
                 {project.output.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -489,29 +440,29 @@ export default async function ProjectPage(
             </section>
           )}
 
-          <section className="mb-10 md:mb-12">
-            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">
+          <section className="mb-8 md:mb-12">
+            <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">
               {slug === "archive-to-future" ? "Project Highlights" : "Responsibilities"}
             </span>
-            <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+            <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
               {project.responsibilities.map((responsibility, index) => (
                 <li key={index}>{responsibility}</li>
               ))}
             </ul>
           </section>
 
-          <section className="mb-10 md:mb-12">
-            <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Skills</span>
-            <ul className="flex flex-wrap gap-2">
+          <section className="mb-8 md:mb-12">
+            <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Skills</span>
+            <ul className="flex flex-wrap gap-1.5 md:gap-2">
               {project.skills.map((skill, index) => (
-                <li key={index} className="px-3 py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
+                <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[9px] md:text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
               ))}
             </ul>
           </section>
 
           {project.materialSystem && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Material System</span>
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Material System</span>
               <div className="max-w-2xl">
                 <p className="text-xs md:text-sm text-foreground leading-relaxed">
                   {project.materialSystem}
@@ -521,12 +472,12 @@ export default async function ProjectPage(
           )}
 
           {project.theCapsule && project.theCapsule.length > 0 && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">The Capsule</span>
-              <div className="max-w-2xl space-y-4">
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">The Capsule</span>
+              <div className="max-w-2xl space-y-3 md:space-y-4">
                 {project.theCapsule.map((garment, index) => (
-                  <div key={index} className="border-b border-border pb-4 last:border-0">
-                    <h4 className="text-xs md:text-sm font-semibold text-foreground mb-1">{garment.name}</h4>
+                  <div key={index} className="border-b border-border pb-3 md:pb-4 last:border-0">
+                    <h4 className="text-xs md:text-sm font-semibold text-foreground mb-0.5 md:mb-1">{garment.name}</h4>
                     <p className="text-xs md:text-sm text-muted leading-relaxed">
                       <span className="font-medium">Material:</span> {garment.material}
                     </p>
@@ -540,9 +491,9 @@ export default async function ProjectPage(
           )}
 
           {project.process && project.process.length > 0 && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Process</span>
-              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Process</span>
+              <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
                 {project.process.map((step, index) => (
                   <li key={index}>{step}</li>
                 ))}
@@ -551,17 +502,17 @@ export default async function ProjectPage(
           )}
 
           {project.whatILearned && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">What I Learned</span>
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">What I Learned</span>
               <div className="max-w-2xl">
                 {Array.isArray(project.whatILearned) ? (
-                  <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+                  <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
                     {project.whatILearned.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-xs md:text-sm text-muted leading-relaxed italic bg-surface p-5 md:p-6 border-l-4 border-accent rounded-r-lg">
+                  <p className="text-xs md:text-sm text-muted leading-relaxed italic bg-surface p-4 md:p-6 border-l-4 border-accent rounded-r-lg">
                     {project.whatILearned}
                   </p>
                 )}
@@ -570,9 +521,9 @@ export default async function ProjectPage(
           )}
 
           {project.nextIterations && project.nextIterations.length > 0 && (
-            <section className="mb-10 md:mb-12">
-              <span className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 block">Next Iterations</span>
-              <ul className="list-disc list-inside space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Next Iterations</span>
+              <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
                 {project.nextIterations.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -581,10 +532,10 @@ export default async function ProjectPage(
           )}
         </div>
 
-        <div className="mt-16">
-          <h2 className="text-xs font-mono uppercase tracking-[0.08em] text-muted mb-8">Documentation & Imagery</h2>
+        <div className="mt-10 md:mt-16">
+          <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-5 md:mb-8">Documentation & Imagery</h2>
           {slug === "archive-to-future" ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
               {project.images.map((image, index) => (
                 <ImageWithCaption
                   key={index}
@@ -595,10 +546,10 @@ export default async function ProjectPage(
               ))}
             </div>
           ) : slug === "gymnasia-imagining-new-places-to-move" || slug === "sporty-bonnet-accessory-design" ? (
-            <div className="grid grid-cols-1 gap-8 md:gap-12 max-w-4xl">
+            <div className="grid grid-cols-1 gap-4 md:gap-12 max-w-4xl">
               {project.images.map((image, index) => (
                 <figure key={index} className="mb-0">
-                  <div className="relative w-full bg-surface rounded-lg overflow-hidden border border-border">
+                  <div className="relative w-full bg-surface rounded-md md:rounded-lg overflow-hidden border border-border">
                     <Image
                       src={image.src}
                       alt={image.alt}
@@ -617,14 +568,14 @@ export default async function ProjectPage(
               ))}
             </div>
           ) : (
-            <div className="columns-2 md:columns-3 gap-3 md:gap-2">
+            <div className="columns-2 md:columns-3 gap-2 md:gap-3">
               {project.images.map((image, index) => {
                 const isMewoBackground = image.src.includes("mewobackground");
                 return (
-                  <div key={index} className="break-inside-avoid [&>figure]:mb-4 [&>figure]:md:mb-2">
+                  <div key={index} className="break-inside-avoid [&>figure]:mb-2 [&>figure]:md:mb-3">
                     {isMewoBackground ? (
-                      <figure className="mb-4 break-inside-avoid">
-                        <div className="relative w-full overflow-hidden">
+                      <figure className="mb-2 md:mb-3 break-inside-avoid">
+                        <div className="relative w-full overflow-hidden rounded-md md:rounded-lg">
                           <Image
                             src={image.src}
                             alt={image.alt}
@@ -635,7 +586,7 @@ export default async function ProjectPage(
                           />
                         </div>
                         {image.caption && (
-                          <figcaption className="mt-3 px-2 text-xs font-mono tracking-[0.06em] text-muted text-center leading-relaxed">
+                          <figcaption className="mt-2 md:mt-3 px-1 md:px-2 text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted text-center leading-relaxed">
                             {image.caption}
                           </figcaption>
                         )}

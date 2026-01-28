@@ -53,31 +53,31 @@ export default function Header() {
 
       {/* Mobile Header */}
       <header className="md:hidden fixed top-0 left-0 right-0 z-50 border-b border-accent bg-background">
-        <div className="px-4 py-4 flex items-center justify-between">
+        <div className="px-4 py-3 flex items-center justify-between">
           <Link
             href="/"
-            className="text-2xl font-normal text-foreground hover:text-accent transition-colors font-[family-name:var(--font-tourney)]"
+            className="text-xl font-normal text-foreground hover:text-accent transition-colors font-[family-name:var(--font-tourney)]"
           >
             HY
           </Link>
           <button
             onClick={toggleMenu}
-            className="flex flex-col gap-1.5 p-2"
+            className="flex flex-col gap-1 p-2"
             aria-label="Toggle menu"
           >
             <span
-              className={`w-6 h-0.5 bg-accent transition-transform duration-300 ${
-                isMenuOpen ? "rotate-45 translate-y-2" : ""
+              className={`w-5 h-0.5 bg-accent transition-transform duration-300 ${
+                isMenuOpen ? "rotate-45 translate-y-1.5" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-accent transition-opacity duration-300 ${
+              className={`w-5 h-0.5 bg-accent transition-opacity duration-300 ${
                 isMenuOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-accent transition-transform duration-300 ${
-                isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+              className={`w-5 h-0.5 bg-accent transition-transform duration-300 ${
+                isMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
               }`}
             />
           </button>
@@ -89,13 +89,13 @@ export default function Header() {
             isMenuOpen ? "max-h-96 border-t border-border" : "max-h-0"
           }`}
         >
-          <div className="px-4 py-2.5 flex flex-col gap-0">
+          <div className="px-4 py-2 flex flex-col gap-0">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={closeMenu}
-                className={`py-1 text-[15px] font-sans uppercase tracking-[0.08em] font-normal transition-colors ${
+                className={`py-1.5 text-[13px] font-sans uppercase tracking-[0.08em] font-normal transition-colors ${
                   isActive(link.href) ? "text-accent" : "text-muted hover:text-accent"
                 }`}
               >
