@@ -111,7 +111,7 @@ export default async function ProjectPage(
 
     // Moodboard images
     const moodboardImages = [
-      { src: "/images/PDL/corpcore/Moodboard/moodboard.png", alt: "CORPCORE moodboard" }
+      { src: "/images/pdl/corpcore/Moodboard/moodboard.png", alt: "CORPCORE moodboard" }
     ];
 
     return (
@@ -208,7 +208,7 @@ export default async function ProjectPage(
                 {/* Persona Gallery */}
                 <ScrollGallery
                   images={persona.images.map((imageName, imageIndex) => ({
-                    src: `/images/PDL/corpcore/${encodeURIComponent(persona.folder)}/${imageName}`,
+                    src: `/images/pdl/corpcore/${encodeURIComponent(persona.folder)}/${imageName}`,
                     alt: `${persona.title} - Image ${imageIndex + 1}`
                   }))}
                   desktopVisible={3}

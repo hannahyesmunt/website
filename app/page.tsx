@@ -14,7 +14,7 @@ const heroImages = [
   { src: "/images/main/Adaptation_7350_edit.webp", alt: '"Sporty Bonnet" for Adaptation Editorial' },
   { src: "/images/main/PDL+Studio+RAW-042.jpg", alt: 'Pocket Design Lab "Spring Jacket"' },
   { src: "/images/main/tieGuy1.webp", alt: 'Editorial Work "CORPCORE"' },
-  { src: "/images/PDL/corpcore/IT DEPARTMENT/8.jpg", alt: 'Editorial Work "CORPCORE"' },
+  { src: "/images/pdl/corpcore/IT DEPARTMENT/8.jpg", alt: 'Editorial Work "CORPCORE"' },
 ];
 
 export default function Home() {

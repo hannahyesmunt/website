@@ -185,7 +185,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2023",
     role: "Co-Creative Director / Designer",
-    thumbnail: { src: "/images/PDL/corpcore/The CORPORATE ATHLETE/9.jpg", alt: "CORPCORE fashion world-building case study" },
+    thumbnail: { src: "/images/pdl/corpcore/The CORPORATE ATHLETE/9.jpg", alt: "CORPCORE fashion world-building case study" },
     overview: "The first time Kiernan (co-creative director) and I sat down in our company's basement cafeteria, we realized we had a lot in common.\n\"We should make a jacket together,\" I offered.\n\nAfter that first meeting, we kept talking about corporate life. One idea turned into another, and before we realized it, we had built an entire world. We named it Corpcore — a satirical corporate fashion universe inspired by our own 9–5 jobs.\n\nWe developed seven personas, each speaking to outdated dress codes, unspoken rules and rituals, and power structures worth critiquing as we enter a new age of work.\n\nAnyways, welcome to Corpcore.\nWhere coffee is free and dreams are crushed.",
     responsibilities: [
       "Co-developed the creative concept and world narrative",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2023",
     role: "Designer / Patternmaker / Sewer",
-    thumbnail: { src: "/images/PDL/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION (Reworked)" },
+    thumbnail: { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION (Reworked)" },
     overview: "A materiality-led capsule translating Michigan's Winter-to-Spring transition into functional layers—built for dirty snow, wet sidewalks, and unpredictable temperature swings.",
     problem: "The ugliest weather period: wet, dirty snow + slush + mud + salt. Clothing gets destroyed; \"nice\" outerwear feels wrong for the environment. Need a system that embraces grime: durable, washable, non-precious.",
     responsibilities: [
@@ -243,23 +243,23 @@ export const projects: Project[] = [
       "Layering systems require modular thinking from the start"
     ],
     images: [
-      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8600.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8725.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/PDL/trash collection/April2023_Leighanncobb_photo_8774.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
-      { src: "/images/PDL/trash collection/IMG_5849.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/PDL/trash collection/IMG_7670.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
-      { src: "/images/PDL/trash collection/IMG_7675.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
-      { src: "/images/PDL/trash collection/IMG_7821.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/PDL/trash collection/IMG_7890.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-019.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-032.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final - Midweight Wind Resistant Jacket" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Final flat lay" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Reversible Side" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-042.jpeg", alt: "TRASH COLLECTION process studio", caption: "Spring Jacket / Final" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" },
-      { src: "/images/PDL/trash collection/PDL Studio RAW-052.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" }
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8540.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8600.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8725.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/April2023_Leighanncobb_photo_8774.jpeg", alt: "TRASH COLLECTION final lookbook", caption: "Final / Lookbook" },
+      { src: "/images/pdl/trash collection/IMG_5849.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/IMG_7670.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
+      { src: "/images/pdl/trash collection/IMG_7675.jpeg", alt: "TRASH COLLECTION process studio", caption: "Material Exploration" },
+      { src: "/images/pdl/trash collection/IMG_7821.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/IMG_7890.jpeg", alt: "TRASH COLLECTION process studio", caption: "Process / Studio" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-019.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-028.jpeg", alt: "TRASH COLLECTION process studio", caption: "GORPCORE SKIRT" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-032.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final - Midweight Wind Resistant Jacket" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-034.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Final flat lay" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-037.jpeg", alt: "TRASH COLLECTION process studio", caption: "Midweight Jacket - Reversible Side" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-042.jpeg", alt: "TRASH COLLECTION process studio", caption: "Spring Jacket / Final" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-045.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" },
+      { src: "/images/pdl/trash collection/PDL Studio RAW-052.jpeg", alt: "TRASH COLLECTION process studio", caption: "Final flat lay" }
     ]
   },
   {
@@ -268,7 +268,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2023",
     role: "Designer / Researcher",
-    thumbnail: { src: "/images/PDL/archive-to-future/reference-1.jpeg", alt: "ARCHIVE TO FUTURE" },
+    thumbnail: { src: "/images/pdl/archive-to-future/reference-1.jpeg", alt: "ARCHIVE TO FUTURE" },
     overview: "A conceptual design study exploring how historical dress can inform modern, androgynous tailoring. Using 16th century archival references as a starting point, I translated key silhouette and proportion cues—especially the French hood—into a contemporary wearable garment. The project includes CLO 3D visualization to refine the form before physical execution.",
     responsibilities: [
       "Historical research (FIT archive reference)",
@@ -284,13 +284,13 @@ export const projects: Project[] = [
       "Material + Trim Exploration"
     ],
     images: [
-      { src: "/images/PDL/archive-to-future/image-5-new.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/images/PDL/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "CLO 3D Futuristic French Hood" },
-      { src: "/images/PDL/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "Final Sewn Garment" },
-      { src: "/images/PDL/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Historical Reference Photo" },
-      { src: "/images/PDL/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/images/PDL/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
-      { src: "/images/PDL/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" }
+      { src: "/images/pdl/archive-to-future/image-5-new.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/images/pdl/archive-to-future/reference-1.jpeg", alt: "Historical reference image used to study silhouette and French hood proportions", caption: "CLO 3D Futuristic French Hood" },
+      { src: "/images/pdl/archive-to-future/hero-1.jpeg", alt: "CLO 3D render exploring a modern reinterpretation of a historical silhouette", caption: "Final Sewn Garment" },
+      { src: "/images/pdl/archive-to-future/final-1.jpeg", alt: "Final wearable garment photo featuring modern androgynous tailoring details", caption: "Historical Reference Photo" },
+      { src: "/images/pdl/archive-to-future/image-7.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/images/pdl/archive-to-future/image-8.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" },
+      { src: "/images/pdl/archive-to-future/image-9.jpeg", alt: "ARCHIVE TO FUTURE process documentation", caption: "Historical Reference Photo" }
     ]
   },
   {
@@ -299,7 +299,7 @@ export const projects: Project[] = [
     category: "pocket-design-lab",
     year: "2022",
     role: "Designer / Patternmaker / Sewer",
-    thumbnail: { src: "/images/PDL/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
+    thumbnail: { src: "/images/pdl/workwear/hero.jpeg", alt: "WORKWEAR FIT STUDY - Sherpa-lined Detroit-style work jacket" },
     overview: "A fit study exploring workwear proportions, protection, and functionality through a fit-first, androgynous approach designed for a petite frame. This project investigates how durable, structured workwear can be adapted for smaller bodies while maintaining true workwear function.",
     problem: "In-store workwear shopping revealed a significant gap: men's workwear offers durable, structured, protective silhouettes, while women's options often default to tapered fits or lightweight stretch fabrics that compromise true workwear function. This study addresses that gap through proportion-driven patternmaking and androgynous silhouette development.",
     researchNotes: [
@@ -341,14 +341,14 @@ export const projects: Project[] = [
       "\"Shrink it and pink it\" fails when durability and protection are the core requirements"
     ],
     images: [
-      { src: "/images/PDL/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
-      { src: "/images/PDL/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
-      { src: "/images/PDL/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
-      { src: "/images/PDL/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Sherpa lining close up" },
-      { src: "/images/PDL/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
-      { src: "/images/PDL/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
-      { src: "/images/PDL/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
-      { src: "/images/PDL/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
+      { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-lined Detroit-style work jacket - hero piece", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_1941.jpeg", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_3672.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_3650.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Sherpa lining close up" },
+      { src: "/images/pdl/workwear/IMG_3702.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Final product" },
+      { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Fit testing" },
+      { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "WORKWEAR FIT STUDY development process", caption: "Chore coat quilting details" },
+      { src: "/images/pdl/workwear/mewobackground.png", alt: "WORKWEAR FIT STUDY workwear garment", caption: "Final product" }
     ]
   },
   {
@@ -375,9 +375,9 @@ export const projects: Project[] = [
       "Narrative storytelling"
     ],
     images: [
-      { src: "/images/PDL/gymnasia/GYMNASIA.jpeg", alt: "Gymnasia conceptual space", caption: "Conceptual fitness space" },
-      { src: "/images/PDL/gymnasia/gymnasia+exterior+2.png", alt: "Gymnasia exterior concept", caption: "Exterior concept" },
-      { src: "/images/PDL/gymnasia/Screenshot+2025-07-27+at+5.07.14 PM.png", alt: "Gymnasia visual exploration", caption: "Visual exploration" }
+      { src: "/images/pdl/gymnasia/GYMNASIA.jpeg", alt: "Gymnasia conceptual space", caption: "Conceptual fitness space" },
+      { src: "/images/pdl/gymnasia/gymnasia+exterior+2.png", alt: "Gymnasia exterior concept", caption: "Exterior concept" },
+      { src: "/images/pdl/gymnasia/Screenshot+2025-07-27+at+5.07.14 PM.png", alt: "Gymnasia visual exploration", caption: "Visual exploration" }
     ]
   },
   {
@@ -404,9 +404,9 @@ export const projects: Project[] = [
       "Styling and visual presentation"
     ],
     images: [
-      { src: "/images/PDL/sportybonnet/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Contemporary technical bonnet made with ripstop nylon" },
-      { src: "/images/PDL/sportybonnet/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Detail view of technical bonnet construction" },
-      { src: "/images/PDL/sportybonnet/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Styled technical bonnet worn in outdoor environment" }
+      { src: "/images/pdl/sportybonnet/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Contemporary technical bonnet made with ripstop nylon" },
+      { src: "/images/pdl/sportybonnet/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Detail view of technical bonnet construction" },
+      { src: "/images/pdl/sportybonnet/2024_06_05_Pocket_Design_Lab_501.jpeg", alt: "Styled technical bonnet worn in outdoor environment" }
     ]
   }
 ];
