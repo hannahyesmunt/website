@@ -620,6 +620,35 @@ export default async function ProjectPage(
             </div>
           )}
         </div>
+
+        {/* Credits Footer for SLUSHWORLD */}
+        {slug === "slushworld" && (
+          <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-border">
+            <h2 className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4">Credits</h2>
+            <div className="text-xs md:text-sm text-muted leading-relaxed space-y-0.5 md:space-y-1">
+              <p><a href="https://instagram.com/leigh.ann.cobb.photo" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Leigh Ann Cobb</a>, Photography (Flat Lays & Final Looks)</p>
+            </div>
+          </div>
+        )}
+
+        {/* Credits Footer for SPORTY BONNET */}
+        {slug === "sporty-bonnet-accessory-design" && (
+          <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-border">
+            <h2 className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4">Credits</h2>
+            <div className="text-xs md:text-sm text-muted leading-relaxed space-y-0.5 md:space-y-1">
+              <p><a href="https://instagram.com/stephholt" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Stephanie Holt</a>, Photography</p>
+              <p>Katie Mann, MUA</p>
+            </div>
+            
+            <h2 className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 mt-6 md:mt-8">Talent</h2>
+            <div className="text-xs md:text-sm text-muted leading-relaxed">
+              <p>
+                <a href="https://instagram.com/goddamnleanne" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@goddamnleanne</a>
+                {" "}<a href="https://instagram.com/bigsyyyy" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@bigsyyyy</a>
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

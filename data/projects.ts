@@ -203,7 +203,7 @@ export const projects: Project[] = [
     images: []
   },
   {
-    slug: "trash-collection-rework",
+    slug: "slushworld",
     title: "SLUSHWORLD",
     category: "pocket-design-lab",
     year: "2023",
