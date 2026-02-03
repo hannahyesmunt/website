@@ -61,49 +61,49 @@ export default async function ProjectPage(
       {
         id: "tie-guy",
         title: "TIE GUY",
-        callout: "The eternal middle manager. A man defined by his collection of statement ties—each one a desperate bid for personality within dress code compliance.",
+        callout: "\"Extended-Length Tie:\" built for his extended nights at the office.\nDragging himself through the week — always trying, always tired.",
         folder: "TIE GUY",
         images: ["10.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "11.jpg", "0004324_0004324-R1-E029.jpg", "12.jpg"]
       },
       {
         id: "secretary",
         title: "THE SECRETARY",
-        callout: "Keeper of schedules, gatekeeper of the corner office. Her ergonomic keyboard and sensible heels are the tools of quiet corporate power.",
+        callout: "\"Sitwear\" pencil skirt: built-in exercise ball to encourage \"active sitting,\" reducing the need to leave her desk.",
         folder: "The SECRETARY",
         images: ["10.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg"]
       },
       {
         id: "intern",
         title: "THE INTERN",
-        callout: "Fresh out of college, armed with a lanyard and unearned confidence. The coffee runner, the note-taker, the future of this company (allegedly).",
+        callout: "\"Wearable filing cabinet\": built for nights when the work has to come home (which is every night).\n$70K in student loans. He can't afford not to get the job offer.",
         folder: "THE INTERN",
         images: ["6.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg", "7.jpg", "8.jpg"]
       },
       {
         id: "ceo",
         title: "THE CEO — \"MR. CORP\"",
-        callout: "The corner office incarnate. Power suits, power moves, power lunches. He built this company from the ground up (with a small loan from his father).",
+        callout: "\"Pink power suit\": the color speaks louder than his company-wide memos.\nA challenge to the masculinity traditionally used to signal power.",
         folder: "THE CEO \"MR. CORP\"",
         images: ["5.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "6.jpg", "7.jpg"]
       },
       {
         id: "corporate-athlete",
         title: "THE CORPORATE ATHLETE",
-        callout: "Peloton before sunrise, protein shake at her standing desk. She treats quarterly reports like marathon training—everything is a competition.",
+        callout: "\"Practice penny sweater vest\": built for speed and agility, designed for jumping through hoops.",
         folder: "The CORPORATE ATHLETE",
         images: ["8.jpg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "7.5.png", "9.jpg", "10.jpg", "0004324_0004324-R1-E012.jpg"]
       },
       {
         id: "facilities",
         title: "FACILITIES CREW",
-        callout: "The unsung heroes who keep the lights on. They know every secret of the building—the broken elevator, the haunted supply closet, where the good snacks are hidden.",
+        callout: "\"High-visibility jumpsuit\": modeled after institutional uniforms designed for control.\nThey maintain the corporate ladder without ever being invited to climb it.\nAlways moving. Never upward.",
         folder: "FACILITIES CREW",
         images: ["12.jpeg", "1.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpg", "10.jpg", "11.jpg"]
       },
       {
         id: "it-department",
         title: "IT DEPARTMENT",
-        callout: "Have you tried turning it off and on again? The wizards behind the curtain, fluent in jargon, allergic to fluorescent lighting.",
+        callout: "Athletic socks with khakis: done trying to impress, done resetting people's passwords.",
         folder: "IT DEPARTMENT",
         images: ["10.jpg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpg", "9.jpg"]
       }
@@ -199,8 +199,8 @@ export default async function ProjectPage(
 
                 {/* Persona Callout */}
                 <div className="max-w-2xl mb-6 md:mb-10">
-                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-2 md:mb-3 block">Character Notes</span>
-                  <p className="text-xs md:text-sm text-foreground leading-relaxed italic border-l-2 border-accent pl-3 md:pl-4">
+                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-2 md:mb-3 block">Callouts</span>
+                  <p className="text-xs md:text-sm text-foreground leading-relaxed italic border-l-2 border-accent pl-3 md:pl-4 whitespace-pre-line">
                     {persona.callout}
                   </p>
                 </div>
@@ -248,7 +248,7 @@ export default async function ProjectPage(
             <div className="text-[11px] md:text-sm text-muted leading-relaxed space-y-0.5 md:space-y-1">
               <p>Design / Co-Creative Direction: Hannah Yesmunt + Kiernan McKay</p>
               <p>Photography: Leigh Ann Cobb</p>
-              <p>Makeup: Kathy Price</p>
+              <p>H&MU: Kathy Price</p>
             </div>
           </div>
         </div>
