@@ -142,7 +142,7 @@ export default async function ProjectPage(
                 <h1 className="text-lg md:text-2xl font-bold text-foreground tracking-tight">
                   {project.title}
                 </h1>
-                <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted uppercase">
+                <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[11px] md:text-xs font-mono tracking-[0.06em] text-muted uppercase">
                   <span>{project.role}</span>
                   <span className="text-border">•</span>
                   <span>{project.year}</span>
@@ -152,9 +152,9 @@ export default async function ProjectPage(
 
             {/* Background / Overview */}
             <section className="mb-8 md:mb-12">
-              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Background</span>
+              <span className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Background</span>
               <div className="max-w-2xl">
-                <p className="text-xs md:text-sm text-foreground leading-relaxed whitespace-pre-line">
+                <p className="text-sm md:text-sm text-foreground leading-relaxed whitespace-pre-line">
                   {project.overview}
                 </p>
               </div>
@@ -164,7 +164,7 @@ export default async function ProjectPage(
 
           {/* Moodboard / Ideation */}
           <div className="mt-10 md:mt-16 mb-10 md:mb-16">
-            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-6 md:mb-8">Ideation / Moodboard</h2>
+            <h2 className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-6 md:mb-8">Ideation / Moodboard</h2>
             <div className="max-w-full md:max-w-3xl">
               {moodboardImages.map((image, index) => (
                 <figure key={index} className="mb-0">
@@ -189,7 +189,7 @@ export default async function ProjectPage(
               <div key={persona.id} className="mb-12 md:mb-24">
                 {/* Persona Header */}
                 <div className="border-t border-border pt-5 md:pt-8 mb-5 md:mb-8">
-                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-1.5 md:mb-2 block">
+                  <span className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-1.5 md:mb-2 block">
                     Persona {String(personaIndex + 1).padStart(2, "0")}
                   </span>
                   <h3 className="text-base md:text-xl font-bold text-foreground tracking-tight uppercase">
@@ -199,8 +199,8 @@ export default async function ProjectPage(
 
                 {/* Persona Callout */}
                 <div className="max-w-2xl mb-6 md:mb-10">
-                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-2 md:mb-3 block">Callouts</span>
-                  <p className="text-xs md:text-sm text-foreground leading-relaxed italic border-l-2 border-accent pl-3 md:pl-4 whitespace-pre-line">
+                  <span className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-2 md:mb-3 block">Callouts</span>
+                  <p className="text-sm md:text-sm text-foreground leading-relaxed italic border-l-2 border-accent pl-3 md:pl-4 whitespace-pre-line">
                     {persona.callout}
                   </p>
                 </div>
@@ -220,7 +220,7 @@ export default async function ProjectPage(
 
           {/* Skills Section */}
           <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-border">
-            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 md:mb-6">Skills</h2>
+            <h2 className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-4 md:mb-6">Skills</h2>
             <ul className="flex flex-wrap gap-1.5 md:gap-2">
               {[
                 "World-Building",
@@ -235,7 +235,7 @@ export default async function ProjectPage(
                 "Concept Development",
                 "Visual Storytelling"
               ].map((skill, index) => (
-                <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[9px] md:text-xs font-mono tracking-[0.06em] text-muted">
+                <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted">
                   {skill}
                 </li>
               ))}
@@ -244,8 +244,8 @@ export default async function ProjectPage(
 
           {/* Credits Footer */}
           <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-border">
-            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4">Credits</h2>
-            <div className="text-[11px] md:text-sm text-muted leading-relaxed space-y-0.5 md:space-y-1">
+            <h2 className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4">Credits</h2>
+            <div className="text-xs md:text-sm text-muted leading-relaxed space-y-0.5 md:space-y-1">
               <p>Hannah Yesmunt, Designer/CD</p>
               <p><a href="https://instagram.com/kiernanmckay" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Kiernan McKay</a>, Designer/CD</p>
               <p><a href="https://instagram.com/leigh.ann.cobb.photo" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Leigh Ann Cobb</a>, Photography</p>
@@ -253,8 +253,8 @@ export default async function ProjectPage(
               <p>Molly McKay & Sarah Beckett, Production Assists</p>
             </div>
             
-            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 mt-6 md:mt-8">Talent</h2>
-            <div className="text-[11px] md:text-sm text-muted leading-relaxed">
+            <h2 className="text-[11px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 mt-6 md:mt-8">Talent</h2>
+            <div className="text-xs md:text-sm text-muted leading-relaxed">
               <p>
                 <a href="https://instagram.com/somdbho" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@somdbho</a>
                 {" "}<a href="https://instagram.com/allickspurrez" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@allickspurrez</a>
@@ -471,7 +471,7 @@ export default async function ProjectPage(
             <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Skills</span>
             <ul className="flex flex-wrap gap-1.5 md:gap-2">
               {project.skills.map((skill, index) => (
-                <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[9px] md:text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
+                <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
               ))}
             </ul>
           </section>
