@@ -246,9 +246,25 @@ export default async function ProjectPage(
           <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-border">
             <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4">Credits</h2>
             <div className="text-[11px] md:text-sm text-muted leading-relaxed space-y-0.5 md:space-y-1">
-              <p>Design / Co-Creative Direction: Hannah Yesmunt + Kiernan McKay</p>
-              <p>Photography: Leigh Ann Cobb</p>
-              <p>H&MU: Kathy Price</p>
+              <p>Hannah Yesmunt, Designer/CD</p>
+              <p><a href="https://instagram.com/kiernanmckay" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Kiernan McKay</a>, Designer/CD</p>
+              <p><a href="https://instagram.com/leigh.ann.cobb.photo" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Leigh Ann Cobb</a>, Photography</p>
+              <p>Kathy Price, H&MU</p>
+              <p>Molly McKay & Sarah Beckett, Production Assists</p>
+            </div>
+            
+            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 mt-6 md:mt-8">Talent</h2>
+            <div className="text-[11px] md:text-sm text-muted leading-relaxed">
+              <p>
+                <a href="https://instagram.com/somdbho" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@somdbho</a>
+                {" "}<a href="https://instagram.com/allickspurrez" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@allickspurrez</a>
+                {" "}<a href="https://instagram.com/bertfromirie" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@bertfromirie</a>
+                {" "}<a href="https://instagram.com/christastudent" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@christastudent</a>
+                {" "}<a href="https://instagram.com/meleisurelybusy" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@meleisurelybusy</a>
+                {" "}<a href="https://instagram.com/arabellavanderzee" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@arabellavanderzee</a>
+                {" & Jamie of "}<a href="https://instagram.com/endlessmgmt" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@endlessmgmt</a>
+                {" & Kathleen E."}
+              </p>
             </div>
           </div>
         </div>
