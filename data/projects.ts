@@ -186,7 +186,7 @@ export const projects: Project[] = [
     year: "2023",
     role: "Co-Creative Director / Designer",
     thumbnail: { src: "/images/pdl/corpcore/The CORPORATE ATHLETE/9.jpg", alt: "CORPCORE fashion world-building case study" },
-    overview: "The first time Kiernan (co-creative director) and I sat down in our company's basement cafeteria, we realized we had a lot in common.\n\"We should make a jacket together,\" I offered.\n\nAfter that first meeting, we kept talking about corporate life. One idea turned into another, and before we realized it, we had built an entire world. We named it Corpcore — a satirical corporate fashion universe inspired by our own 9–5 jobs.\n\nWe developed seven personas, each speaking to outdated dress codes, unspoken rules and rituals, and power structures worth critiquing as we enter a new age of work.\n\nAnyways, welcome to Corpcore.\nWhere coffee is free and dreams are crushed.",
+    overview: "The first time Kiernan (co-creative director) and I sat down in our company's basement cafeteria, we realized we had a lot in common.\n\"We should make a jacket together,\" I suggested.\n\nAfter that first meeting, we kept talking about corporate life. One idea turned into another, and before we realized it, we had built an entire world. We named it Corpcore — a satirical corporate fashion universe inspired by our own 9–5 jobs.\n\nWe developed seven personas, each speaking to outdated dress codes, unspoken rules and rituals, and power structures worth critiquing as we enter a new age of work.\n\nAnyways, welcome to Corpcore.\nWhere coffee is free and dreams are crushed.",
     responsibilities: [
       "Co-developed the creative concept and world narrative",
       "Led look development and styling direction",
