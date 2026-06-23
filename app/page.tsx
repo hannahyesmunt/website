@@ -1,7 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const heroImages = [
+type HeroImage = {
+  src: string;
+  alt: string;
+  subtext?: string;
+};
+
+const featuredImages: HeroImage[] = [
+  { src: "/images/main/slimewear-satin-dress.png", alt: '"Slimewear" Satin Dress', subtext: "Patternmaking, Design & Garment Construction" },
+  { src: "/images/main/og-anunoby-skechers.png", alt: "OG Anunoby in Skechers Performance Apparel", subtext: "Men's PD Team, Skechers" },
+  { src: "/images/main/slimewear-dress-shirt.png", alt: '"Slimewear" Dress Shirt', subtext: "Patternmaking, Design & Garment Construction" },
+];
+
+const galleryImages: HeroImage[] = [
   { src: "/images/main/bball.jpg", alt: "Jabari Walker in SkechCloud Elevate set" },
   { src: "/images/main/PDL+Studio+RAW-028.jpg", alt: "Pocket Design Lab - Gorpcore Skirt" },
   { src: "/images/main/Flatlay_077_websize.webp", alt: "Saint Andro Zip-Off Capris" },
@@ -16,6 +28,47 @@ const heroImages = [
   { src: "/images/main/tieGuy1.webp", alt: 'Editorial Work "CORPCORE"' },
   { src: "/images/pdl/corpcore/IT DEPARTMENT/8.jpg", alt: 'Editorial Work "CORPCORE"' },
 ];
+
+function GalleryItem({ image }: { image: HeroImage }) {
+  return (
+    <div className="mb-2 md:mb-3 break-inside-avoid group cursor-default">
+      <div className="relative w-full overflow-hidden rounded-md md:rounded-lg border border-border bg-surface shadow-sm">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={800}
+          height={600}
+          className="w-full h-auto object-cover transition-all duration-300 md:group-hover:scale-105 md:group-hover:opacity-40"
+          sizes="(max-width: 768px) 50vw, 33vw"
+        />
+        {/* Desktop Hover Description */}
+        <div className="hidden md:flex absolute inset-0 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <div className="text-center">
+            <p className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-foreground leading-relaxed">
+              {image.alt}
+            </p>
+            {image.subtext && (
+              <p className="mt-1 text-[9px] font-mono uppercase tracking-[0.06em] text-muted leading-relaxed">
+                {image.subtext}
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+      {/* Mobile Description */}
+      <div className="md:hidden mt-1.5 px-0.5">
+        <p className="text-[9px] font-mono uppercase tracking-[0.06em] text-foreground leading-tight">
+          {image.alt}
+        </p>
+        {image.subtext && (
+          <p className="mt-0.5 text-[8px] font-mono uppercase tracking-[0.06em] text-muted leading-tight">
+            {image.subtext}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -34,34 +87,16 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Photo Gallery - Masonry */}
+          {/* Photo Gallery */}
           <div className="w-full mt-8 md:mt-10">
+            <div className="grid grid-cols-3 gap-2 md:gap-3 mb-2 md:mb-3">
+              {featuredImages.map((image) => (
+                <GalleryItem key={image.src} image={image} />
+              ))}
+            </div>
             <div className="columns-2 md:columns-3 gap-2 md:gap-3">
-              {heroImages.map((image, index) => (
-                <div key={index} className="mb-2 md:mb-3 break-inside-avoid group cursor-default">
-                  <div className="relative w-full overflow-hidden rounded-md md:rounded-lg border border-border bg-surface shadow-sm">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={800}
-                      height={600}
-                      className="w-full h-auto object-cover transition-all duration-300 md:group-hover:scale-105 md:group-hover:opacity-40"
-                      sizes="(max-width: 768px) 50vw, 33vw"
-                    />
-                    {/* Desktop Hover Description */}
-                    <div className="hidden md:flex absolute inset-0 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <p className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-foreground text-center leading-relaxed">
-                        {image.alt}
-                      </p>
-                    </div>
-                  </div>
-                  {/* Mobile Description */}
-                  <div className="md:hidden mt-1.5 px-0.5">
-                    <p className="text-[9px] font-mono uppercase tracking-[0.06em] text-muted leading-tight">
-                      {image.alt}
-                    </p>
-                  </div>
-                </div>
+              {galleryImages.map((image) => (
+                <GalleryItem key={image.src} image={image} />
               ))}
             </div>
           </div>
