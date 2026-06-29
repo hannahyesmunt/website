@@ -7,7 +7,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const isVertical = project.category === "professional" || project.category === "technical";
+  const isVertical = project.category === "case-studies";
   const aspectClass = isVertical ? "aspect-[3/4]" : "aspect-[4/3]";
 
   return (
@@ -31,9 +31,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="mt-2 md:mt-3 text-xs md:text-base font-sans font-semibold tracking-tight text-foreground">
           {project.title}
         </h3>
-        {project.category === "professional" && project.brand && (
+        {project.category === "case-studies" && project.brand && (
           <span className="mt-0.5 md:mt-1 text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted">
             {project.brand}
+          </span>
+        )}
+        {project.category === "case-studies" && !project.brand && project.role && (
+          <span className="mt-0.5 md:mt-1 text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted">
+            {project.role}
           </span>
         )}
         {project.category === "pocket-design-lab" && project.role && (

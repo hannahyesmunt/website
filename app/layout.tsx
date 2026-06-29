@@ -29,10 +29,10 @@ const tourney = Tourney({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hannahyesmunt.vercel.app"),
   title: "Hannah Yesmunt - Portfolio",
-  description: "Designer / Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
+  description: "Technical apparel designer focused on patternmaking, fit development, and garment construction",
   openGraph: {
     title: "Hannah Yesmunt - Portfolio",
-    description: "Designer / Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
+    description: "Technical apparel designer focused on patternmaking, fit development, and garment construction",
     images: [
       {
         url: "/images/about/SAdetroit1.jpg",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hannah Yesmunt - Portfolio",
-    description: "Designer / Product Developer focused on technical design, product workflows, and inclusive apparel solutions",
+    description: "Technical apparel designer focused on patternmaking, fit development, and garment construction",
     images: ["/images/about/SAdetroit1.jpg"],
   },
   icons: {

@@ -15,12 +15,10 @@ export async function generateStaticParams() {
 
 const PolishDivider = () => <div className="my-8 md:my-10 border-t border-border" />;
 
-function getBackLink(category: "professional" | "technical" | "pocket-design-lab"): string {
+function getBackLink(category: "case-studies" | "pocket-design-lab"): string {
   switch (category) {
-    case "professional":
-      return "/professional";
-    case "technical":
-      return "/technical-work";
+    case "case-studies":
+      return "/case-studies";
     case "pocket-design-lab":
       return "/pocket-design-lab";
     default:
@@ -28,12 +26,10 @@ function getBackLink(category: "professional" | "technical" | "pocket-design-lab
   }
 }
 
-function getCategoryLabel(category: "professional" | "technical" | "pocket-design-lab"): string {
+function getCategoryLabel(category: "case-studies" | "pocket-design-lab"): string {
   switch (category) {
-    case "professional":
-      return "Professional";
-    case "technical":
-      return "Technical Work";
+    case "case-studies":
+      return "Case Studies";
     case "pocket-design-lab":
       return "Pocket Design Lab";
     default:

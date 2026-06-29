@@ -7,7 +7,7 @@ export interface ProjectImage {
 export interface Project {
   slug: string;
   title: string;
-  category: "professional" | "technical" | "pocket-design-lab";
+  category: "case-studies" | "pocket-design-lab";
   year: string;
   brand?: string;
   role: string;
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     slug: "skechers-mens-product-development",
     title: "Men's Performance and Lifestyle Apparel",
-    category: "professional",
+    category: "case-studies",
     year: "2025",
     brand: "Skechers",
     role: "Product Development",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
   {
     slug: "case-study-beyond-the-bikini",
     title: "Case Study: Beyond The Bikini",
-    category: "professional",
+    category: "case-studies",
     year: "2022-2025",
     brand: "Saint Andro Swimwear",
     role: "Founder & Designer",
@@ -140,9 +140,39 @@ export const projects: Project[] = [
     ]
   },
   {
+    slug: "slimewear",
+    title: '"Slimewear" Collection',
+    category: "case-studies",
+    year: "2025",
+    role: "Designer / Patternmaker / Sewer",
+    thumbnail: { src: "/images/main/slimewear-satin-dress.png", alt: '"Slimewear" Satin Dress' },
+    overview:
+      "Slimewear is a two-piece collection developed as a study in formal garment construction — a floor-length satin dress and a contrast-stitched dress shirt, both fully designed, patterned, and sewn by hand. The collection plays with \"slime\" green as a through-line: saturated satin on the dress, forest green shirting with neon contrast stitching on the shirt.",
+    responsibilities: [
+      "Designed both silhouettes from concept through final garment",
+      "Drafted custom patterns for the satin dress and dress shirt",
+      "Selected and sourced fabrics — satin and woven shirting",
+      "Executed full garment construction including princess seams, invisible zipper, collar, placket, and cuffs",
+      "Applied contrast stitching as a deliberate design and construction detail",
+      "Fit and adjusted patterns on the dress form throughout development"
+    ],
+    skills: [
+      "Pattern drafting",
+      "Garment construction",
+      "Formalwear & shirting techniques",
+      "Fit development on dress form",
+      "Material selection",
+      "Concept-to-garment execution"
+    ],
+    images: [
+      { src: "/images/main/slimewear-satin-dress.png", alt: '"Slimewear" Satin Dress on dress form', caption: "Satin Dress — Final Garment" },
+      { src: "/images/main/slimewear-dress-shirt.png", alt: '"Slimewear" Dress Shirt on dress form', caption: "Dress Shirt — Final Garment" }
+    ]
+  },
+  {
     slug: "passenger-princess-commuter-jacket",
     title: "Passenger Princess Commuter Jacket",
-    category: "technical",
+    category: "case-studies",
     year: "Fall 2025",
     role: "Student — Pattern Making & Design I",
     thumbnail: { src: "/images/thumbnail/Technical.jpeg", alt: "Passenger Princess Commuter Jacket final garment" },

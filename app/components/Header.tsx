@@ -13,8 +13,8 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/professional", label: "Professional" },
-    { href: "/technical-work", label: "Technical Work" },
+    { href: "/technical-design", label: "Technical Design" },
+    { href: "/case-studies", label: "Case Studies" },
     { href: "/pocket-design-lab", label: "Pocket Design Lab" },
     { href: "/media", label: "Media / Press" },
     { href: "/about", label: "About" },

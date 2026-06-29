@@ -1,74 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import GalleryItem from "@/app/components/GalleryItem";
 
-type HeroImage = {
-  src: string;
-  alt: string;
-  subtext?: string;
-};
-
-const featuredImages: HeroImage[] = [
-  { src: "/images/main/slimewear-satin-dress.png", alt: '"Slimewear" Satin Dress', subtext: "Patternmaking, Design & Garment Construction" },
-  { src: "/images/main/og-anunoby-skechers.png", alt: "OG Anunoby in Skechers Performance Apparel", subtext: "Men's PD Team, Skechers" },
+const homeGallery = [
   { src: "/images/main/slimewear-dress-shirt.png", alt: '"Slimewear" Dress Shirt', subtext: "Patternmaking, Design & Garment Construction" },
+  { src: "/images/main/og-anunoby-skechers.png", alt: "OG Anunoby in Skechers Performance Apparel", subtext: "Men's PD Team, Skechers" },
+  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro 2-Way Swim Top", subtext: "Patternmaking & Construction" },
+  { src: "/images/main/Adaptation_7350_edit.webp", alt: '"Sporty Bonnet" for Adaptation Editorial', subtext: "Adaptation Portfolio" },
 ];
-
-const galleryImages: HeroImage[] = [
-  { src: "/images/main/bball.jpg", alt: "Jabari Walker in SkechCloud Elevate set" },
-  { src: "/images/main/PDL+Studio+RAW-028.jpg", alt: "Pocket Design Lab - Gorpcore Skirt" },
-  { src: "/images/main/Flatlay_077_websize.webp", alt: "Saint Andro Zip-Off Capris" },
-  { src: "/images/main/Flatlay_060_websize.webp", alt: "Saint Andro Baggy Hiking Pants" },
-  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro 2-Way Swim Top" },
-  { src: "/images/main/2024_06_05_Pocket_Design_Lab_388.webp", alt: 'Pocket Design Lab "Technical Bonnet"' },
-  { src: "/images/main/clo2.webp", alt: "CLO 3D design" },
-  { src: "/images/main/Adaptation_6652_exposure1.webp", alt: "Adaptation editorial" },
-  { src: "/images/main/IMG_5703.jpeg", alt: "Technical work" },
-  { src: "/images/main/Adaptation_7350_edit.webp", alt: '"Sporty Bonnet" for Adaptation Editorial' },
-  { src: "/images/main/PDL+Studio+RAW-042.jpg", alt: 'Pocket Design Lab "Spring Jacket"' },
-  { src: "/images/main/tieGuy1.webp", alt: 'Editorial Work "CORPCORE"' },
-  { src: "/images/pdl/corpcore/IT DEPARTMENT/8.jpg", alt: 'Editorial Work "CORPCORE"' },
-];
-
-function GalleryItem({ image }: { image: HeroImage }) {
-  return (
-    <div className="mb-2 md:mb-3 break-inside-avoid group cursor-default">
-      <div className="relative w-full overflow-hidden rounded-md md:rounded-lg border border-border bg-surface shadow-sm">
-        <Image
-          src={image.src}
-          alt={image.alt}
-          width={800}
-          height={600}
-          className="w-full h-auto object-cover transition-all duration-300 md:group-hover:scale-105 md:group-hover:opacity-40"
-          sizes="(max-width: 768px) 50vw, 33vw"
-        />
-        {/* Desktop Hover Description */}
-        <div className="hidden md:flex absolute inset-0 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          <div className="text-center">
-            <p className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-foreground leading-relaxed">
-              {image.alt}
-            </p>
-            {image.subtext && (
-              <p className="mt-1 text-[9px] font-mono uppercase tracking-[0.06em] text-muted leading-relaxed">
-                {image.subtext}
-              </p>
-            )}
-          </div>
-        </div>
-      </div>
-      {/* Mobile Description */}
-      <div className="md:hidden mt-1.5 px-0.5">
-        <p className="text-[9px] font-mono uppercase tracking-[0.06em] text-foreground leading-tight">
-          {image.alt}
-        </p>
-        {image.subtext && (
-          <p className="mt-0.5 text-[8px] font-mono uppercase tracking-[0.06em] text-muted leading-tight">
-            {image.subtext}
-          </p>
-        )}
-      </div>
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -79,23 +18,19 @@ export default function Home() {
             Hannah Yesmunt
           </h1>
           <p className="text-xs md:text-base font-mono uppercase tracking-[0.08em] text-muted mb-1.5 md:mb-1">
-            Product Developer / Designer
+            Technical Design | Product Development
           </p>
           <div className="max-w-xl">
             <p className="text-xs md:text-base font-sans text-muted leading-relaxed">
-              Focused on functional design, product workflows, and inclusive apparel solutions
+              Patternmaking, fit development, and garment construction — from technical flats
+              and CLO 3D prototypes through to finished samples.
             </p>
           </div>
 
           {/* Photo Gallery */}
           <div className="w-full mt-8 md:mt-10">
-            <div className="grid grid-cols-3 gap-2 md:gap-3 mb-2 md:mb-3">
-              {featuredImages.map((image) => (
-                <GalleryItem key={image.src} image={image} />
-              ))}
-            </div>
-            <div className="columns-2 md:columns-3 gap-2 md:gap-3">
-              {galleryImages.map((image) => (
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-3">
+              {homeGallery.map((image) => (
                 <GalleryItem key={image.src} image={image} />
               ))}
             </div>
@@ -107,16 +42,16 @@ export default function Home() {
             </span>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto">
               <Link
-                href="/professional"
+                href="/technical-design"
                 className="px-5 py-3 sm:px-6 sm:py-3 border border-accent text-foreground rounded-md md:rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-xs md:text-sm font-medium"
               >
-                Professional
+                Technical Design
               </Link>
               <Link
-                href="/technical-work"
+                href="/case-studies"
                 className="px-5 py-3 sm:px-6 sm:py-3 border border-accent text-foreground rounded-md md:rounded-lg hover:bg-accent hover:text-white transition-colors text-center text-xs md:text-sm font-medium"
               >
-                Technical Work
+                Case Studies
               </Link>
               <Link
                 href="/pocket-design-lab"

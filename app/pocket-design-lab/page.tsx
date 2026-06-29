@@ -12,11 +12,13 @@ export default function PocketDesignLabPage() {
             Pocket Design Lab
           </span>
           <h1 className="text-lg md:text-2xl font-bold text-foreground tracking-tight mb-4 md:mb-8">
-            My Personal Design Studio
+            Creative & Conceptual Work
           </h1>
           <div className="max-w-2xl">
             <p className="text-xs md:text-base text-muted leading-relaxed">
-              Curated personal experimentation projects exploring inclusive design, sustainable materials, and innovative silhouettes.
+              A personal studio for world-building, editorial image-making, and experimental
+              narratives — projects that explore identity, satire, and speculative design beyond
+              conventional garment categories.
             </p>
           </div>
         </header>

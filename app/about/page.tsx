@@ -14,7 +14,11 @@ export default function AboutPage() {
           </h1>
           <div className="max-w-3xl">
             <p className="text-xs md:text-base text-foreground leading-relaxed">
-              I&apos;m a Los Angeles–based designer and product developer exploring the intersections of fashion, sports, and identity. I specialize in translating concepts into functional apparel, from technical flats and patterns to prototypes and finished garments. At the center of my work is creating designs that prioritize freedom of movement, self-expression, and play.
+              I&apos;m a Los Angeles–based technical apparel designer specializing in fit
+              development, patternmaking, and garment construction. I translate concepts into
+              production-ready garments — from technical flats and CLO 3D prototypes through
+              physical sampling and fit iteration. At the center of my work is precise fit,
+              functional construction, and designing for freedom of movement.
             </p>
           </div>
         </div>
