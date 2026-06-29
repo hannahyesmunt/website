@@ -98,18 +98,6 @@ export const projects: Project[] = [
       "Maintain freedom of movement for sport or daily activity",
       "Create a unisex silhouette that is functional and fashion-forward"
     ],
-    features: [
-      "Scuba-style fabric simulating cooling and thermoregulating properties",
-      "Sustainable and recycled fabric options to align with brand values",
-      "Performance-driven inclusive sizing and unisex pattern engineering",
-      "Integrated UPF-rated sun protection for extended outdoor use"
-    ],
-    process: [
-      "Tested various scuba-style and thermo-regulating fabrics for stretch, cooling, and drape",
-      "Evaluated mobility, range of motion, and sun coverage through physical prototyping",
-      "Used CLO 3D to create virtual prototypes and refine style lines before physical production"
-    ],
-    outcome: "The Oh Cool Compression Zip Top combines technical innovation with thoughtful design, providing a garment that is adaptable, performance-ready, and inclusive. It exemplifies Saint Andro's commitment to high-quality, functional, and fashion-forward swimwear for all bodies.",
     responsibilities: [
       "Provide adjustable, mid-level coverage to accommodate multiple body types",
       "Integrate sun protection (UPF-rated) for outdoor use",
@@ -147,7 +135,7 @@ export const projects: Project[] = [
     role: "Designer / Patternmaker / Sewer",
     thumbnail: { src: "/images/main/slimewear-satin-dress.png", alt: '"Slimewear" Satin Dress' },
     overview:
-      "Slimewear is a two-piece collection developed as a study in formal garment construction — a floor-length satin dress and a contrast-stitched dress shirt, both fully designed, patterned, and sewn by hand. The collection plays with \"slime\" green as a through-line: saturated satin on the dress, forest green shirting with neon contrast stitching on the shirt.",
+      "Slimewear is a two-piece collection developed as a study in formal garment construction — a floor-length satin dress and a contrast-stitched dress shirt, both fully designed, patterned, and sewn by hand. Inspired by childhood nostalgia and Nickelodeon Slime Time, the collection plays with \"slime\" green as a through-line: saturated satin on the dress, forest green shirting with neon contrast stitching on the shirt.",
     responsibilities: [
       "Designed both silhouettes from concept through final garment",
       "Drafted custom patterns for the satin dress and dress shirt",
@@ -166,7 +154,12 @@ export const projects: Project[] = [
     ],
     images: [
       { src: "/images/main/slimewear-satin-dress.png", alt: '"Slimewear" Satin Dress on dress form', caption: "Satin Dress — Final Garment" },
-      { src: "/images/main/slimewear-dress-shirt.png", alt: '"Slimewear" Dress Shirt on dress form', caption: "Dress Shirt — Final Garment" }
+      { src: "/images/slimewear/satin-dress-dress-form.png", alt: '"Slimewear" Satin Dress fit on dress form', caption: "Satin Dress — Fit on Dress Form" },
+      { src: "/images/slimewear/satin-dress-side-zipper.png", alt: '"Slimewear" Satin Dress side elastic binding and princess seam detail', caption: "Satin Dress — Side Elastic Binding & Princess Seam" },
+      { src: "/images/main/slimewear-dress-shirt.png", alt: '"Slimewear" Dress Shirt on dress form', caption: "Dress Shirt — Final Garment" },
+      { src: "/images/slimewear/dress-shirt-patterns.png", alt: '"Slimewear" Dress Shirt pattern pieces and pattern card', caption: "Dress Shirt — Pattern Pieces & Pattern Card" },
+      { src: "/images/slimewear/dress-shirt-back-detail.png", alt: '"Slimewear" Dress Shirt back yoke and contrast stitching', caption: "Dress Shirt — Back Yoke & Contrast Stitching" },
+      { src: "/images/slimewear/dress-shirt-cuff-detail.png", alt: '"Slimewear" Dress Shirt cuff and placket detail', caption: "Dress Shirt — Cuff & Placket Detail" },
     ]
   },
   {
@@ -174,7 +167,7 @@ export const projects: Project[] = [
     title: "Passenger Princess Commuter Jacket",
     category: "case-studies",
     year: "Fall 2025",
-    role: "Student — Pattern Making & Design I",
+    role: "Designer / Patternmaker / Sewer",
     thumbnail: { src: "/images/thumbnail/Technical.jpeg", alt: "Passenger Princess Commuter Jacket final garment" },
     overview: "Passenger Princess Commuter Jacket is a technical outerwear project developed as the final assignment for the Pattern Making & Design I evening course. The jacket reinterprets classic princess-seam tailoring through a commuter-focused lens, integrating high-visibility elements and performance materials to support nighttime travel, safety, and freedom of movement. The project was motivated by a personal accident, which sharpened my focus on designing garments that prioritize protection, visibility, and mobility.",
     responsibilities: [

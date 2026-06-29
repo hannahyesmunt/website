@@ -14,14 +14,14 @@ export default function TechnicalDesignPage() {
           </h1>
           <div className="max-w-2xl">
             <p className="text-xs md:text-base text-muted leading-relaxed">
-              A collection of garments I&apos;ve designed, patterned, constructed, fit-tested, and
-              prototyped — from technical flats and CLO 3D visualization through to finished
-              samples.
+              Hands-on work across the full development cycle — prototyping, muslins,
+              fit sessions, technical flats, CLO 3D renders, and finished samples. Each
+              piece here was designed, patterned, and built by me.
             </p>
           </div>
         </header>
 
-        <div className="columns-2 md:columns-3 gap-2 md:gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
           {technicalDesignGallery.map((image) => (
             <GalleryItem key={image.src} image={image} />
           ))}

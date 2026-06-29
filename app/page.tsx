@@ -4,9 +4,9 @@ import GalleryItem from "@/app/components/GalleryItem";
 
 const homeGallery = [
   { src: "/images/main/slimewear-dress-shirt.png", alt: '"Slimewear" Dress Shirt', subtext: "Patternmaking, Design & Garment Construction" },
-  { src: "/images/main/og-anunoby-skechers.png", alt: "OG Anunoby in Skechers Performance Apparel", subtext: "Men's PD Team, Skechers" },
-  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro 2-Way Swim Top", subtext: "Patternmaking & Construction" },
-  { src: "/images/main/Adaptation_7350_edit.webp", alt: '"Sporty Bonnet" for Adaptation Editorial', subtext: "Adaptation Portfolio" },
+  { src: "/images/main/og-anunoby-skechers.png", alt: "OG Anunoby in Skechers Performance Apparel", subtext: "Product Development" },
+  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro 2-Way Swim Top", subtext: "Fit Development" },
+  { src: "/images/main/Adaptation_7350_edit.webp", alt: '"Sporty Bonnet" for Adaptation Editorial', subtext: "Accessory Design & Styling" },
 ];
 
 export default function Home() {
@@ -22,8 +22,8 @@ export default function Home() {
           </p>
           <div className="max-w-xl">
             <p className="text-xs md:text-base font-sans text-muted leading-relaxed">
-              Patternmaking, fit development, and garment construction — from technical flats
-              and CLO 3D prototypes through to finished samples.
+              Technical apparel design and product development — spanning performance
+              apparel, hands-on pattern and prototype work, and brand-scale production.
             </p>
           </div>
 

@@ -3,7 +3,9 @@ import { GalleryImage } from "@/app/components/GalleryItem";
 export const technicalDesignGallery: GalleryImage[] = [
   // Slimewear
   { src: "/images/main/slimewear-satin-dress.png", alt: '"Slimewear" Satin Dress', subtext: "Patternmaking, Design & Garment Construction" },
+  { src: "/images/slimewear/satin-dress-dress-form.png", alt: '"Slimewear" Satin Dress', subtext: "Fit on Dress Form" },
   { src: "/images/main/slimewear-dress-shirt.png", alt: '"Slimewear" Dress Shirt', subtext: "Patternmaking, Design & Garment Construction" },
+  { src: "/images/slimewear/dress-shirt-back-detail.png", alt: '"Slimewear" Dress Shirt', subtext: "Back Yoke & Contrast Stitching" },
 
   // Passenger Princess Commuter Jacket
   { src: "/images/technical/IMG_5703.jpeg", alt: "Passenger Princess Commuter Jacket", subtext: "Final Garment" },
@@ -25,8 +27,6 @@ export const technicalDesignGallery: GalleryImage[] = [
   { src: "/images/professional/sa/PST00088_websize.jpg", alt: "Oh Cool Compression Zip Top", subtext: "Fit Testing" },
   { src: "/images/main/Flatlay_077_websize.webp", alt: "Saint Andro Zip-Off Capris", subtext: "Patternmaking & Construction" },
   { src: "/images/main/Flatlay_060_websize.webp", alt: "Saint Andro Baggy Hiking Pants", subtext: "Patternmaking & Construction" },
-  { src: "/images/main/sa_coolpool_9687.jpg", alt: "Saint Andro 2-Way Swim Top", subtext: "Patternmaking & Construction" },
-
   // CLO 3D
   { src: "/images/main/clo2.webp", alt: "CLO 3D Garment Visualization", subtext: "Virtual Prototyping" },
   { src: "/images/pdl/archive-to-future/reference-1.jpeg", alt: "Archive to Future — French Hood", subtext: "CLO 3D Render" },
@@ -36,15 +36,8 @@ export const technicalDesignGallery: GalleryImage[] = [
   { src: "/images/pdl/workwear/hero.jpeg", alt: "Sherpa-Lined Detroit-Style Work Jacket", subtext: "Patternmaking & Construction" },
   { src: "/images/pdl/workwear/IMG_1941.jpeg", alt: "Workwear Fit Study", subtext: "Final Garment" },
   { src: "/images/pdl/workwear/IMG_3672.jpeg", alt: "Workwear Fit Study", subtext: "Final Garment" },
-  { src: "/images/pdl/workwear/IMG_3702.jpeg", alt: "Workwear Fit Study", subtext: "Final Garment" },
-  { src: "/images/pdl/workwear/mewobackground.png", alt: "Workwear Fit Study", subtext: "Final Garment" },
   { src: "/images/pdl/workwear/IMG_3650.jpeg", alt: "Workwear Fit Study", subtext: "Sherpa Lining Detail" },
   { src: "/images/pdl/workwear/IMG_2899.jpeg", alt: "Workwear Fit Study", subtext: "Quilted Chore Coat — Construction Detail" },
-  { src: "/images/pdl/workwear/IMG_1928.jpeg", alt: "Workwear Fit Study", subtext: "Fit Testing" },
-  { src: "/images/pdl/workwear/IMG_2678.jpeg", alt: "Workwear Fit Study", subtext: "Eisenhower-Style Work Jacket" },
-  { src: "/images/pdl/workwear/IMG_2685.jpeg", alt: "Workwear Fit Study", subtext: "Work Pants" },
-  { src: "/images/pdl/workwear/IMG_2823.jpeg", alt: "Workwear Fit Study", subtext: "Work Vest" },
-  { src: "/images/pdl/workwear/IMG_3676.jpeg", alt: "Workwear Fit Study", subtext: "Construction Process" },
   { src: "/images/pdl/workwear/IMG_3683.jpeg", alt: "Workwear Fit Study", subtext: "Construction Process" },
 
   // SLUSHWORLD
