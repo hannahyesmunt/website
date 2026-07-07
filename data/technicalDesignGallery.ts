@@ -59,4 +59,8 @@ export const technicalDesignGallery: GalleryImage[] = [
   { src: "/images/pdl/sportybonnet/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Sporty Bonnet", subtext: "Accessory Construction — Ripstop Nylon" },
   { src: "/images/pdl/sportybonnet/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Sporty Bonnet", subtext: "Construction Detail" },
   { src: "/images/main/2024_06_05_Pocket_Design_Lab_388.webp", alt: "Sporty Bonnet", subtext: "Technical Accessory Design" },
+  { src: "/images/technical/IMG_4586.jpeg", alt: "Sporty Bonnet", subtext: "Ripstop Nylon — Final Garment" },
+  { src: "/images/technical/IMG_4657.jpeg", alt: "Sporty Bonnet", subtext: "Technical Fabric — Final Garment" },
+  { src: "/images/technical/IMG_4705.jpeg", alt: "Sporty Bonnet", subtext: "Ripstop Nylon Mesh" },
+  { src: "/images/technical/IMG_5744.jpeg", alt: "Sporty Bonnet", subtext: "Ripstop Nylon — Final Garment" },
 ];
