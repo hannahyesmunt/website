@@ -1,6 +1,21 @@
 import GalleryItem from "@/app/components/GalleryItem";
 import { technicalDesignGallery } from "@/data/technicalDesignGallery";
 
+const technicalDesignSkills = [
+  "Prototyping",
+  "Muslins",
+  "Fit Sessions",
+  "Technical Flats",
+  "CLO 3D Renders",
+  "Finished Samples",
+  "Design",
+  "Patternmaking",
+  "Pattern Grading",
+  "Garment Construction",
+  "Fabric Sourcing",
+  "Spec Sheet Development",
+];
+
 export default function TechnicalDesignPage() {
   return (
     <div className="min-h-screen bg-background">
@@ -14,14 +29,27 @@ export default function TechnicalDesignPage() {
           </h1>
           <div className="max-w-2xl">
             <p className="text-xs md:text-base text-muted leading-relaxed">
-              Hands-on work across the full development cycle — prototyping, muslins,
-              fit sessions, technical flats, CLO 3D renders, and finished samples. Each
-              piece here was designed, patterned, and built by me.
+              Hands-on work across the full development cycle.
             </p>
           </div>
+          <section className="mt-6 md:mt-8">
+            <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">
+              Skills
+            </span>
+            <ul className="flex flex-wrap gap-1.5 md:gap-2">
+              {technicalDesignSkills.map((skill) => (
+                <li
+                  key={skill}
+                  className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted"
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </section>
         </header>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 auto-rows-auto">
           {technicalDesignGallery.map((image) => (
             <GalleryItem key={image.src} image={image} />
           ))}

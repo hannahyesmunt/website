@@ -419,6 +419,26 @@ export default async function ProjectPage(
             </div>
           </section>
 
+          {slug === "la-fit-test-party" && (
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Credits</span>
+              <div className="max-w-2xl">
+                <p className="text-xs md:text-sm text-muted leading-relaxed">
+                  Photography by{" "}
+                  <a
+                    href="https://instagram.com/leigh.ann.cobb.photo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-accent transition-colors"
+                  >
+                    Leigh Ann Cobb
+                  </a>
+                  .
+                </p>
+              </div>
+            </section>
+          )}
+
           {project.problem && (
             <section className="mb-8 md:mb-12">
               <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Problem</span>
@@ -452,25 +472,29 @@ export default async function ProjectPage(
             </section>
           )}
 
-          <section className="mb-8 md:mb-12">
-            <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">
-              {slug === "archive-to-future" ? "Project Highlights" : "Responsibilities"}
-            </span>
-            <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
-              {project.responsibilities.map((responsibility, index) => (
-                <li key={index}>{responsibility}</li>
-              ))}
-            </ul>
-          </section>
+          {project.responsibilities.length > 0 && slug !== "la-fit-test-party" && (
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">
+                {slug === "archive-to-future" ? "Project Highlights" : "Responsibilities"}
+              </span>
+              <ul className="list-disc list-inside space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted leading-relaxed">
+                {project.responsibilities.map((responsibility, index) => (
+                  <li key={index}>{responsibility}</li>
+                ))}
+              </ul>
+            </section>
+          )}
 
-          <section className="mb-8 md:mb-12">
-            <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Skills</span>
-            <ul className="flex flex-wrap gap-1.5 md:gap-2">
-              {project.skills.map((skill, index) => (
-                <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
-              ))}
-            </ul>
-          </section>
+          {project.skills.length > 0 && (
+            <section className="mb-8 md:mb-12">
+              <span className="text-[10px] md:text-xs font-mono uppercase tracking-[0.08em] text-muted mb-3 md:mb-4 block">Skills</span>
+              <ul className="flex flex-wrap gap-1.5 md:gap-2">
+                {project.skills.map((skill, index) => (
+                  <li key={index} className="px-2 md:px-3 py-0.5 md:py-1 bg-surface border border-border rounded-full text-[10px] md:text-xs font-mono tracking-[0.06em] text-muted">{skill}</li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {project.materialSystem && (
             <section className="mb-8 md:mb-12">
@@ -579,6 +603,31 @@ export default async function ProjectPage(
                 </figure>
               ))}
             </div>
+          ) : slug === "la-fit-test-party" ? (
+            <>
+              <div className="columns-2 md:columns-3 gap-2 md:gap-3">
+                {project.images.slice(0, -3).map((image, index) => (
+                  <div key={index} className="break-inside-avoid [&>figure]:mb-2 [&>figure]:md:mb-3">
+                    <ImageWithCaption
+                      src={image.src}
+                      alt={image.alt}
+                      caption={image.caption}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="mt-2 md:mt-3 grid grid-cols-1 gap-2 md:gap-3 max-w-md mx-auto">
+                {project.images.slice(-3).map((image, index) => (
+                  <div key={`closing-${index}`} className="break-inside-avoid [&>figure]:mb-0">
+                    <ImageWithCaption
+                      src={image.src}
+                      alt={image.alt}
+                      caption={image.caption}
+                    />
+                  </div>
+                ))}
+              </div>
+            </>
           ) : (
             <div className="columns-2 md:columns-3 gap-2 md:gap-3">
               {project.images.map((image, index) => {

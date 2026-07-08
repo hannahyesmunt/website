@@ -5,6 +5,7 @@ const caseStudyOrder = [
   "slimewear",
   "passenger-princess-commuter-jacket",
   "case-study-beyond-the-bikini",
+  "la-fit-test-party",
   "skechers-mens-product-development",
 ];
 

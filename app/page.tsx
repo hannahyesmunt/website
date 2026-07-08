@@ -73,7 +73,7 @@ export default function Home() {
             </span>
             <div className="max-w-xl">
               <p className="text-xs md:text-lg text-muted leading-relaxed">
-                Selected features highlighting my work in fashion, product development, and creative projects.
+                Selected features highlighting creative projects and my work in fashion.
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-5 md:gap-12 mt-2 md:mt-4">

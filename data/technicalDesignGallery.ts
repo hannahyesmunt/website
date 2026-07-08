@@ -25,8 +25,17 @@ export const technicalDesignGallery: GalleryImage[] = [
   { src: "/images/professional/sa/4ZIP TOP RENDER_Custom_View_1.png", alt: "Oh Cool Compression Zip Top", subtext: "CLO 3D — Custom View" },
   { src: "/images/professional/sa/1sa.png", alt: "Oh Cool Compression Zip Top", subtext: "Conceptual Ideation" },
   { src: "/images/professional/sa/PST00088_websize.jpg", alt: "Oh Cool Compression Zip Top", subtext: "Fit Testing" },
-  { src: "/images/main/Flatlay_077_websize.webp", alt: "Saint Andro Zip-Off Capris", subtext: "Patternmaking & Construction" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_011.jpg", alt: "Saint Andro Compression Zip Top", subtext: "Flat Lay" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_013.jpg", alt: "Saint Andro Sleeveless Zip Top", subtext: "Flat Lay" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_017.jpg", alt: "Saint Andro Compression Shorts", subtext: "Flat Lay" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_031.jpg", alt: "Saint Andro Swim Shorts", subtext: "Flat Lay — Lining Detail" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_033.jpg", alt: "Saint Andro Swim Shorts", subtext: "Flat Lay — Back View" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_053.jpg", alt: "Saint Andro Technical Button-Up", subtext: "Flat Lay — Front" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_054.jpg", alt: "Saint Andro Technical Button-Up", subtext: "Flat Lay — Back" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_058.jpg", alt: "Saint Andro Baggy Hiking Pants", subtext: "Flat Lay" },
   { src: "/images/main/Flatlay_060_websize.webp", alt: "Saint Andro Baggy Hiking Pants", subtext: "Patternmaking & Construction" },
+  { src: "/images/technical/FLAT%20LAYS%20+/Flatlay_065.jpg", alt: "Saint Andro Hiking Pants", subtext: "Flat Lay — Drawcord Hem" },
+  { src: "/images/main/Flatlay_077_websize.webp", alt: "Saint Andro Zip-Off Capris", subtext: "Patternmaking & Construction" },
   // CLO 3D
   { src: "/images/main/clo2.webp", alt: "CLO 3D Garment Visualization", subtext: "Virtual Prototyping" },
   { src: "/images/pdl/archive-to-future/reference-1.jpeg", alt: "Archive to Future — French Hood", subtext: "CLO 3D Render" },
@@ -56,7 +65,7 @@ export const technicalDesignGallery: GalleryImage[] = [
   { src: "/images/pdl/trash collection/IMG_7890.jpeg", alt: "SLUSHWORLD", subtext: "Studio Process" },
 
   // Sporty Bonnet
-  { src: "/images/pdl/sportybonnet/2024_06_05_Pocket_Design_Lab_113.jpeg", alt: "Sporty Bonnet", subtext: "Accessory Construction — Ripstop Nylon" },
+  { src: "/images/technical/2024_06_05_Pocket_Design_Lab_466.jpeg", alt: "Sporty Bonnet", subtext: "Accessory Construction — Ripstop Nylon", wide: true },
   { src: "/images/pdl/sportybonnet/2024_06_05_Pocket_Design_Lab_394.jpeg", alt: "Sporty Bonnet", subtext: "Construction Detail" },
   { src: "/images/main/2024_06_05_Pocket_Design_Lab_388.webp", alt: "Sporty Bonnet", subtext: "Technical Accessory Design" },
   { src: "/images/technical/IMG_4586.jpeg", alt: "Sporty Bonnet", subtext: "Ripstop Nylon — Final Garment" },

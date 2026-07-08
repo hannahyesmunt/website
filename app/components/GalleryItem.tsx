@@ -4,19 +4,35 @@ export type GalleryImage = {
   src: string;
   alt: string;
   subtext?: string;
+  wide?: boolean;
 };
 
+function isWideGalleryImage(image: GalleryImage): boolean {
+  if (image.wide !== undefined) return image.wide;
+
+  const src = image.src.toLowerCase();
+  const subtext = image.subtext?.toLowerCase() ?? "";
+
+  return subtext.includes("flat lay") || src.includes("flatlay") || src.includes("flat lay");
+}
+
 export default function GalleryItem({ image }: { image: GalleryImage }) {
+  const wide = isWideGalleryImage(image);
+
   return (
-    <div className="mb-2 md:mb-3 break-inside-avoid group cursor-default">
+    <div
+      className={`mb-2 md:mb-3 group cursor-default ${
+        wide ? "col-span-2 md:col-span-3" : ""
+      }`}
+    >
       <div className="relative w-full overflow-hidden rounded-md md:rounded-lg border border-border bg-surface shadow-sm">
         <Image
           src={image.src}
           alt={image.alt}
-          width={800}
-          height={600}
+          width={wide ? 1200 : 800}
+          height={wide ? 800 : 600}
           className="w-full h-auto object-cover transition-all duration-300 md:group-hover:scale-105 md:group-hover:opacity-40"
-          sizes="(max-width: 768px) 50vw, 33vw"
+          sizes={wide ? "100vw" : "(max-width: 768px) 50vw, 33vw"}
         />
         <div className="hidden md:flex absolute inset-0 items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
           <div className="text-center">
