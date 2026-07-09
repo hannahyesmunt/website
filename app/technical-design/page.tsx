@@ -1,5 +1,5 @@
 import GalleryItem from "@/app/components/GalleryItem";
-import { technicalDesignGallery } from "@/data/technicalDesignGallery";
+import { technicalDesignSections } from "@/data/technicalDesignGallery";
 
 const technicalDesignSkills = [
   "Prototyping",
@@ -49,9 +49,26 @@ export default function TechnicalDesignPage() {
           </section>
         </header>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 auto-rows-auto">
-          {technicalDesignGallery.map((image) => (
-            <GalleryItem key={image.src} image={image} />
+        <div className="space-y-10 md:space-y-16">
+          {technicalDesignSections.map((section, index) => (
+            <section key={section.id}>
+              {index > 0 && <div className="mb-8 md:mb-12 border-t border-border" />}
+              <header className="mb-5 md:mb-8">
+                <h2 className="text-sm md:text-lg font-bold text-foreground tracking-tight">
+                  {section.title}
+                </h2>
+                {section.subtext && (
+                  <p className="mt-2 md:mt-3 max-w-2xl text-xs md:text-sm text-muted leading-relaxed">
+                    {section.subtext}
+                  </p>
+                )}
+              </header>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 auto-rows-auto">
+                {section.images.map((image) => (
+                  <GalleryItem key={image.src} image={image} />
+                ))}
+              </div>
+            </section>
           ))}
         </div>
       </div>
