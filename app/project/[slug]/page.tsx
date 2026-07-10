@@ -6,6 +6,7 @@ import ProjectHeader from "@/app/components/ProjectHeader";
 import ImageWithCaption from "@/app/components/ImageWithCaption";
 import SpecBlock from "@/app/components/SpecBlock";
 import ScrollGallery from "@/app/components/ScrollGallery";
+import { assetPath } from "@/lib/assetPath";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -166,7 +167,7 @@ export default async function ProjectPage(
                 <figure key={index} className="mb-0">
                   <div className="relative w-full bg-surface rounded-md md:rounded-lg overflow-hidden border border-border">
                     <Image
-                      src={image.src}
+                      src={assetPath(image.src)}
                       alt={image.alt}
                       width={1200}
                       height={900}
@@ -363,7 +364,7 @@ export default async function ProjectPage(
               {project.images.map((image, index) => (
                 <div key={index} className="break-inside-avoid [&>figure]:mb-4 [&>figure]:md:mb-2">
                   <ImageWithCaption
-                    src={image.src}
+                    src={assetPath(image.src)}
                     alt={image.alt}
                     caption={image.caption}
                   />
@@ -575,7 +576,7 @@ export default async function ProjectPage(
               {project.images.map((image, index) => (
                 <ImageWithCaption
                   key={index}
-                  src={image.src}
+                  src={assetPath(image.src)}
                   alt={image.alt}
                   caption={image.caption}
                 />
@@ -587,7 +588,7 @@ export default async function ProjectPage(
                 <figure key={index} className="mb-0">
                   <div className="relative w-full bg-surface rounded-md md:rounded-lg overflow-hidden border border-border">
                     <Image
-                      src={image.src}
+                      src={assetPath(image.src)}
                       alt={image.alt}
                       width={1600}
                       height={1200}
@@ -609,7 +610,7 @@ export default async function ProjectPage(
                 {project.images.slice(0, -3).map((image, index) => (
                   <div key={index} className="break-inside-avoid [&>figure]:mb-2 [&>figure]:md:mb-3">
                     <ImageWithCaption
-                      src={image.src}
+                      src={assetPath(image.src)}
                       alt={image.alt}
                       caption={image.caption}
                     />
@@ -620,7 +621,7 @@ export default async function ProjectPage(
                 {project.images.slice(-3).map((image, index) => (
                   <div key={`closing-${index}`} className="break-inside-avoid [&>figure]:mb-0">
                     <ImageWithCaption
-                      src={image.src}
+                      src={assetPath(image.src)}
                       alt={image.alt}
                       caption={image.caption}
                     />
@@ -638,7 +639,7 @@ export default async function ProjectPage(
                       <figure className="mb-2 md:mb-3 break-inside-avoid">
                         <div className="relative w-full overflow-hidden rounded-md md:rounded-lg">
                           <Image
-                            src={image.src}
+                            src={assetPath(image.src)}
                             alt={image.alt}
                             width={1000}
                             height={750}
@@ -654,7 +655,7 @@ export default async function ProjectPage(
                       </figure>
                     ) : (
                       <ImageWithCaption
-                        src={image.src}
+                        src={assetPath(image.src)}
                         alt={image.alt}
                         caption={image.caption}
                       />

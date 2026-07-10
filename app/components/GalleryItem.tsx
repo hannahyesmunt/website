@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 export type GalleryImage = {
   src: string;
@@ -18,16 +19,17 @@ function isWideGalleryImage(image: GalleryImage): boolean {
 
 export default function GalleryItem({ image }: { image: GalleryImage }) {
   const wide = isWideGalleryImage(image);
+  const src = assetPath(image.src);
 
   return (
     <div
       className={`mb-2 md:mb-3 group cursor-default ${
-        wide ? "col-span-2 md:col-span-3" : ""
+        wide ? "col-span-full" : ""
       }`}
     >
       <div className="relative w-full overflow-hidden rounded-md md:rounded-lg border border-border bg-surface shadow-sm">
         <Image
-          src={image.src}
+          src={src}
           alt={image.alt}
           width={wide ? 1200 : 800}
           height={wide ? 800 : 600}

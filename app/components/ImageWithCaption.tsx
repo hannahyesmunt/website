@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 interface ImageWithCaptionProps {
   src: string;
@@ -11,7 +12,7 @@ export default function ImageWithCaption({ src, alt, caption }: ImageWithCaption
     <figure className="mb-2 md:mb-4 break-inside-avoid">
       <div className="relative w-full bg-surface rounded-md md:rounded-lg overflow-hidden border border-border">
         <Image
-          src={src}
+          src={assetPath(src)}
           alt={alt}
           width={1000}
           height={750}

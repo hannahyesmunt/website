@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Project } from "@/data/projects";
+import { assetPath } from "@/lib/assetPath";
 
 interface ProjectCardProps {
   project: Project;
@@ -19,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.thumbnail && (
           <div className={`${aspectClass} overflow-hidden rounded-md md:rounded-lg border border-border bg-surface`}>
             <Image
-              src={project.thumbnail.src}
+              src={assetPath(project.thumbnail.src)}
               alt={project.thumbnail.alt}
               width={1000}
               height={isVertical ? 1333 : 750}

@@ -27,7 +27,7 @@ const tourney = Tourney({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hannahyesmunt.vercel.app"),
+  metadataBase: new URL("https://hannahyesmunt.github.io/website"),
   title: "Hannah Yesmunt - Portfolio",
   description: "Technical apparel designer focused on patternmaking, fit development, and garment construction",
   openGraph: {

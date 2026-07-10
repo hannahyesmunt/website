@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 import GalleryItem from "@/app/components/GalleryItem";
 
 const homeGallery = [
@@ -79,7 +80,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center justify-center gap-5 md:gap-12 mt-2 md:mt-4">
               <div className="bg-zinc-900 px-3 py-1.5 md:px-4 md:py-2 rounded">
                 <Image
-                  src="/images/main/press/sd l-01.avif"
+                  src={assetPath("/images/main/press/sd l-01.avif")}
                   alt="Something Different Magazine"
                   width={150}
                   height={50}
@@ -87,14 +88,14 @@ export default function Home() {
                 />
               </div>
               <Image
-                src="/images/main/press/submissionbeauty.logo.small.72dpi_r3.avif"
+                src={assetPath("/images/main/press/submissionbeauty.logo.small.72dpi_r3.avif")}
                 alt="Submission Beauty"
                 width={150}
                 height={50}
                 className="h-4 md:h-6 w-auto object-contain grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <Image
-                src="/images/main/press/250px-CreativeMornings_Logo.png"
+                src={assetPath("/images/main/press/250px-CreativeMornings_Logo.png")}
                 alt="Creative Mornings"
                 width={150}
                 height={50}

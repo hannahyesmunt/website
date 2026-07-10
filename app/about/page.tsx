@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 export default function AboutPage() {
   return (
@@ -36,7 +37,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6 max-w-3xl">
           <div className="relative w-full rounded-md md:rounded-lg border border-border bg-surface shadow-sm overflow-hidden [&>span]:block [&>span]:m-0 [&>span]:p-0 [&>span]:leading-none [&>span>img]:block [&>span>img]:m-0 [&>span>img]:p-0">
             <Image
-              src="/images/about/SAdetroit1.jpg"
+              src={assetPath("/images/about/SAdetroit1.jpg")}
               alt="Hannah Yesmunt"
               width={600}
               height={750}
@@ -46,7 +47,7 @@ export default function AboutPage() {
           </div>
           <div className="relative w-full rounded-md md:rounded-lg border border-border bg-surface shadow-sm overflow-hidden [&>span]:block [&>span]:m-0 [&>span]:p-0 [&>span]:leading-none [&>span>img]:block [&>span>img]:m-0 [&>span>img]:p-0">
             <Image
-              src="/images/about/Screenshot+2023-03-01+at+12.15.16+PM.jpeg"
+              src={assetPath("/images/about/Screenshot+2023-03-01+at+12.15.16+PM.jpeg")}
               alt="Hannah Yesmunt"
               width={600}
               height={450}

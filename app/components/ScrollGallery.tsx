@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 interface ScrollGalleryImage {
   src: string;
@@ -68,7 +69,7 @@ export default function ScrollGallery({ images, desktopVisible = 3 }: ScrollGall
           >
             <div className="relative w-full bg-surface rounded-md md:rounded-lg overflow-hidden border border-border">
               <Image
-                src={image.src}
+                src={assetPath(image.src)}
                 alt={image.alt}
                 width={1200}
                 height={900}

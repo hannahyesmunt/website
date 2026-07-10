@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 interface CarouselImage {
   src: string;
@@ -43,7 +44,7 @@ export default function ImageCarousel({ images, autoPlayInterval = 4000 }: Image
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
               <Image
-                src={image.src}
+                src={assetPath(image.src)}
                 alt={image.alt}
                 fill
                 className="object-cover"
