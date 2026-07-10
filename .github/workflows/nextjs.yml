@@ -37,15 +37,12 @@ jobs:
           bun-version: latest
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Automatically inject basePath in your Next.js config file, and a
-          # can-be-configured static export image optimization loader.
-          static_site_generator: next
       - name: Install dependencies
         run: bun install
       - name: Build with Next.js
         env:
           GITHUB_PAGES: "true"
+          NEXT_PUBLIC_BASE_PATH: "/website"
         run: bun run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
